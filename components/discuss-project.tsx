@@ -12,6 +12,7 @@ interface DiscussProjectProps {
   showSubtitle?:boolean
   buttonText?: string
   useModal?: boolean
+  showCta?: boolean
 }
 
 export function DiscussProject({ 
@@ -21,7 +22,8 @@ export function DiscussProject({
   subtitle = "Premier échange confidentiel — Réponse sous 48h",
   showSubtitle=true,
   buttonText = "Contactez-nous",
-  useModal = true
+  useModal = true,
+  showCta = true
 }: DiscussProjectProps) {
   const [isFormOpen, setIsFormOpen] = useState(false)
 
@@ -78,13 +80,15 @@ export function DiscussProject({
               </p>
               }
               
-              <button
-                onClick={handleButtonClick}
-                className="mt-10 inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 px-8 py-4 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:border-primary-foreground hover:bg-primary-foreground/10"
-              >
-                {buttonText}
-                <ArrowRight className="h-4 w-4" />
-              </button>
+              {showCta && (
+                <button
+                  onClick={handleButtonClick}
+                  className="mt-10 inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 px-8 py-4 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:border-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  {buttonText}
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              )}
             </div>
           </FadeIn>
         </div>

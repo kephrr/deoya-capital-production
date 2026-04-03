@@ -14,6 +14,7 @@ import { Toast } from "@/components/ui/toast";
 import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 import { newsletterContent } from "@/content/newsletter";
+import { sendNewsletterConfirmation } from "@/lib/emailjs";
 
 export default function NewsletterPage() {
   const { toast } = useToast();
@@ -85,8 +86,11 @@ export default function NewsletterPage() {
     
     setIsSubscribing(true);
     try {
-      // Simulate API call - replace with actual newsletter subscription API
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const result = await sendNewsletterConfirmation(email);
+      
+      if (!result.success) {
+        throw new Error("Une erreur est survenue lors de l'inscription à la newsletter");
+      }
       
       // Reset form and close modal
       setEmail("");
@@ -109,7 +113,7 @@ export default function NewsletterPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Hero {...hero} onClickCta={() => setIsModalOpen(true)} />
+      <Hero {...hero} showCta={false} onClickCta={() => setIsModalOpen(true)} />
       <Navigation backgrounded={true} />
       <div className="mx-auto max-w-7xl px-6 pt-12 pb-24 lg:px-8">
         {/* Filters */}
@@ -248,7 +252,7 @@ export default function NewsletterPage() {
         </div>
       )}
 
-      <DiscussProject {...discussProject} />
+      <DiscussProject {...discussProject} showCta={false} />
       <Toaster />
       <Footer />
     </div>

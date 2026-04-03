@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react"
 import { Send } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 import { contactContent } from "@/content/contact"
+import { sendContactForm } from "@/lib/emailjs"
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -21,21 +22,17 @@ export function Contact() {
     const name = formData.get("name") as string
     const email = formData.get("email") as string
     const message = formData.get("message") as string
+    const company = formData.get("company") as string
     
     try {
-      const response = await fetch("https://ton-api.vercel.app/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
+      const result = await sendContactForm({
+        nom_complet: name,
+        email: email,
+        message: message,
+        entreprise: company, // Ajout du champ company
       })
       
-      if (!response.ok) {
+      if (!result.success) {
         throw new Error("Une erreur est survenue lors de l'envoi du message")
       }
       
