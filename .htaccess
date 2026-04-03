@@ -1,0 +1,5 @@
+# Allow CORS for external API calls
+Header set Access-Control-Allow-Origin "*"
+
+# Ensure Apache serves index.html by default
+DirectoryIndex index.html
