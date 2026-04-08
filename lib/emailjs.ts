@@ -66,9 +66,7 @@ export const sendNewsletterConfirmation = async (email: string) => {
       "template_fes71q9",
       {
         to_email: "contact@deoya-capital.com",  // Email de destination
-        email: email,                            // Email de l'abonné
-        type_formulaire: "Newsletter",          // Type de formulaire
-        nom_complet: "Abonné Newsletter",        // Nom par défaut
+        email: email,        // Nom par défaut
       },
       "n26ELgn8Po_c1rHcr"  // Même public key que sendContactForm
     );

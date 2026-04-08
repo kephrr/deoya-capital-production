@@ -69,7 +69,7 @@ export const homeContent = {
       highlightLine2: "",
       cta: {
         label: "Découvrir notre approche",
-        href: "#",
+        href: "/expertises",
       },
     },
     items: [

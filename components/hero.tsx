@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react"
 import { homeContent } from "@/content/home"
+import { useEffect, useRef } from "react"
 
 interface HeroBackgroundProps {
   backgroundImage?: string;
@@ -27,15 +28,46 @@ interface VideoHeroBackgroundProps {
 }
 
 function VideoHeroBackground({ videoSrc = '/wmremove-transformed.mp4' }: VideoHeroBackgroundProps) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      // Forcer le démarrage de la vidéo sur Safari
+      const playPromise = video.play()
+      
+      if (playPromise !== undefined) {
+        playPromise.catch(error => {
+          console.log("Autoplay prevented:", error)
+          // Tenter de jouer après une interaction utilisateur
+          const attemptPlay = () => {
+            video.play().catch(e => console.log("Still cannot play:", e))
+          }
+          
+          // Écouter le premier événement d'interaction
+          const events = ['click', 'touchstart', 'keydown']
+          const handleInteraction = () => {
+            attemptPlay()
+            events.forEach(event => document.removeEventListener(event, handleInteraction))
+          }
+          
+          events.forEach(event => document.addEventListener(event, handleInteraction, { once: true }))
+        })
+      }
+    }
+  }, [])
+
   return (
     <div className="absolute inset-0 h-full w-full overflow-hidden">
       <video
+        ref={videoRef}
         className="h-full w-full object-cover"
         autoPlay
         muted
         loop
         playsInline
         aria-hidden="true"
+        style={{ pointerEvents: 'none' }}
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.

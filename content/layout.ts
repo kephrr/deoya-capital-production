@@ -33,7 +33,7 @@ export const layoutContent = {
       }
     },
     bottom: {
-      copyright: "2026 DEOYA CAPITAL. Tous droits réservés.",
+      copyright: "© 2026 DEOYA CAPITAL. Tous droits réservés.",
       legal: {
         mentions: "Mentions légales",
         privacy: "Politique de confidentialité"

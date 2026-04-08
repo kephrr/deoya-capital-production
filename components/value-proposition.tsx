@@ -16,7 +16,7 @@ export function ValueProposition() {
           {items.map((item, index) => (
             <FadeIn key={index} delay={index * 150}>
               <div
-                className="flex items-center gap-4 md:justify-center"
+                className="flex items-center justify-center gap-4"
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-border bg-secondary">
                   <item.icon className="h-5 w-5 text-primary" strokeWidth={1.5} />

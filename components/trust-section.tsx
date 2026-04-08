@@ -2,13 +2,32 @@
 
 import { useState } from "react"
 import { FadeIn } from "@/components/fade-in"
-import { Play, Volume2, VolumeX } from "lucide-react"
+import { Play, Pause, Volume2, VolumeX } from "lucide-react"
+import { cabinetContent } from "@/content/cabinet"
 
 export function TrustSection() {
   const [isMuted, setIsMuted] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const { trustSection } = cabinetContent
 
   const toggleMute = () => {
     setIsMuted(!isMuted)
+  }
+
+  const handlePlay = () => {
+    const video = document.getElementById('trust-video') as HTMLVideoElement
+    if (video) {
+      video.play()
+      setIsPlaying(true)
+    }
+  }
+
+  const handlePause = () => {
+    const video = document.getElementById('trust-video') as HTMLVideoElement
+    if (video) {
+      video.pause()
+      setIsPlaying(false)
+    }
   }
   return (
     <section className="bg-background py-24 lg:py-32">
@@ -17,29 +36,71 @@ export function TrustSection() {
           {/* Video */}
           <FadeIn>
             <div className="relative aspect-video rounded-lg overflow-hidden bg-primary border border-border">
+              {/* Thumbnail image */}
+              {!isPlaying && (
+                <div className="absolute inset-0">
+                  <img
+                    src="/video-cover.png"
+                    alt="Vidéo de présentation DEOYA CAPITAL"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Dark overlay for better button visibility */}
+                  <div className="absolute inset-0 bg-black/30" />
+                </div>
+              )}
+              
+              {/* Video */}
               <video
-                className="w-full h-full object-cover"
-                autoPlay
+                id="trust-video"
+                className={`w-full h-full object-cover ${!isPlaying ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
                 muted={isMuted}
                 loop
                 playsInline
               >
-                <source src="/video/Deoya video.mp4" type="video/mp4" />
-                Votre navigateur ne supporte pas la lecture de cette vidéo.
+                <source src={trustSection.video.src} type="video/mp4" />
+                {trustSection.video.fallbackText}
               </video>
               
+              {/* Play button */}
+              {!isPlaying && (
+                <button
+                  onClick={handlePlay}
+                  className="absolute inset-0 flex items-center justify-center group"
+                  aria-label="Lire la vidéo"
+                >
+                  <div className="w-16 h-16 rounded-full bg-white/90 hover:bg-white transition-all duration-200 flex items-center justify-center group-hover:scale-110 shadow-lg">
+                    <Play className="w-8 h-8 text-primary ml-1" fill="currentColor" />
+                  </div>
+                </button>
+              )}
+              
+              {/* Pause button - visible on hover when playing */}
+              {isPlaying && (
+                <button
+                  onClick={handlePause}
+                  className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200 bg-transparent"
+                  aria-label="Mettre en pause la vidéo"
+                >
+                  <div className="w-14 h-14 rounded-full bg-black/60 hover:bg-black/80 transition-all duration-200 flex items-center justify-center shadow-lg">
+                    <Pause className="w-7 h-7 text-white" fill="currentColor" />
+                  </div>
+                </button>
+              )}
+              
               {/* Mute/Unmute button */}
-              <button
-                onClick={toggleMute}
-                className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors duration-200"
-                aria-label={isMuted ? "Activer le son" : "Désactiver le son"}
-              >
-                {isMuted ? (
-                  <VolumeX className="w-5 h-5" />
-                ) : (
-                  <Volume2 className="w-5 h-5" />
-                )}
-              </button>
+              {isPlaying && (
+                <button
+                  onClick={toggleMute}
+                  className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors duration-200"
+                  aria-label={isMuted ? trustSection.video.ariaLabels.enableSound : trustSection.video.ariaLabels.disableSound}
+                >
+                  {isMuted ? (
+                    <VolumeX className="w-5 h-5" />
+                  ) : (
+                    <Volume2 className="w-5 h-5" />
+                  )}
+                </button>
+              )}
               
               {/* Subtle overlay for better text readability if needed */}
               <div className="absolute inset-0 pointer-events-none">
@@ -53,36 +114,30 @@ export function TrustSection() {
             <div className="space-y-6">
               {/* Section label */}
               <p className="text-sm font-medium uppercase tracking-widest text-accent">
-                Notre philosophie
+                {trustSection.label}
               </p>
 
               {/* Main heading */}
               <h1 className="font-serif text-3xl font-semibold leading-tight text-balance md:text-4xl lg:text-5xl">
-                Un cabinet fondé sur la confiance
+                {trustSection.title}
               </h1>
 
               {/* Description */}
               <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-                <p>
-                  DEOYA CAPITAL est né d'une conviction : les projets d'investissement transcontinentaux méritent un partenaire qui comprend à la fois les réalités du terrain africain et les exigences des standards européens.
-                </p>
-                
-                <p>
-                  Notre modèle est celui d'un cabinet stratégique agile — une équipe centrale de haut niveau, appuyée par un réseau international d'experts sélectionnés, mobilisés selon la nature exacte de chaque mission.
-                </p>
-                
-                <p>
-                  Nous intervenons là où la complexité est la plus grande : à l'interface des marchés, des cultures institutionnelles et des exigences réglementaires.
-                </p>
+                {trustSection.description.map((paragraph, index) => (
+                  <p key={index}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
 
               {/* CTA */}
               <div className="pt-4">
                 <a
-                  href="/expertises"
+                  href={trustSection.cta.href}
                   className="inline-flex items-center gap-2 rounded-md border border-border bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity duration-200 hover:opacity-90"
                 >
-                  En savoir plus
+                  {trustSection.cta.text}
                 </a>
               </div>
             </div>

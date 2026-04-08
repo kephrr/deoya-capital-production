@@ -148,7 +148,7 @@ export const expertisesContent = {
     backgroundImage: "/co-workers-with-blue-file.jpg",
     redirectUrl: "/contact",
     title: "Expertises sur mesure pour votre ambition.",
-    subtitle: "Notre savoir-faire à votre service — Des solutions adaptées à vos enjeux spécifiques.",
+    subtitle: "Notre savoir-faire à votre service. Des solutions adaptées à vos enjeux spécifiques.",
     buttonText: "Bénéficier de notre expertise",
     useModal: false
   }

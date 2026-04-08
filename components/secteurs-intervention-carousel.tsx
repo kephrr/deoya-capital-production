@@ -197,7 +197,7 @@ export default function SecteursCarousel() {
         }
       `}</style>
 
-      <div className="relative w-full h-100 lg:h-130 overflow-hidden font-sans">
+      <div className="relative w-full h-150 lg:h-130 overflow-hidden font-sans">
 
         {/* ── Leaving slide ── */}
         {prevSlide && (
@@ -238,7 +238,7 @@ export default function SecteursCarousel() {
                       ))}
                     </ul>
                   </div>
-                  <div>
+                  <div className="mt-12">
                     <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Sous-segments couverts</p>
                     <p className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0">
                       {prevSlide.segments.join(' | ')}
@@ -290,7 +290,7 @@ export default function SecteursCarousel() {
                     ))}
                   </ul>
                 </div>
-                <div>
+                <div className="mt-12">
                   <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Sous-segments couverts</p>
                   <p className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0">
                     {slide.segments.join(' | ')}

@@ -32,7 +32,7 @@ export default function SecteursPage() {
         <SecteursCarousel />
       </div>
       <FadeIn>
-        <div className="mt-10 max-w-5xl mx-auto">
+        <div className="mt-10 max-w-6xl overflow-hidden mx-auto px-10">
           <h2 className="font-serif text-3xl font-semibold text-primary text-balance md:text-4xl">
             {expertisesContent.hero.title}
           </h2>

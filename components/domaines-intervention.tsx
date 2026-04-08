@@ -1,5 +1,6 @@
 import { TextAlignStart } from "lucide-react";
 import { homeContent } from "@/content/home";
+import Link from "next/link";
 
 const LEFT_CONTENT = homeContent.domainesIntervention.leftContent;
 const ITEMS = homeContent.domainesIntervention.items;
@@ -107,6 +108,10 @@ export default function DomaineSection() {
               <span className="text-accent italic block font-bold">
                 {LEFT_CONTENT.highlightLine2}
               </span>
+              <Link href={LEFT_CONTENT.cta.href} className="cta-btn">
+                {LEFT_CONTENT.cta.label}
+                <span className="cta-arrow">→</span>
+              </Link>
             </h2>
           </div>
 

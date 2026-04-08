@@ -160,6 +160,12 @@ export default function NewsletterPage() {
                 {filteredArticles.length} {filteredArticles.length > 1 ? filters.results.articles : filters.results.article} {filteredArticles.length > 1 ? filters.results.trouves : filters.results.trouve}
               </div>
               
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent/90"
+              >
+                S'abonner
+              </button>
             </div>
           </div>
         </FadeIn>

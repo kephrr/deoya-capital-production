@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deoya-capital.com/sitemap.xml
