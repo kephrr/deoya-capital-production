@@ -66,8 +66,15 @@ function VideoHeroBackground({ videoSrc = '/Video DEOYA.mp4' }: VideoHeroBackgro
         muted
         loop
         playsInline
+        controls={false}
+        disablePictureInPicture
+        disableRemotePlayback
         aria-hidden="true"
-        style={{ pointerEvents: 'none' }}
+        style={{ 
+          pointerEvents: 'none',
+          WebkitAppearance: 'none',
+          appearance: 'none'
+        }}
       >
         <source src={videoSrc} type="video/mp4" />
         Your browser does not support the video tag.
