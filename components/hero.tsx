@@ -27,7 +27,7 @@ interface VideoHeroBackgroundProps {
   videoSrc?: string;
 }
 
-function VideoHeroBackground({ videoSrc = '/wmremove-transformed.mp4' }: VideoHeroBackgroundProps) {
+function VideoHeroBackground({ videoSrc = '/Video DEOYA.mp4' }: VideoHeroBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {

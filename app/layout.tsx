@@ -7,12 +7,16 @@ const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
   weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  fallback: ['system-ui', 'arial', 'sans-serif'],
 })
 
 const cormorantGaramond = Cormorant_Garamond({
   subsets: ['latin'],
   variable: '--font-cormorant',
   weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  fallback: ['Georgia', 'serif'],
 })
 
 export const metadata: Metadata = {

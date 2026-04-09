@@ -2,7 +2,7 @@ import { Globe, Target, Zap, FileSearch, Compass, Users, Eye, BarChart3, Handsha
 
 export const homeContent = {
   videoHero: {
-    videoSrc: "/wmremove-transformed.mp4",
+    videoSrc: "/Video DEOYA.mp4",
     label: "Cabinet d'intelligence économique et de conseil stratégique",
     title: "Structurer et exécuter vos investissements internationaux avec une approche transcontinentale",
     subtitle: "Nous analysons les environnements politiques, sectoriels et géostratégiques afin d'accompagner les entreprises et les investisseurs dans leurs décisions d'expansion, d'implantation et de développement sur les marchés internationaux.",
