@@ -64,5 +64,22 @@ export const layoutContent = {
         privacy: "Politique de confidentialité"
       }
     }
+  },
+  cookies: {
+    banner: {
+      title: "DEOYA CAPITAL utilise des cookies",
+      description: "pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu. En continuant d'utiliser ce site, vous acceptez notre utilisation des cookies.",
+      minimizedText: "Ce site utilise des cookies pour votre expérience.",
+      buttons: {
+        accept: "Tout accepter",
+        refuse: "Refuser",
+        manage: "Gérer",
+        minimize: "Minimiser"
+      },
+      links: {
+        policy: "Politique de cookies",
+        privacy: "Politique de confidentialité"
+      }
+    }
   }
 }

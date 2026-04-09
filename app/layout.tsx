@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Montserrat, Cormorant_Garamond } from 'next/font/google'
 
 import './globals.css'
+import { CookieBanner } from '@/components/cookie-banner'
+import { CookieManager } from '@/components/cookie-manager'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -66,7 +68,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${montserrat.variable} ${cormorantGaramond.variable}`}>
       <body className="font-sans antialiased">
-        {children}
+        <CookieManager>
+          {children}
+        </CookieManager>
+        <CookieBanner />
       </body>
     </html>
   )
