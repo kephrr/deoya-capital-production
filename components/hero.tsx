@@ -96,6 +96,7 @@ interface HeroProps {
   height?: string;
   mxAuto?: boolean;
   ctaMarginTop?: string;
+  ctaAccent?: boolean;
   onClickCta?: () => void;
 }
 
@@ -113,6 +114,7 @@ export function Hero({
   height = 'min-h-screen',
   mxAuto = false,
   ctaMarginTop = 'mt-10',
+  ctaAccent = false,
   onClickCta
 }: HeroProps) {
   return (
@@ -145,7 +147,7 @@ export function Hero({
               <a
                 href={ctaHref}
                 onClick={onClickCta}
-                className="inline-flex items-center justify-center gap-2 rounded-md border border-primary-foreground/30 px-6 py-3 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:border-primary-foreground hover:bg-primary-foreground/10"
+                className={`inline-flex items-center justify-center gap-2 rounded-md  px-6 py-3 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:border-primary-foreground hover:bg-primary-foreground/10 ${ctaAccent ? 'bg-accent text-primary-foreground' : 'border border-primary-foreground/30'}`}
               >
                 {ctaText}
                 <ArrowRight className="h-4 w-4" />

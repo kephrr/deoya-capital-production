@@ -116,7 +116,8 @@ export default function NewsletterPage() {
       <Hero {...hero} 
       showCta={true} 
       ctaText={hero.ctaText} 
-      ctaMarginTop="mt-32"
+      ctaMarginTop={hero.ctaMarginTop}
+      ctaAccent={hero.ctaAccent}
       onClickCta={() => setIsModalOpen(true)} />
       <Navigation backgrounded={true} />
       <div className="mx-auto max-w-7xl px-6 pt-12 pb-24 lg:px-8">
@@ -163,13 +164,6 @@ export default function NewsletterPage() {
               <div className="text-sm text-muted-foreground">
                 {filteredArticles.length} {filteredArticles.length > 1 ? filters.results.articles : filters.results.article} {filteredArticles.length > 1 ? filters.results.trouves : filters.results.trouve}
               </div>
-              
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent/90"
-              >
-                S'abonner
-              </button>
             </div>
           </div>
         </FadeIn>

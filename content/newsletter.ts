@@ -4,6 +4,8 @@ export const newsletterContent = {
     subtitle: "Notre regard sur l'investissement Afrique – Europe - Amérique . Analyses de fond, notes sectorielles, points de vue sur l'évolution des marchés et des réglementations.",
     backgroundImage: "/press.jpg",
     ctaText: "S'abonner",
+    ctaMarginTop: "mt-32",
+    ctaAccent: true,
     showPreTitle: false,
     mxAuto: true
   },
