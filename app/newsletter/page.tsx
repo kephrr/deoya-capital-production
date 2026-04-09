@@ -113,7 +113,11 @@ export default function NewsletterPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Hero {...hero} showCta={false} onClickCta={() => setIsModalOpen(true)} />
+      <Hero {...hero} 
+      showCta={true} 
+      ctaText={hero.ctaText} 
+      ctaMarginTop="mt-32"
+      onClickCta={() => setIsModalOpen(true)} />
       <Navigation backgrounded={true} />
       <div className="mx-auto max-w-7xl px-6 pt-12 pb-24 lg:px-8">
         {/* Filters */}

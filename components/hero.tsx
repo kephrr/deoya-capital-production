@@ -88,6 +88,7 @@ interface HeroProps {
   showPreTitle?:boolean;
   height?: string;
   mxAuto?: boolean;
+  ctaMarginTop?: string;
   onClickCta?: () => void;
 }
 
@@ -104,6 +105,7 @@ export function Hero({
   showPreTitle = true,
   height = 'min-h-screen',
   mxAuto = false,
+  ctaMarginTop = 'mt-10',
   onClickCta
 }: HeroProps) {
   return (
@@ -132,7 +134,7 @@ export function Hero({
 
           {/* CTAs */}
           {showCta && (
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className={`${ctaMarginTop} flex flex-col gap-4 sm:flex-row sm:items-center`}>
               <a
                 href={ctaHref}
                 onClick={onClickCta}

@@ -30,6 +30,31 @@ export const layoutContent = {
         title: "Contact",
         email: "contact@deoya-capital.com",
         location: "Paris, France"
+      },
+      social: {
+        title: "Suivez-nous",
+        networks: [
+          {
+            name: "Facebook",
+            href: "https://www.facebook.com/profile.php?id=61575333096729&mibextid=wwXIfr",
+            ariaLabel: "Facebook"
+          },
+          {
+            name: "Instagram", 
+            href: "https://www.instagram.com/deoya.capital?igsh=MXZuYnQ5d25mbm9naQ%3D%3D&utm_source=qr",
+            ariaLabel: "Instagram"
+          },
+          {
+            name: "LinkedIn",
+            href: "https://www.linkedin.com/company/deoya-capital/", 
+            ariaLabel: "LinkedIn"
+          },
+          {
+            name: "YouTube",
+            href: "https://www.youtube.com/@DEOYACAPITAL",
+            ariaLabel: "YouTube"
+          }
+        ]
       }
     },
     bottom: {
