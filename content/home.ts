@@ -5,7 +5,7 @@ export const homeContent = {
     videoSrc: "/Video DEOYA.mp4",
     label: "Cabinet d'intelligence économique et de conseil stratégique",
     title: "Structurer et exécuter vos investissements internationaux avec une approche transcontinentale",
-    subtitle: "Nous analysons les environnements politiques, sectoriels et géostratégiques afin d'accompagner les entreprises et les investisseurs dans leurs décisions d'expansion, d'implantation et de développement sur les marchés internationaux.",
+    subtitle: "Nous accompagnons les entreprises et les investisseurs dans la structuration de leurs projets d'expansion internationale grâce à une analyse approfondie des environnements politiques, sectoriels et géostratégiques. Notre mission est d'éclairer la prise de décision stratégique en identifiant les opportunités, les risques et les dynamiques de marché à l'échelle transcontinentale.",
     ctaText: "Découvrir nos expertises",
     ctaHref: "/expertises",
     showCta: true,

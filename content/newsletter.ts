@@ -1,7 +1,7 @@
 export const newsletterContent = {
   hero: {
     title: "DEOYA Intelligence",
-    subtitle: "Notre regard sur l'investissement Afrique – Europe - Amérique . Analyses de fond, notes sectorielles, points de vue sur l'évolution des marchés et des réglementations",
+    subtitle: "Notre regard sur l'investissement Afrique – Europe - Amérique . Analyses de fond, notes sectorielles, points de vue sur l'évolution des marchés et des réglementations.",
     backgroundImage: "/press.jpg",
     ctaText: "S'abonner",
     showPreTitle: false,
