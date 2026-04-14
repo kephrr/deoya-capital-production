@@ -20,7 +20,7 @@ export const layoutContent = {
       logo: "/deoya-capital-blanc-vert.png",
       alt: "DEOYA CAPITAL",
       homeLabel: "DEOYA CAPITAL - Accueil",
-      description: "Structurer et piloter des investissements transcontinentaux avec exigence et précision."
+      description: "Structurer et accompagner des investissements transcontinentaux avec exigence et précision."
     },
     sections: {
       navigation: {

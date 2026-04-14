@@ -1,16 +1,15 @@
 import { navLinks } from "@/app/resources"
 import { layoutContent } from "@/content/layout"
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export function Footer() {
   const { brand, sections, bottom } = layoutContent.footer
   const currentYear = new Date().getFullYear()
 
-  const iconMap = {
-    Facebook: Facebook,
-    Instagram: Instagram,
-    LinkedIn: Linkedin,
-    YouTube: Youtube,
+  const socialIcons = {
+    Facebook: '/facebook-app-symbol.png',
+    Instagram: '/instagram.png',
+    LinkedIn: '/linkedin.png',
+    YouTube: '/youtube.png',
   }
 
   return (
@@ -65,17 +64,23 @@ export function Footer() {
                 </p>
                 <div className="flex gap-4">
                   {sections.social.networks.map((network) => {
-                    const IconComponent = iconMap[network.name as keyof typeof iconMap]
+                    const iconSrc = socialIcons[network.name as keyof typeof socialIcons]
                     return (
                       <a
                         key={network.name}
                         href={network.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary-foreground/60 transition-colors duration-200 hover:text-primary-foreground"
+                        className="text-primary-foreground/60 
+                        transition-colors duration-200 hover:text-primary-foreground
+                        border border-primary-foreground/20 rounded-full p-2 hover:bg-primary-foreground/10"
                         aria-label={network.ariaLabel}
                       >
-                        <IconComponent className="h-5 w-5" />
+                        <img 
+                          src={iconSrc} 
+                          alt={network.name}
+                          className="h-5 w-5 object-contain"
+                        />
                       </a>
                     )
                   })}
