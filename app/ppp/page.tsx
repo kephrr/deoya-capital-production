@@ -5,82 +5,9 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { DiscussProject } from "@/components/discuss-project";
 import { FadeIn } from "@/components/fade-in";
+import { pppContent } from "@/content/ppp";
 
-const sections = [
-  {
-    id: "intro",
-    tag: "Fondement",
-    title: "Comprendre et articuler des logiques d'acteurs complexes",
-    content: [
-      "Les partenariats public-privé ne sont pas uniquement des montages contractuels.",
-      "Ils reposent sur des équilibres sensibles entre intérêts publics, logiques économiques et contraintes institutionnelles.",
-      "Leur réussite dépend moins d'une approche technique que de la capacité à comprendre et à aligner des acteurs aux objectifs parfois divergents.",
-    ],
-    highlight:
-      "DEOYA Capital intervient sur cette zone critique : là où se rencontrent décision publique, logique d'investissement et réalité terrain.",
-  },
-];
-
-const pillars = [
-  {
-    number: "01",
-    title: "Naviguer entre sphères publiques et privées",
-    intro:
-      "Les projets en PPP impliquent une multiplicité d'acteurs aux logiques propres :",
-    actors: [
-      "Institutions publiques",
-      "Investisseurs",
-      "Opérateurs privés",
-      "Partenaires techniques",
-    ],
-    outcomes: [
-      "Faciliter les échanges",
-      "Anticiper les points de friction",
-      "Structurer des dynamiques de collaboration durables",
-    ],
-    outcomesLabel: "Nous apportons une lecture claire de ces interactions afin de :",
-  },
-  {
-    number: "02",
-    title: "Intégrer les réalités locales dans des cadres internationaux",
-    intro:
-      "Dans de nombreux contextes, notamment en Afrique, les projets s'inscrivent dans des environnements hybrides :",
-    actors: [
-      "Cadres réglementaires en évolution",
-      "Pratiques institutionnelles spécifiques",
-      "Décalage entre normes théoriques et réalités opérationnelles",
-    ],
-    note: "Ces éléments ne sont pas des anomalies - ils font partie intégrante du projet.",
-    outcomesLabel:
-      "Notre rôle consiste à les intégrer dans la réflexion stratégique, afin d'éviter les décalages entre conception et mise en oeuvre.",
-  },
-  {
-    number: "03",
-    title: "Une lecture transcontinentale des projets",
-    intro:
-      "Les PPP impliquent souvent des acteurs issus de différentes zones économiques. Cette diversité crée des écarts :",
-    actors: [
-      "Perception du risque",
-      "Exigence réglementaire",
-      "Temporalité décisionnelle",
-    ],
-    outcomesLabel:
-      "Nous intervenons dans une logique transcontinentale, en apportant une lecture cohérente de ces différences et en facilitant leur articulation.",
-  },
-  {
-    number: "04",
-    title: "Une approche ancrée dans la réalité des projets",
-    intro:
-      "Au-delà des cadres théoriques, les projets évoluent dans des environnements concrets, avec leurs contraintes et leurs imprévus. Nous intervenons aux côtés des décideurs pour :",
-    actors: [
-      "Ajuster les approches",
-      "Sécuriser les arbitrages",
-      "Maintenir la cohérence du projet dans le temps",
-    ],
-    outcomesLabel:
-      "Cette proximité permet d'éviter les ruptures entre stratégie et réalité.",
-  },
-];
+const { hero, pillars, discussProject } = pppContent;
 
 export default function PPPPage() {
   return (
@@ -99,17 +26,13 @@ export default function PPPPage() {
           
           <div className="relative mx-auto max-w-7xl px-6 py-32 lg:px-8 lg:py-40">
             <div className="max-w-6xl">
-              <FadeIn>
-                <p className="mb-6 text-sm font-medium uppercase tracking-widest text-primary-foreground/50">
-                  DEOYA Capital - PPP
-                </p>
-              </FadeIn>
+
               
               <FadeIn delay={100}>
                 <h1 className="font-serif text-4xl font-semibold leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
-                  Partenariats
+                  {hero.title}
                   <br />
-                  <span className="text-accent italic">Public-Privé</span>
+                  <span className="text-accent italic">{hero.titleAccent}</span>
                 </h1>
               </FadeIn>
 
@@ -117,22 +40,20 @@ export default function PPPPage() {
                 <div className="mt-12 max-w-5xl space-y-6">
                   <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     <div className="space-y-4 text-lg font-light leading-relaxed text-primary-foreground/70">
-                      <p>
-                        Les partenariats public-privé ne sont pas uniquement des montages contractuels.
-                      </p>
-                      <p>
-                        Ils reposent sur des équilibres sensibles entre intérêts publics, logiques économiques et contraintes institutionnelles.
-                      </p>
-                      <p>
-                        Leur réussite dépend moins d'une approche technique que de la capacité à comprendre et à aligner des acteurs aux objectifs parfois divergents.
-                      </p>
+                      {hero.introduction.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
                     </div>
                     
                     <div className="flex items-center">
                       <div className="border-l border-accent pl-8">
                         <p className="font-serif text-2xl font-light leading-snug text-primary-foreground">
-                          DEOYA Capital intervient sur cette{" "}
-                          <span className="text-accent italic">zone critique</span> : là où se rencontrent décision publique, logique d'investissement et réalité terrain.
+                          {hero.highlight.split('zone critique').map((part, index) => (
+                            <span key={index}>
+                              {part}
+                              {index === 1 && <span className="text-accent italic">zone critique</span>}
+                            </span>
+                          ))}
                         </p>
                       </div>
                     </div>
@@ -151,12 +72,12 @@ export default function PPPPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <FadeIn>
               <p className="mb-12 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-                Nos axes d'intervention
+                {pillars.title}
               </p>
             </FadeIn>
 
             <div className="space-y-8">
-              {pillars.map((pillar, index) => (
+              {pillars.items.map((pillar, index) => (
                 <FadeIn key={pillar.number} delay={index * 100}>
                   <div className="rounded-lg border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-accent/30">
                     <div className="mb-8 flex items-start gap-6">
@@ -212,12 +133,12 @@ export default function PPPPage() {
         </section>
 
         <DiscussProject 
-        title="Pour aller plus loin"
-        subtitle="Si vous développez un projet impliquant des acteurs publics et privés, ou souhaitez mieux appréhender les dynamiques propres aux partenariats public-privé, nous serons ravis d'examiner les modalités d'un accompagnement adapté à vos enjeux."
-        buttonText="Échanger avec nous"
-        redirectUrl="/contact"
+        title={discussProject.title}
+        subtitle={discussProject.subtitle}
+        buttonText={discussProject.buttonText}
+        redirectUrl={discussProject.redirectUrl}
         useModal={false}
-        backgroundImage="/business-people-video-call-meeting.jpg"
+        backgroundImage={discussProject.backgroundImage}
       />
       </div>
 
