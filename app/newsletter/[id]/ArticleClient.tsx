@@ -7,6 +7,7 @@ import { WPPost } from "@/types/WPPTypes";
 import { getPost } from "@/services/blogAPI";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { SocialShare } from "@/components/social-share";
 
 interface ArticleClientProps {
   id: string;
@@ -112,16 +113,23 @@ export default function ArticleClient({ id }: ArticleClientProps) {
               />
             </div>
 
-            {/* Date and author */}
+            {/* Date, author and share */}
             <div className="flex items-center justify-between text-sm text-muted-foreground mb-8">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                <span>{new Date(article.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+              <div className="flex items-center gap-6">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>{new Date(article.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  <span>Deoya Capital</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <User className="h-4 w-4" />
-                <span>Deoya Capital</span>
-              </div>
+              <SocialShare 
+                url={`${typeof window !== 'undefined' ? window.location.origin : ''}/newsletter/${article.slug}`}
+                title={article.title?.replace(/<[^>]*>/g, '') || 'Article'}
+                description={article.excerpt?.replace(/<[^>]*>/g, '') || ''}
+              />
             </div>
           </div>
 

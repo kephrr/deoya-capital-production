@@ -7,4 +7,4 @@
 :HL["/instagram.png","image"]
 :HL["/linkedin.png","image"]
 :HL["/youtube.png","image"]
-0:{"buildId":"rNh6tWWdU2TANMa-RpdrP","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"politique-confidentialite","paramType":null,"paramKey":"politique-confidentialite","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"DIp3zdq2d7JYIFIOf6Nju","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"politique-confidentialite","paramType":null,"paramKey":"politique-confidentialite","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
