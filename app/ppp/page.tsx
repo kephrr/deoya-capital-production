@@ -79,46 +79,69 @@ export default function PPPPage() {
             <div className="space-y-8">
               {pillars.items.map((pillar, index) => (
                 <FadeIn key={pillar.number} delay={index * 100}>
-                  <div className="rounded-lg border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-accent/30">
-                    <div className="mb-8 flex items-start gap-6">
-                      <span className="text-accent text-5xl font-light leading-none opacity-40">
-                        {pillar.number}
-                      </span>
-                      <h2 className="font-serif text-2xl font-semibold leading-snug text-primary pt-1 lg:text-3xl">
-                        {pillar.title}
-                      </h2>
+                  <div className="relative rounded-lg border border-border bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:border-accent/30 overflow-hidden">
+                    {/* Header with number and title */}
+                    <div className="relative p-8 pb-0">
+                      <div className="flex items-start gap-6">
+                        <span className="text-accent text-5xl font-light leading-none opacity-40">
+                          {pillar.number}
+                        </span>
+                        <h2 className="font-serif text-2xl font-semibold leading-snug text-primary pt-1 lg:text-3xl max-w-2xl">
+                          {pillar.title}
+                        </h2>
+                      </div>
                     </div>
 
-                    <div className="grid gap-8 lg:grid-cols-2 lg:pl-18">
-                      <div>
-                        <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                    {/* Problem Section - Left */}
+                    <div className="relative">
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-accent/30 to-transparent"></div>
+                      <div className="p-8 pt-6 lg:pl-12">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-2 h-2 bg-accent/60 rounded-full animate-pulse"></div>
+                          <p className="text-xs font-medium uppercase tracking-wider text-accent/80">
+                            Enjeux identifiés
+                          </p>
+                        </div>
+                        <p className="mb-6 text-sm leading-relaxed text-muted-foreground font-medium">
                           {pillar.intro}
                         </p>
-                        <ul className="space-y-2">
+                        <ul className="space-y-3">
                           {pillar.actors.map((actor) => (
-                            <li key={actor} className="flex items-start gap-3 text-base text-muted-foreground">
-                              <span className="mt-1.5 text-accent shrink-0">¶</span>
-                              {actor}
+                            <li key={actor} className="flex items-start gap-3 text-base text-muted-foreground/80">
+                              <span className="mt-1.5 text-accent shrink-0 text-lg">◆</span>
+                              <span>{actor}</span>
                             </li>
                           ))}
                         </ul>
                         {pillar.note && (
-                          <p className="mt-5 italic text-sm leading-relaxed text-muted-foreground/70">
-                            {pillar.note}
-                          </p>
+                          <div className="mt-6 p-4 bg-accent/5 border-l-2 border-accent/30 rounded-r">
+                            <p className="italic text-sm leading-relaxed text-accent/90">
+                              {pillar.note}
+                            </p>
+                          </div>
                         )}
                       </div>
+                    </div>
 
-                      <div className="border-t border-border pt-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
-                        <p className="text-base leading-relaxed text-muted-foreground">
+                    {/* Solution Section - Right */}
+                    <div className="relative bg-gradient-to-r from-accent/5 to-transparent">
+                      <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent/30 via-transparent to-accent/30"></div>
+                      <div className="p-8 lg:pr-12">
+                        <div className="flex items-center gap-3 mb-4">
+                          <div className="w-2 h-2 bg-accent rounded-full"></div>
+                          <p className="text-xs font-medium uppercase tracking-wider text-accent">
+                            Notre approche
+                          </p>
+                        </div>
+                        <p className="mb-6 text-base leading-relaxed text-primary font-medium">
                           {pillar.outcomesLabel}
                         </p>
                         {pillar.outcomes && (
-                          <ul className="mt-5 space-y-2">
+                          <ul className="space-y-3">
                             {pillar.outcomes.map((outcome) => (
-                              <li key={outcome} className="flex items-start gap-3 text-sm text-muted-foreground">
-                                <span className="mt-1.5 text-accent shrink-0">¶</span>
-                                {outcome}
+                              <li key={outcome} className="flex items-start gap-3 text-sm text-primary/90 bg-accent/10 p-3 rounded-lg">
+                                <span className="mt-1.5 text-accent shrink-0 text-lg">✓</span>
+                                <span>{outcome}</span>
                               </li>
                             ))}
                           </ul>
