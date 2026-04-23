@@ -48,10 +48,10 @@ export default function PPPPage() {
                     <div className="flex items-center">
                       <div className="border-l border-accent pl-8">
                         <p className="font-serif text-2xl font-light leading-snug text-primary-foreground">
-                          {hero.highlight.split('zone critique').map((part, index) => (
+                          {hero.highlight.split(' zone critique').map((part, index) => (
                             <span key={index}>
                               {part}
-                              {index === 1 && <span className="text-accent italic">zone critique</span>}
+                              {index === 1 && <span className="text-accent italic"> zone critique</span>}
                             </span>
                           ))}
                         </p>
@@ -97,7 +97,7 @@ export default function PPPPage() {
                         <ul className="space-y-2">
                           {pillar.actors.map((actor) => (
                             <li key={actor} className="flex items-start gap-3 text-base text-muted-foreground">
-                              <span className="mt-1.5 text-accent shrink-0">§</span>
+                              <span className="mt-1.5 text-accent shrink-0">¶</span>
                               {actor}
                             </li>
                           ))}
