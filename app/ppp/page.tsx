@@ -48,10 +48,9 @@ export default function PPPPage() {
                     <div className="flex items-center">
                       <div className="border-l border-accent pl-8">
                         <p className="font-serif text-2xl font-light leading-snug text-primary-foreground">
-                          {hero.highlight.split(' zone critique').map((part, index) => (
-                            <span key={index}>
+                          {hero.highlight.map((part, index) => (
+                            <span key={index} className={index === 1 ? 'text-accent italic' : ''}>
                               {part}
-                              {index === 1 && <span className="text-accent italic"> zone critique</span>}
                             </span>
                           ))}
                         </p>

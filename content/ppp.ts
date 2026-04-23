@@ -8,7 +8,7 @@ export const pppContent = {
       "Ils reposent sur des équilibres sensibles entre intérêts publics, logiques économiques et contraintes institutionnelles.",
       "Leur réussite dépend moins d'une approche technique que de la capacité à comprendre et à aligner des acteurs aux objectifs parfois divergents."
     ],
-    highlight: "DEOYA Capital intervient sur cette zone critique : là où se rencontrent décision publique, logique d'investissement et réalité terrain."
+    highlight: ["DEOYA Capital intervient sur cette ", "zone critique", " : là où se rencontrent décision publique, logique d'investissement et réalité terrain."]
   },
   pillars: {
     title: "Nos axes d'intervention",
