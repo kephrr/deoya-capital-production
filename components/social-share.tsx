@@ -26,7 +26,8 @@ export function SocialShare({ url, title, description }: SocialShareProps) {
 
   const handleCopyLink = async () => {
     try {
-      await navigator.clipboard.writeText(url)
+      const textToCopy = `${title}\n${description || ''}\n\n${url}`
+      await navigator.clipboard.writeText(textToCopy)
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch (err) {
