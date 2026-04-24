@@ -107,7 +107,7 @@ export default function PPPPage() {
                         <ul className="space-y-3">
                           {pillar.actors.map((actor) => (
                             <li key={actor} className="flex items-start gap-3 text-base text-muted-foreground/80">
-                              <span className="mt-1.5 text-accent shrink-0 text-lg">◆</span>
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                               <span>{actor}</span>
                             </li>
                           ))}
@@ -139,7 +139,7 @@ export default function PPPPage() {
                           <ul className="space-y-3">
                             {pillar.outcomes.map((outcome) => (
                               <li key={outcome} className="flex items-start gap-3 text-sm text-primary/90 bg-accent/10 p-3 rounded-lg">
-                                <span className="mt-1.5 text-accent shrink-0 text-lg">✓</span>
+                                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                                 <span>{outcome}</span>
                               </li>
                             ))}
