@@ -136,7 +136,7 @@ export default function ArticleClient({ id }: ArticleClientProps) {
           {/* Article content */}
           <div className="prose prose-lg max-w-none">
             <div 
-              className="space-y-6 text-muted-foreground leading-relaxed"
+              className="space-y-6 text-muted-foreground leading-relaxed [&_h1]:space-y-4 [&_h2]:space-y-4 [&_h3]:space-y-4 [&_h4]:space-y-4 [&_h5]:space-y-4 [&_h6]:space-y-4 [&_h1]:mb-6 [&_h2]:mb-6 [&_h3]:mb-6 [&_h4]:mb-6 [&_h5]:mb-6 [&_h6]:mb-6 [&_h1]:mt-8 [&_h2]:mt-8 [&_h3]:mt-8 [&_h4]:mt-8 [&_h5]:mt-8 [&_h6]:mt-8 [&_h1]:text-4xl [&_h2]:text-3xl [&_h3]:text-2xl [&_h4]:text-xl [&_h5]:text-lg [&_h6]:text-base"
               dangerouslySetInnerHTML={{ __html: article.content }} 
             />
           </div>

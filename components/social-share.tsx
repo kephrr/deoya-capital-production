@@ -43,7 +43,16 @@ export function SocialShare({ url, title, description }: SocialShareProps) {
     if (platform === 'copy') {
       handleCopyLink()
     } else {
-      window.open(shareLinks[platform], '_blank', 'width=600,height=400')
+      // Détecter si on est sur mobile
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+      
+      if (isMobile) {
+        // Sur mobile, ouvrir dans le même onglet
+        window.location.href = shareLinks[platform]
+      } else {
+        // Sur desktop, ouvrir dans une popup
+        window.open(shareLinks[platform], '_blank', 'width=600,height=400')
+      }
     }
   }
 
