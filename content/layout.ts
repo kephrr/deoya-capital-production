@@ -29,6 +29,7 @@ export const layoutContent = {
       contact: {
         title: "Contact",
         email: "contact@deoya-capital.com",
+        phone: "+33 1 84 16 18 08",
         location: "Paris, France"
       },
       social: {

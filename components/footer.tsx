@@ -53,6 +53,7 @@ export function Footer() {
             </p>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <p>{sections.contact.email}</p>
+              <p>{sections.contact.phone}</p>
               <p>{sections.contact.location}</p>
             </div>
             

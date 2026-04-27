@@ -1,4 +1,5 @@
 export const contactContent = {
+  phone: "+33 1 84 16 18 08",
   hero: {
     label: "Contactez-nous",
     title: "Travaillons ensemble",

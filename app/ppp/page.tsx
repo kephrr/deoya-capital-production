@@ -123,8 +123,8 @@ export default function PPPPage() {
                     </div>
 
                     {/* Solution Section - Right */}
-                    <div className="relative bg-gradient-to-r from-accent/5 to-transparent">
-                      <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent/30 via-transparent to-accent/30"></div>
+                    <div className="relative border border-t-[1px]">
+                      <div className="absolute right-0 top-0 bottom-0 w-1"></div>
                       <div className="p-8 lg:pr-12">
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-2 h-2 bg-accent rounded-full"></div>
@@ -138,7 +138,7 @@ export default function PPPPage() {
                         {pillar.outcomes && (
                           <ul className="space-y-3">
                             {pillar.outcomes.map((outcome) => (
-                              <li key={outcome} className="flex items-start gap-3 text-sm text-primary/90 bg-accent/10 p-3 rounded-lg">
+                              <li key={outcome} className="flex items-start gap-3 text-sm text-primary/90 p-3 rounded-lg">
                                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                                 <span>{outcome}</span>
                               </li>
