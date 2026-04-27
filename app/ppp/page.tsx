@@ -138,7 +138,7 @@ export default function PPPPage() {
                         {pillar.outcomes && (
                           <ul className="space-y-3">
                             {pillar.outcomes.map((outcome) => (
-                              <li key={outcome} className="flex items-start gap-3 text-sm text-primary/90 p-3 rounded-lg">
+                              <li key={outcome} className="flex items-start gap-3  text-base text-muted-foreground/80">
                                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                                 <span>{outcome}</span>
                               </li>
