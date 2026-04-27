@@ -24,6 +24,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const title = post.title?.replace(/<[^>]*>/g, '') || 'Article';
   const description = post.excerpt?.replace(/<[^>]*>/g, '') || '';
   
+  // Utiliser l'image de couverture de l'article si disponible, sinon le logo par défaut
+  const ogImage = post.featured_image?.source_url || post.thumbnail_url || '/deoya-capital-vert-mini-o.png';
+  const imageWidth = post.featured_image?.media_details?.width || 1200;
+  const imageHeight = post.featured_image?.media_details?.height || 630;
+  const imageAlt = post.featured_image?.alt_text || title;
+  
   return {
     title: `${title} — DEOYA CAPITAL`,
     description: description || `Article: ${title}`,
@@ -34,10 +40,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       siteName: 'Deoya Capital',
       images: [
         {
-          url: '/deoya-capital-vert-mini-o.png',
-          width: 1200,
-          height: 630,
-          alt: 'Deoya Capital',
+          url: ogImage,
+          width: imageWidth,
+          height: imageHeight,
+          alt: imageAlt,
         },
       ],
       locale: 'fr_FR',
