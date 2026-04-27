@@ -17,10 +17,14 @@ export function SocialShare({ url, title, description }: SocialShareProps) {
   const encodedTitle = encodeURIComponent(title)
   const encodedDescription = encodeURIComponent(description || title)
 
+  // Message par défaut pour le partage
+  const defaultMessage = `Découvrez cet article de Deoya Capital : ${title}\n\n${description || ''}\n\nLire l'article complet : ${url}`
+  const encodedMessage = encodeURIComponent(defaultMessage)
+
   const shareLinks = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    email: `mailto:?subject=${encodedTitle}&body=${encodedDescription}%0A%0A${encodedUrl}`,
+    email: `mailto:?subject=${encodedTitle}&body=${defaultMessage}`,
     copy: url
   }
 
