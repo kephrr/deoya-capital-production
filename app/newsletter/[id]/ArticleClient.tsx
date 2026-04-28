@@ -126,7 +126,7 @@ export default function ArticleClient({ id }: ArticleClientProps) {
                 </div>
               </div>
               <SocialShare 
-                url={`${typeof window !== 'undefined' ? window.location.origin : ''}/newsletter/${article.slug}`}
+                url={`https://deoya-capital.com/newsletter/${article.slug}`}
                 title={article.title?.replace(/<[^>]*>/g, '') || 'Article'}
                 description={article.excerpt?.replace(/<[^>]*>/g, '') || ''}
               />

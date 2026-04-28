@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: facebookexternalhit
+Allow: /
+
 Sitemap: https://deoya-capital.com/sitemap.xml

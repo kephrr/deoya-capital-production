@@ -22,9 +22,9 @@ export function SocialShare({ url, title, description }: SocialShareProps) {
   const encodedMessage = encodeURIComponent(defaultMessage)
 
   const shareLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedDescription}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    email: `mailto:?subject=${encodedTitle}&body=${defaultMessage}`,
+    email: `mailto:?subject=${encodedTitle}&body=${encodeURIComponent(`Découvrez cet article de Deoya Capital : ${title}\n\nLire l'article complet : ${url}`)}`,
     copy: url
   }
 
