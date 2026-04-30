@@ -59,8 +59,8 @@ export default function NewsletterPage() {
     };
   }, []);
 
-  // Get unique categories for filter
-  const categoryOptions = [{ id: 0, name: "all", slug: "all" }, ...categories];
+  // Get unique categories for filter (exclure la catégorie "non-classe")
+  const categoryOptions = [{ id: 0, name: "all", slug: "all" }, ...categories.filter(cat => cat.slug !== "non-classe")];
 
   // Filter articles
   const filteredArticles = posts.filter((post: WPPost) => {
