@@ -624,6 +624,72 @@
     },
     "preTitle": "Expertise en"
   },
+  "reseau": {
+    "hero": {
+      "title": "Un réseau international d'Experts au service des projets stratégiques",
+      "subtitle": "DEOYA CAPITAL s'appuie sur un réseau international d'experts et de consultants spécialisés dans différents secteurs et zones géographiques. Ce réseau permet de mobiliser les compétences les plus pertinentes pour chaque mission tout en garantissant un pilotage stratégique centralisé par le cabinet."
+    },
+    "zones": [
+      {
+        "id": 1,
+        "name": "Europe"
+      },
+      {
+        "id": 2,
+        "name": "Afrique"
+      },
+      {
+        "id": 3,
+        "name": "Amérique du Nord"
+      },
+      {
+        "id": 4,
+        "name": "Asie"
+      }
+    ],
+    "couvertureGeographique": {
+      "title": "Couverture géographique",
+      "description": "Nos experts interviennent sur plusieurs zones stratégiques"
+    },
+    "expertisesSectorielles": {
+      "title": "Expertises sectorielles stratégiques",
+      "description": "DEOYA CAPITAL intervient sur des secteurs à forte intensité stratégique, où la structuration des projets, la compréhension des environnements et la capacité d'exécution sont déterminantes.",
+      "secteurs": [
+        {
+          "name": "Énergie",
+          "desc": "Structuration et développement de projets énergétiques internationaux Identification d'opportunités, structuration de projets et accompagnement à l'implantation dans des environnements complexes."
+        },
+        {
+          "name": "Infrastructure",
+          "desc": "Structuration et analyse de projets d'infrastructures Études de faisabilité, analyse des marchés et accompagnement stratégique jusqu'à la mise en œuvre."
+        },
+        {
+          "name": "Industrie",
+          "desc": "Structuration financière et déploiement de projets industriels Analyse des investissements, modélisation économique et stratégie d'implantation."
+        },
+        {
+          "name": "Services Financiers",
+          "desc": "Analyse stratégique et structuration d'investissements financiers Études sectorielles, analyse des risques et accompagnement à la décision"
+        },
+        {
+          "name": "Santé",
+          "desc": "Structuration et pilotage de projets de santé. Organisation opérationnelle, analyse des besoins et déploiement de projets."
+        },
+        {
+          "name": "Digital",
+          "desc": "Analyse des environnements numériques et des risques pays. Évaluation des marchés, cadres réglementaires et dynamiques géopolitiques"
+        }
+      ]
+    },
+    "rejoindreReseau": {
+      "title": "Rejoindre le réseau"
+    },
+    "ctaFinal": {
+      "title": "Rejoignez DEOYA CAPITAL",
+      "description": "Ensemble, développons des opportunités d'investissement de portée internationale",
+      "buttonText": "Contacter nos équipes"
+    }
+  },
   "contact": {
     "meta": {
       "title": "Contact",
@@ -704,21 +770,6 @@
     "discussTitle": "Pour aller plus loin",
     "discussSubtitle": "Si vous developpez un projet impliquant des acteurs publics et prives, ou souhaitez mieux apprehender les dynamiques propres aux partenariats public-prive, nous serons ravis d'examiner les modalites d'un accompagnement adapte a vos enjeux.",
     "discussButton": "Echanger avec nous"
-  },
-  "reseau": {
-    "heroTitle": "Un reseau international d'Experts au service des projets strategiques",
-    "heroSubtitle": "DEOYA CAPITAL s'appuie sur un reseau international d'experts et de consultants specialises dans differents secteurs et zones geographiques.",
-    "geographyTitle": "Couverture geographique",
-    "geographyDescription": "Nos experts interviennent sur plusieurs zones strategiques",
-    "zonesEurope": "Europe",
-    "zonesAfrica": "Afrique",
-    "zonesNorthAmerica": "Amerique du Nord",
-    "zonesAsia": "Asie",
-    "sectorExpertiseTitle": "Expertises sectorielles strategiques",
-    "joinNetworkTitle": "Rejoindre le reseau",
-    "ctaTitle": "Rejoignez DEOYA CAPITAL",
-    "ctaDescription": "Ensemble, developpons des opportunites d'investissement de portee internationale",
-    "ctaButton": "Contacter nos equipes"
   },
   "secteurs": {
     "label": "Nos Secteurs",

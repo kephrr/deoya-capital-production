@@ -6,18 +6,68 @@ import { Hero } from "@/components/hero";
 import { Footer } from "@/components/footer";
 import { FadeIn } from "@/components/fade-in";
 import { ContactModal } from "@/components/contact-modal";
-import { ArrowRight, Globe } from "lucide-react";
-import { getReseauContent } from "@/content/reseau";
-import type { Locale } from "@/i18n/config";
+import { ArrowRight, Globe, Zap, Wrench, Factory, DollarSign, Stethoscope, Cpu } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-type ReseauPageProps = {
-  locale?: Locale
-}
-
-export default function ReseauPage({ locale = "fr" }: ReseauPageProps) {
+export default function ReseauPage() {
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const reseauContent = getReseauContent(locale)
-  const { hero, zones, couvertureGeographique, expertisesSectorielles, rejoindreReseau, ctaFinal } = reseauContent
+  const t = useTranslations('reseau')
+
+  const hero = {
+    title: t('hero.title'),
+    subtitle: t('hero.subtitle'),
+    backgroundImage: "/549.jpg",
+    showCta: false,
+    showPreTitle: false,
+    mxAuto: true
+  }
+
+  const zones = t.raw('zones')
+  const couvertureGeographique = {
+    title: t('couvertureGeographique.title'),
+    description: t('couvertureGeographique.description')
+  }
+  // Mapping des icônes pour les secteurs
+  const iconMap = {
+    "Énergie": Zap,
+    "Energy": Zap,
+    "Energía": Zap,
+    "الطاقة": Zap,
+    "Infrastructure": Wrench,
+    "Infraestructura": Wrench,
+    "البنية التحتية": Wrench,
+    "Industrie": Factory,
+    "Industry": Factory,
+    "Industria": Factory,
+    "الصناعة": Factory,
+    "Services Financiers": DollarSign,
+    "Financial Services": DollarSign,
+    "Servicios Financieros": DollarSign,
+    "الخدمات المالية": DollarSign,
+    "Santé": Stethoscope,
+    "Health": Stethoscope,
+    "Salud": Stethoscope,
+    "الصحة": Stethoscope,
+    "Digital": Cpu,
+    "الرقمنة": Cpu
+  }
+
+  const expertisesSectorielles = {
+    title: t('expertisesSectorielles.title'),
+    description: t('expertisesSectorielles.description'),
+    secteurs: t.raw('expertisesSectorielles.secteurs').map((secteur: any) => ({
+      ...secteur,
+      icon: iconMap[secteur.name as keyof typeof iconMap] || Globe
+    }))
+  }
+  const rejoindreReseau = {
+    title: t('rejoindreReseau.title')
+  }
+  const ctaFinal = {
+    title: t('ctaFinal.title'),
+    description: t('ctaFinal.description'),
+    buttonText: t('ctaFinal.buttonText')
+  }
 
   return (
     <main>
@@ -39,7 +89,7 @@ export default function ReseauPage({ locale = "fr" }: ReseauPageProps) {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {zones.map((zone) => (
+              {zones.map((zone: any) => (
                 <div key={zone.id} className="bg-white rounded-lg border border-border p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="flex flex-col items-center gap-3 mb-6">
                     <Globe className="h-6 w-6 text-accent" />
@@ -65,7 +115,7 @@ export default function ReseauPage({ locale = "fr" }: ReseauPageProps) {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-              {expertisesSectorielles.secteurs.map((secteur, index) => (
+              {expertisesSectorielles.secteurs.map((secteur: any, index: number) => (
                 <div key={index} className="bg-white rounded-lg border border-border p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="flex justify-center mb-4">
                     <secteur.icon className="h-8 w-8 text-accent" />

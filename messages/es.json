@@ -552,6 +552,72 @@
     },
     "preTitle": "Experiencia en"
   },
+  "reseau": {
+    "hero": {
+      "title": "Una red internacional de Expertos al servicio de proyectos estratégicos",
+      "subtitle": "DEOYA CAPITAL se apoya en una red internacional de expertos y consultores especializados en diferentes sectores y áreas geográficas. Esta red permite movilizar las competencias más relevantes para cada misión garantizando una gestión estratégica centralizada por el gabinete."
+    },
+    "zones": [
+      {
+        "id": 1,
+        "name": "Europa"
+      },
+      {
+        "id": 2,
+        "name": "África"
+      },
+      {
+        "id": 3,
+        "name": "América del Norte"
+      },
+      {
+        "id": 4,
+        "name": "Asia"
+      }
+    ],
+    "couvertureGeographique": {
+      "title": "Cobertura geográfica",
+      "description": "Nuestros expertos intervienen en varias zonas estratégicas"
+    },
+    "expertisesSectorielles": {
+      "title": "Experiencia sectorial estratégica",
+      "description": "DEOYA CAPITAL interviene en sectores con alta intensidad estratégica, donde la estructuración de proyectos, la comprensión de entornos y la capacidad de ejecución son determinantes.",
+      "secteurs": [
+        {
+          "name": "Energía",
+          "desc": "Estructuración y desarrollo de proyectos energéticos internacionales Identificación de oportunidades, estructuración de proyectos y apoyo a la implementación en entornos complejos."
+        },
+        {
+          "name": "Infraestructura",
+          "desc": "Estructuración y análisis de proyectos de infraestructuras Estudios de viabilidad, análisis de mercados y apoyo estratégico hasta la implementación."
+        },
+        {
+          "name": "Industria",
+          "desc": "Estructuración financiera y despliegue de proyectos industriales Análisis de inversiones, modelado económico y estrategia de implementación."
+        },
+        {
+          "name": "Servicios Financieros",
+          "desc": "Análisis estratégico y estructuración de inversiones financieros Estudios sectoriales, análisis de riesgos y apoyo a la decisión"
+        },
+        {
+          "name": "Salud",
+          "desc": "Estructuración y gestión de proyectos de salud. Organización operativa, análisis de necesidades y despliegue de proyectos."
+        },
+        {
+          "name": "Digital",
+          "desc": "Análisis de entornos digitales y riesgos país. Evaluación de mercados, marcos regulatorios y dinámicas geopolíticas"
+        }
+      ]
+    },
+    "rejoindreReseau": {
+      "title": "Unirse a la red"
+    },
+    "ctaFinal": {
+      "title": "Únase a DEOYA CAPITAL",
+      "description": "Juntos, desarrollemos oportunidades de inversión de alcance internacional",
+      "buttonText": "Contactar a nuestros equipos"
+    }
+  },
   "contact": {
     "meta": {
       "title": "Contacto",
@@ -632,21 +698,6 @@
     "discussTitle": "Para ir mas lejos",
     "discussSubtitle": "Si desarrollas un proyecto con actores publicos y privados, estaremos encantados de ayudarte.",
     "discussButton": "Hablar con nosotros"
-  },
-  "reseau": {
-    "heroTitle": "Una red internacional de expertos para proyectos estrategicos",
-    "heroSubtitle": "DEOYA CAPITAL se apoya en una red internacional de expertos y consultores.",
-    "geographyTitle": "Cobertura geografica",
-    "geographyDescription": "Nuestros expertos operan en varias zonas estrategicas",
-    "zonesEurope": "Europa",
-    "zonesAfrica": "Africa",
-    "zonesNorthAmerica": "America del Norte",
-    "zonesAsia": "Asia",
-    "sectorExpertiseTitle": "Expertise sectorial estrategica",
-    "joinNetworkTitle": "Unirse a la red",
-    "ctaTitle": "Unete a DEOYA CAPITAL",
-    "ctaDescription": "Desarrollemos juntos oportunidades de inversion internacional",
-    "ctaButton": "Contactar a nuestros equipos"
   },
   "secteurs": {
     "label": "Nuestros Sectores",
