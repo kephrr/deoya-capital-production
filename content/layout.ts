@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const layoutContent = {
   navigation: {
     logo: {
@@ -82,5 +84,16 @@ export const layoutContent = {
         privacy: "Politique de confidentialité"
       }
     }
+  }
+}
+
+export function getLayoutContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return layoutContent
   }
 }

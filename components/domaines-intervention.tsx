@@ -1,12 +1,27 @@
 import { TextAlignStart } from "lucide-react";
-import { homeContent } from "@/content/home";
 import Link from "next/link";
-
-const LEFT_CONTENT = homeContent.domainesIntervention.leftContent;
-const ITEMS = homeContent.domainesIntervention.items;
+import { useTranslations } from "next-intl";
+import { images } from "@/content/images";
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function DomaineSection() {
+  const t = useTranslations('home.domainesIntervention')
+  const leftContentData = t.raw('leftContent') as {preTitle: string, highlight: string, postTitle: string, cta: string}
+  const itemsData = t.raw('items') as Array<{title: string, body: string}>
+  
+  const LEFT_CONTENT = {
+    ...leftContentData,
+    highlightLine2: '',
+    cta: {
+      label: leftContentData.cta,
+      href: '/expertises'
+    }
+  }
+  
+  const ITEMS = itemsData.map((item, index) => ({
+    ...item,
+    id: `item-${index}`
+  }))
   return (
     <>
       <style>{`
@@ -28,7 +43,7 @@ export default function DomaineSection() {
         .bg-forest {
           position: absolute;
           inset: 0;
-          background-image: url('paper-job-office-teamwork-business-analyst.jpg');
+          background-image: url('${images.home.domainesIntervention.backgroundImage}');
           background-size: cover;
           background-position: center 40%;
           z-index: 0;

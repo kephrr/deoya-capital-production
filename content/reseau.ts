@@ -1,4 +1,5 @@
 import { Zap, Wrench, Factory, DollarSign, Stethoscope, Cpu } from "lucide-react"
+import type { Locale } from "@/i18n/config"
 
 export const reseauContent = {
   hero: {
@@ -74,5 +75,16 @@ export const reseauContent = {
     title: "Rejoignez DEOYA CAPITAL",
     description: "Ensemble, développons des opportunités d'investissement de portée internationale",
     buttonText: "Contacter nos équipes"
+  }
+}
+
+export function getReseauContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return reseauContent
   }
 }

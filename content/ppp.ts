@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const pppContent = {
   hero: {
     tag: "DEOYA Capital - PPP",
@@ -72,5 +74,16 @@ export const pppContent = {
     buttonText: "Échanger avec nous",
     redirectUrl: "/contact",
     backgroundImage: "/business-people-video-call-meeting.jpg"
+  }
+}
+
+export function getPppContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return pppContent
   }
 }

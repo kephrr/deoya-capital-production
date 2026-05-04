@@ -7,10 +7,16 @@ import { Footer } from "@/components/footer";
 import { FadeIn } from "@/components/fade-in";
 import { ContactModal } from "@/components/contact-modal";
 import { ArrowRight, Globe } from "lucide-react";
-import { reseauContent } from "@/content/reseau";
+import { getReseauContent } from "@/content/reseau";
+import type { Locale } from "@/i18n/config";
 
-export default function ReseauPage() {
+type ReseauPageProps = {
+  locale?: Locale
+}
+
+export default function ReseauPage({ locale = "fr" }: ReseauPageProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const reseauContent = getReseauContent(locale)
   const { hero, zones, couvertureGeographique, expertisesSectorielles, rejoindreReseau, ctaFinal } = reseauContent
 
   return (

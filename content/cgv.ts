@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const cgvContent = {
   hero: {
     title: "Conditions Générales de Vente",
@@ -58,5 +60,16 @@ export const cgvContent = {
     contact: "Pour toute question concernant ces CGV, contactez-nous à :",
     email: "contact@deoya-capital.com",
     phone: "+33 6 12 34 56 78"
+  }
+}
+
+export function getCgvContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return cgvContent
   }
 }

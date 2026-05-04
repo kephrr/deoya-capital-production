@@ -3,11 +3,19 @@
 import { Globe, Target, Zap } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 import { Quote } from "@/components/quote"
-import { homeContent } from "@/content/home"
+import { useTranslations } from "next-intl"
 
 export function ValueProposition() {
-  const content = homeContent
-  const { items, quote } = content.valueProposition
+  const t = useTranslations('home.valueProposition')
+  const itemsData = t.raw('items') as Array<{title: string, description: string}>
+  const quote = t.raw('quote') as {citation: string, subtext: string}
+  
+  // Map icons to items
+  const icons = [Globe, Target, Zap]
+  const items = itemsData.map((item, index) => ({
+    ...item,
+    icon: icons[index]
+  }))
   
   return (
     <section className="border-b border-border bg-background py-16">

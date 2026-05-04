@@ -13,11 +13,17 @@ import { getPosts, getCategories } from "@/services/blogAPI";
 import { Toast } from "@/components/ui/toast";
 import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
-import { newsletterContent } from "@/content/newsletter";
+import { getNewsletterContent } from "@/content/newsletter";
 import { sendNewsletterConfirmation } from "@/lib/emailjs";
+import type { Locale } from "@/i18n/config";
 
-export default function NewsletterPage() {
+type NewsletterPageProps = {
+  locale?: Locale
+}
+
+export default function NewsletterPage({ locale = "fr" }: NewsletterPageProps) {
   const { toast } = useToast();
+  const newsletterContent = getNewsletterContent(locale)
   const { hero, filters, subscription, discussProject } = newsletterContent
   const [posts, setPosts] = useState<WPPost[]>([]);
   const [categories, setCategories] = useState<WPCategory[]>([]);

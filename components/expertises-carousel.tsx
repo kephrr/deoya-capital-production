@@ -1,5 +1,6 @@
 "use client"
 import { useRef, useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 
 // ─── Types ────────────────────────────────────────────────────────
 interface Card {
@@ -26,6 +27,7 @@ interface ExpertiseCarouselProps {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function ExpertiseCarousel({ header, cards, index = 0 }: ExpertiseCarouselProps) {
+  const t = useTranslations('expertises.expertiseCarousel')
   const CARD_WIDTH = 260;
   const CARD_GAP = 16;
   const STEP = CARD_WIDTH + CARD_GAP;
@@ -111,7 +113,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
               {header.description}<br />
               {header.objectif !== "" && (
                 <>
-                  <span className="font-bold text-foreground">Objectif :</span> {header.objectif}
+                  <span className="font-bold text-foreground">{t('objectifLabel')}</span> {header.objectif}
                 </>
               )}
             </p>
@@ -164,7 +166,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
                 className="w-8.5 h-8.5 rounded-full border border-black/25 bg-transparent flex items-center justify-center cursor-pointer transition-all text-[#1a1a1a] disabled:opacity-30 disabled:cursor-default hover:border-accent hover:text-accent" 
                 onClick={() => scrollBy(-1)} 
                 disabled={!canPrev} 
-                aria-label="Précédent"
+                aria-label={t('precedent')}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M9 2L4 7l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -174,7 +176,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
                 className="w-8.5 h-8.5 rounded-full border border-black/25 bg-transparent flex items-center justify-center cursor-pointer transition-all text-[#1a1a1a] disabled:opacity-30 disabled:cursor-default hover:border-accent hover:text-accent" 
                 onClick={() => scrollBy(1)} 
                 disabled={!canNext} 
-                aria-label="Suivant"
+                aria-label={t('suivant')}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M5 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -226,7 +228,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
                 className="w-8 h-8 rounded-full border border-black/25 bg-transparent flex items-center justify-center cursor-pointer transition-all text-[#1a1a1a] disabled:opacity-30 disabled:cursor-default hover:border-accent hover:text-accent" 
                 onClick={prevMobileSlide}
                 disabled={!canPrevMobile}
-                aria-label="Précédent"
+                aria-label={t('precedent')}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M9 2L4 7l5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -244,7 +246,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
                         : "bg-black/20"
                     }`}
                     onClick={() => goToMobileSlide(i)}
-                    aria-label={`Slide ${i + 1}`}
+                    aria-label={`${t('slide')} ${i + 1}`}
                   />
                 ))}
               </div>
@@ -253,7 +255,7 @@ export default function ExpertiseCarousel({ header, cards, index = 0 }: Expertis
                 className="w-8 h-8 rounded-full border border-black/25 bg-transparent flex items-center justify-center cursor-pointer transition-all text-[#1a1a1a] disabled:opacity-30 disabled:cursor-default hover:border-accent hover:text-accent" 
                 onClick={nextMobileSlide}
                 disabled={!canNextMobile}
-                aria-label="Suivant"
+                aria-label={t('suivant')}
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <path d="M5 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

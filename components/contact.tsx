@@ -3,14 +3,19 @@
 import { useState, type FormEvent } from "react"
 import { Send } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
-import { contactContent } from "@/content/contact"
+import { getContactContent } from "@/content/contact"
 import { sendContactForm } from "@/lib/emailjs"
+import type { Locale } from "@/i18n/config"
 
-export function Contact() {
+type ContactProps = {
+  locale?: Locale
+}
+
+export function Contact({ locale = "fr" }: ContactProps) {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const content = contactContent
+  const content = getContactContent(locale)
   const { hero, form } = content
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {

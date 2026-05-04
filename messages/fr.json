@@ -1,0 +1,737 @@
+{
+  "navigation": {
+    "navigationLabel": "Navigation principale",
+    "homeLabel": "Retour à l'accueil",
+    "logoAlt": "Logo DEOYA CAPITAL",
+    "contactButton": "Nous contacter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "home": "Accueil",
+    "cabinet": "Le cabinet",
+    "expertises": "Notre savoir-faire",
+    "reseau": "Notre réseau d'experts",
+    "ppp": "Partenariat(s) public-privé",
+    "newsletter": "Newsletter",
+    "contact": "Contact",
+    "cgv": "CGV"
+  },
+  "footer": {
+    "brand": {
+      "homeLabel": "Retour à l'accueil",
+      "alt": "Logo DEOYA CAPITAL",
+      "description": "Cabinet d'intelligence économique et de conseil stratégique spécialisé dans les investissements transcontinentaux."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Accueil",
+      "expertises": "Expertises",
+      "cabinet": "Cabinet",
+      "reseau": "Notre réseau d'experts",
+      "ppp": "Partenariat(s) public-privé",
+      "newsletter": "Newsletter",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "contact@deoya-capital.com",
+      "phone": "+33 1 23 45 67 89",
+      "location": "Paris, France"
+    },
+    "social": {
+      "title": "Suivez-nous",
+      "networks": {
+        "facebook": "Facebook",
+        "instagram": "Instagram", 
+        "linkedin": "LinkedIn",
+        "youtube": "YouTube"
+      }
+    },
+    "legal": {
+      "mentions": "Mentions légales",
+      "privacy": "Politique de confidentialité",
+      "cookies": "Politique de cookies",
+      "cgu": "CGU",
+      "cgv": "CGV"
+    },
+    "copyright": "© {year} DEOYA CAPITAL. Tous droits réservés."
+  },
+  "metadata": {
+    "siteName": "DEOYA CAPITAL",
+    "description": "Cabinet d'intelligence economique et de conseil strategique pour investissements internationaux."
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue.",
+    "readMore": "Lire la suite"
+  },
+  "discussProject": {
+    "defaultTitle": "Discutons de votre projet.",
+    "defaultSubtitle": "Premier échange confidentiel — Réponse sous 48h",
+    "defaultButtonText": "Contactez-nous",
+    "cancel": "Annuler",
+    "send": "Envoyer"
+  },
+  "languageSwitcher": {
+    "changeLanguage": "Changer de langue",
+    "languages": {
+      "fr": "Français",
+      "en": "English",
+      "es": "Español",
+      "ar": "العربية"
+    }
+  },
+  "layout": {
+    "navigation": {
+      "logoHomeLabel": "DEOYA CAPITAL - Accueil",
+      "ariaNavigation": "Navigation principale",
+      "ariaCloseMenu": "Fermer le menu",
+      "ariaOpenMenu": "Ouvrir le menu",
+      "ctaButton": "Rejoindre Deoya"
+    },
+        "cookies": {
+      "title": "DEOYA CAPITAL utilise des cookies",
+      "description": "pour ameliorer votre experience de navigation, analyser le trafic du site et personnaliser le contenu. En continuant d'utiliser ce site, vous acceptez notre utilisation des cookies.",
+      "minimizedText": "Ce site utilise des cookies pour votre experience.",
+      "accept": "Tout accepter",
+      "refuse": "Refuser",
+      "manage": "Gerer",
+      "minimize": "Minimiser",
+      "policy": "Politique de cookies",
+      "privacy": "Politique de confidentialite"
+    }
+  },
+  "home": {
+    "videoHero": {
+      "label": "Cabinet d'intelligence économique et de conseil stratégique",
+      "title": "Structurer vos investissements internationaux avec une approche transcontinentale",
+      "subtitle": "Nous intervenons aux côtés d'entreprises et d'investisseurs sur leurs décisions stratégiques à l'international, en apportant une compréhension approfondie des environnements politiques, économiques et sectoriels.",
+      "ctaText": "Découvrir nos expertises",
+      "secondCta": "Discuter de votre projet"
+    },
+    "valueProposition": {
+      "title": "Notre approche",
+      "items": [
+        {
+          "title": "Europe, Afrique, Amérique & marchés internationaux",
+          "description": "Nous maîtrisons les dynamiques africaines et européennes et accompagnons le déploiement de projets d'investissement sur des marchés internationaux à fort potentiel."
+        },
+        {
+          "title": "Approche opérationnelle",
+          "description": "DEOYA CAPITAL ne se limite pas à la production d'analyses. Nous structurons, pilotons et accompagnons la mise en œuvre des projets jusqu'à leur déploiement effectif."
+        },
+        {
+          "title": "Cabinet agile",
+          "description": "Une structure resserrée et stratégique, appuyée par un réseau international d'experts mobilisés sur mesure selon les enjeux de chaque mission. Cette organisation garantit réactivité, précision et efficacité."
+        }
+      ],
+      "quote": {
+        "citation": "L'avenir de l'investissement transcontinental appartient à ceux qui savent naviguer entre les environnements, créer des ponts durables entre les économies, sans jamais perdre de vue l'humain.",
+        "subtext": "— La vision DEOYA CAPITAL"
+      }
+    },
+    "expertises": {
+      "label": "Ce qui nous anime",
+      "title": "Nos valeurs",
+      "items": [
+        {
+          "title": "Rigueur analytique",
+          "description": "Chaque analyse est étayée par des données terrain et vérifiées. Zéro approximation dans nos livrables."
+        },
+        {
+          "title": "Indépendance",
+          "description": "Nous n'avons pas d'intérêts dans les projets que nous accompagnons. Notre seul engagement : votre réussite."
+        },
+        {
+          "title": "Discrétion totale",
+          "description": "Confidentialité absolue sur vos projets, vos partenaires et vos données stratégiques."
+        }
+      ]
+    },
+    "domainesIntervention": {
+      "leftContent": {
+        "preTitle": "Transformer la complexité des marchés internationaux en ",
+        "highlight": "décisions stratégiques",
+        "postTitle": "",
+        "cta": "Découvrir notre approche"
+      },
+      "items": [
+        {
+          "title": "Structuration de projets",
+          "body": "Cadrage stratégique, modélisation financière, structuration organisationnelle dès la phase amont. Nous accompagnons la mise en place de projets complexes en assurant une fondation solide pour leur développement."
+        },
+        {
+          "title": "Analyse de faisabilité",
+          "body": "Étude de marché, évaluation des risques et contraintes réglementaires avant tout engagement. Notre expertise permet d'identifier les opportunités et les défis pour garantir la viabilité des projets."
+        },
+        {
+          "title": "Relations institutionnelles & réglementaires",
+          "body": "Cartographie acteurs publics, dossiers stratégiques, négociations administratives. Nous naviguons efficacement dans les environnements institutionnels complexes pour faciliter vos projets."
+        },
+        {
+          "title": "Accompagnement à l'implantation",
+          "body": "Coordination terrain, interface locale-internationale jusqu'à l'opérationnel. Nous assurons le lien entre les équipes locales et internationales pour garantir une exécution réussie."
+        },
+        {
+          "title": "Coordination Europe Afrique Amérique du Nord Asie",
+          "body": "Alignement des équipes, traduction des standards, synchronisation décisionnelle. Nous facilitons la collaboration transcontinentale en assurant une communication fluide et efficace."
+        }
+      ]
+    },
+    "differentiators": {
+      "label": "Notre différence",
+      "title": "Pourquoi DEOYA CAPITAL",
+      "items": [
+        {
+          "title": "Une compréhension approfondie des environnements africains",
+          "description": "Une connaissance terrain qui dépasse les études théoriques, fondée sur une immersion réelle dans les dynamiques économiques, institutionnelles et culturelles locales."
+        },
+        {
+          "title": "Une exigence européenne des standards et des processus",
+          "description": "Rigueur méthodologique, conformité réglementaire et transparence guident chacune de nos interventions, dans le respect des meilleures pratiques internationales."
+        },
+        {
+          "title": "Une approche orientée exécution",
+          "description": "Nous ne produisons pas uniquement des recommandations. Chaque stratégie est conçue pour être opérationnelle, déployable et mesurable."
+        },
+        {
+          "title": "Une structure agile et stratégique",
+          "description": "Un noyau de pilotage resserré, soutenu par un réseau international d'experts mobilisés sur mesure. Cette organisation garantit réactivité, précision et proximité avec nos clients."
+        }
+      ]
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
+    }
+  },
+  "cabinet": {
+    "discussProject": {
+      "title": "Rejoignez l'aventure DEOYA CAPITAL.",
+      "buttonText": "Nous rejoindre"
+    },
+    "trustSection": {
+      "label": "Notre philosophie",
+      "title": "Un cabinet fondé sur la confiance",
+      "description": [
+        "DEOYA CAPITAL est né d'une conviction : les projets d'investissement transcontinentaux méritent un partenaire qui comprend à la fois les réalités du terrain africain et les exigences des standards européens.",
+        "Notre modèle est celui d'un cabinet stratégique agile. Une équipe centrale de haut niveau, appuyée par un réseau international d'experts sélectionnés, mobilisés selon la nature exacte de chaque mission.",
+        "Nous intervenons là où la complexité est la plus grande : à l'interface des marchés, des cultures institutionnelles et des exigences réglementaires."
+      ],
+      "video": {
+        "fallbackText": "Votre navigateur ne supporte pas la lecture de cette vidéo.",
+        "ariaLabels": {
+          "enableSound": "Activer le son",
+          "disableSound": "Désactiver le son"
+        }
+      },
+      "cta": {
+        "text": "En savoir plus",
+        "href": "/expertises"
+      }
+    },
+    "notreVision": {
+      "title": "Notre vision",
+      "subtitle": "L'excellence stratégique au service de l'investissement transcontinental",
+      "description": "DEOYA CAPITAL incarne une nouvelle génération de conseil stratégique, où l'expertise africaine et l'exigence européenne se rencontrent pour créer de la valeur.",
+      "values": [
+        {
+          "title": "Expertise locale",
+          "description": "Une connaissance profonde des réalités économiques et institutionnelles africaines."
+        },
+        {
+          "title": "Standards internationaux",
+          "description": "L'excellence méthodologique et la conformité aux meilleures pratiques mondiales."
+        },
+        {
+          "title": "Approche sur mesure",
+          "description": "Des solutions adaptées à chaque contexte, alliant pragmatisme et innovation."
+        }
+      ]
+    },
+    "architectureEtEquipe": {
+      "title": "Architecture et équipe",
+      "subtitle": "Une organisation pensée pour l'efficacité",
+      "description": "Notre structure repose sur un noyau stratégique agile, complété par un réseau d'experts mobilisés selon les besoins spécifiques de chaque mission.",
+      "team": [
+        {
+          "role": "Direction stratégique",
+          "description": "Un comité de pilotage assurant la vision et la coordination globale."
+        },
+        {
+          "role": "Experts réseau",
+          "description": "Des spécialistes mobilisés selon les domaines d'intervention requis."
+        },
+        {
+          "role": "Support opérationnel",
+          "description": "Une équipe dédiée à l'exécution et au suivi des projets."
+        }
+      ]
+    },
+    "zonesGeographiques": {
+      "title": "Nos zones d'intervention",
+      "subtitle": "Une présence stratégique sur les marchés émergents",
+      "description": "Nous opérons principalement en Europe, en Afrique et en Amérique du Nord, avec une capacité d'intervention sur les marchés asiatiques.",
+      "regions": [
+        {
+          "name": "Europe",
+          "description": "Siège stratégique et centre de coordination pour les opérations européennes."
+        },
+        {
+          "name": "Afrique",
+          "description": "Présence opérationnelle et expertise terrain sur les principaux marchés africains."
+        },
+        {
+          "name": "Amérique du Nord",
+          "description": "Interface avec les investisseurs et partenaires nord-américains."
+        },
+        {
+          "name": "Asie",
+          "description": "Capacité d'intervention et réseau de partenaires sur les marchés asiatiques."
+        }
+      ]
+    }
+  },
+  "cgv": {
+    "meta": {
+      "title": "Conditions Generales de Vente",
+      "description": "Conditions Generales de Vente de DEOYA CAPITAL."
+    },
+    "hero": {
+      "title": "Conditions Generales de Vente",
+      "subtitle": "DEOYA CAPITAL",
+      "description": "Les presentes Conditions Generales de Vente (CGV) regissent les prestations de conseil, de structuration, de coordination et de mise en relation proposees par DEOYA CAPITAL."
+    },
+    "sections": {
+      "s1Title": "1. Objet",
+      "s1Content": "Les presentes Conditions Generales de Vente (CGV) regissent les prestations de conseil, de structuration, de coordination et de mise en relation proposees par DEOYA CAPITAL. Toute commande implique l'acceptation sans reserve des presentes CGV.",
+      "s2Title": "2. Nature des prestations",
+      "s2Content": "DEOYA CAPITAL intervient en qualite de conseil et de coordinateur de projets. A ce titre, elle est tenue a une obligation de moyens et non de resultat. Les prestations sont definies precisement dans un devis ou un contrat.",
+      "s3Title": "3. Formation du contrat",
+      "s3Content": "Toute prestation fait l'objet d'un devis prealable. La mission debute uniquement apres signature du devis par le client et paiement de l'acompte correspondant. La signature du devis vaut acceptation des presentes CGV.",
+      "s4Title": "4. Modalites de paiement et penalites de retard",
+      "s4Content": "Un acompte de trente pour cent (30%) est exige a la signature du devis. Le solde est payable de maniere echelonnee, sur une base mensuelle, selon l'avancement de la mission, valide par DEOYA CAPITAL. Chaque echeance donne lieu a l'emission d'une facture par DEOYA CAPITAL, payable a reception. A defaut de paiement d'une echeance, DEOYA CAPITAL se reserve le droit de suspendre l'execution de la mission jusqu'a regularisation. En cas de retard de paiement, des penalites seront exigibles de plein droit, sans qu'un rappel soit necessaire, calculees sur la base du taux legal en vigueur. Conformement a l'article L441-10 du Code de commerce, une indemnite forfaitaire pour frais de recouvrement d'un montant de quarante (40) euros sera egalement due. Lorsque les frais de recouvrement exposes sont superieurs a ce montant, une indemnisation complementaire pourra etre demandee sur justification.",
+      "s5Title": "5. Responsabilite",
+      "s5Content": "DEOYA CAPITAL est tenue a une obligation de moyens. Sa responsabilite ne pourra etre engagee qu'en cas de faute prouvee dans l'execution de ses obligations. Le client demeure seul responsable des decisions prises sur la base des recommandations formulees par DEOYA CAPITAL. En tout etat de cause, la responsabilite de DEOYA CAPITAL, tous prejudices confondus, est limitee au montant des honoraires effectivement percus au titre de la mission concernee. DEOYA CAPITAL ne saurait etre tenue responsable des dommages indirects, notamment perte de chiffre d'affaires, perte d'opportunite ou prejudice commercial.",
+      "s6Title": "6. Intervention des experts",
+      "s6Content": "DEOYA CAPITAL peut faire intervenir des experts partenaires dans le cadre des missions. Ces intervenants agissent sous leur propre responsabilite. DEOYA CAPITAL ne saurait etre tenue responsable de leurs actions, omissions ou manquements.",
+      "s7Title": "7. Confidentialite",
+      "s7Content": "Les parties s'engagent a conserver strictement confidentielles toutes les informations echangees dans le cadre de la mission. Cette obligation s'applique pendant toute la duree de la mission et pendant une periode de cinq (5) ans a compter de sa cessation, quelle qu'en soit la cause.",
+      "s8Title": "8. Propriete intellectuelle",
+      "s8Content": "Les livrables demeurent la propriete de DEOYA CAPITAL jusqu'au paiement complet des prestations. Apres paiement, le client beneficie d'un droit d'utilisation strictement limite a ses besoins internes. Toute reproduction, diffusion ou exploitation sans autorisation ecrite prealable est interdite.",
+      "s9Title": "9. Resiliation",
+      "s9Content": "En cas de resiliation anticipee : Les prestations realisees restent dues et exigibles - Les sommes versees ne sont pas remboursables. DEOYA CAPITAL se reserve le droit de suspendre ou de resilier la mission en cas de manquement du client, notamment en cas de defaut de paiement.",
+      "s10Title": "10. Force majeure",
+      "s10Content": "DEOYA CAPITAL ne pourra etre tenue responsable en cas d'evenement imprevisible, irresistible et exterieur empechant l'execution de ses obligations.",
+      "s11Title": "11. Droit applicable et litiges",
+      "s11Content": "Les presentes CGV sont regies par le droit francais. En cas de differend, les parties s'engagent a rechercher une solution amiable. A defaut d'accord amiable, le litige sera soumis aux tribunaux francais competents.",
+      "s12Title": "12. Acceptation",
+      "s12Content": "La signature du devis par le client emporte acceptation pleine et entiere des presentes Conditions Generales de Vente."
+    }
+  },
+  "cabinet": {
+    "meta": {
+      "title": "Cabinet",
+      "description": "Un cabinet fonde sur la confiance."
+    },
+    "hero": {
+      "title": "Rejoignez l'aventure DEOYA CAPITAL.",
+      "subtitle": "Une equipe passionnee, des projets ambitieux - Construisons ensemble l'avenir de l'investissement transcontinental.",
+      "buttonText": "Nous rejoindre"
+    },
+    "trustSection": {
+      "label": "Notre philosophie",
+      "title": "Un cabinet fondé sur la confiance",
+      "description1": "DEOYA CAPITAL est né d'une conviction : les projets d'investissement transcontinentaux méritent un partenaire qui comprend à la fois les réalités du terrain africain et les exigences des standards européens.",
+      "description2": "Notre modèle est celui d'un cabinet stratégique agile. Une équipe centrale de haut niveau, appuyée par un réseau international d'experts sélectionnés, mobilisés selon la nature exacte de chaque mission.",
+      "description3": "Nous intervenons là où la complexité est la plus grande : à l'interface des marchés, des cultures institutionnelles et des exigences réglementaires.",
+      "videoFallbackText": "Votre navigateur ne supporte pas la lecture de cette vidéo.",
+      "enableSound": "Activer le son",
+      "disableSound": "Désactiver le son",
+      "ctaText": "En savoir plus",
+      "ctaHref": "/expertises"
+    },
+    "notreVision": {
+      "label": "Notre vision",
+      "title": "Redéfinir le conseil en investissement transcontinental",
+      "subtitle": "Nous défendons une approche du conseil qui allie expertise internationale et compréhension fine des réalités locales. Chaque projet est une opportunité de structurer des investissements solides et de créer des passerelles durables entre les économies.",
+      "values": [
+        {
+          "title": "Excellence opérationnelle",
+          "description": "Nous transformons les stratégies en actions concrètes, avec un pilotage rigoureux et un suivi terrain structuré."
+        },
+        {
+          "title": "Confiance et transparence",
+          "description": "Nous construisons des relations durables fondées sur l'exigence, l'éthique et une communication claire à chaque étape."
+        },
+        {
+          "title": "Impact durable",
+          "description": "Nous visons une création de valeur pérenne, au bénéfice de nos clients et des écosystèmes dans lesquels nous intervenons."
+        }
+      ],
+      "quote": "L'avenir de l'investissement transcontinental appartient à ceux qui savent naviguer entre les mondes sans jamais perdre de vue l'humain.",
+      "cite": "La vision DEOYA CAPITAL"
+    },
+    "zonesGeographiques": {
+      "label": "Nos marchés",
+      "title": "Zones d'interventions",
+      "subtitle": "Une présence opérationnelle là où les projets se construisent.",
+      "zones": [
+        {
+          "title": "Europe",
+          "description": "Stratégie, financement et pilotage depuis nos bureaux européens."
+        },
+        {
+          "title": "Afrique de l'Ouest",
+          "description": "Présence opérationnelle et expertise terrain au cœur des projets."
+        },
+        {
+          "title": "Afrique du Nord",
+          "description": "Interface entre les marchés européens et les opportunités méditerranéennes."
+        },
+        {
+          "title": "Amérique du Nord",
+          "description": "Accès aux marchés financiers et expertise en structuration internationale."
+        }
+      ]
+    },
+    "architectureEtEquipe": {
+      "label": "Notre organisation",
+      "title": "Architecture et équipe",
+      "subtitle": "Une structure conçue pour l'excellence opérationnelle.",
+      "points": [
+        {
+          "title": "Noyau stratégique",
+          "description": "L'équipe centrale DEOYA pilote chaque mission avec exigence. La stratégie est définie et maîtrisée en interne à chaque étape."
+        },
+        {
+          "title": "Réseau d'experts sélectionnés",
+          "description": "Des experts sectoriels et géographiques mobilisés sur mesure selon les besoins spécifiques de chaque mission : secteur, pays, phase d'exécution."
+        },
+        {
+          "title": "Cadre méthodologique rigoureux",
+          "description": "Chaque mission s'inscrit dans un protocole structuré garantissant cohérence, traçabilité et qualité des livrables."
+        },
+        {
+          "title": "Reporting et transparence",
+          "description": "Un suivi régulier et structuré auprès des décideurs, assurant visibilité, clarté et absence totale d'opacité."
+        }
+      ]
+    },
+    "discussProject": {
+      "title": "Rejoignez l'aventure DEOYA CAPITAL.",
+      "subtitle": "Une équipe passionnée, des projets ambitieux - Construisons ensemble l'avenir de l'investissement transcontinental.",
+      "buttonText": "Nous rejoindre"
+    }
+  },
+  "expertises": {
+    "hero": {
+      "title": "Une expertise structurée au service des investissements internationaux",
+      "description": "DEOYA CAPITAL accompagne entreprises, investisseurs et institutions dans la conception, l'analyse et la mise en œuvre de projets d'investissement à l'échelle internationale. Nos expertises couvrent l'ensemble des dimensions stratégiques, opérationnelles et institutionnelles nécessaires à la réussite de projets complexes."
+    },
+    "secteursCarousel": {
+      "energie": {
+        "quote": "Énergie & Ressources",
+        "enjeux": [
+          "Cartographie des environnements réglementaires par pays",
+          "Structuration de projets énergétiques (renouvelables & conventionnels)",
+          "Accès aux licences et cadres d'exploitation",
+          "Interface avec autorités et régulateurs"
+        ],
+        "segments": ["Solaire", "Hydraulique", "Pétrole & Gaz", "Mines & Ressources naturelles"]
+      },
+      "infrastructure": {
+        "quote": "Infrastructure & BTP",
+        "enjeux": [
+          "Sécurisation foncière et cadre administratif",
+          "Structuration et coordination de projets publics/privés",
+          "Accès aux financements internationaux (AFD, BEI, Banque mondiale)",
+          "Gestion des relations avec autorités locales"
+        ],
+        "segments": ["Infrastructures routières", "Construction", "Smart Cities", "Eau & assainissement"]
+      },
+      "industrie": {
+        "quote": "Industrie & Services",
+        "enjeux": [
+          "Optimisation des chaînes d'approvisionnement",
+          "Accès aux marchés locaux et régionaux",
+          "Conformité aux normes et standards",
+          "Développement de partenariats stratégiques"
+        ],
+        "segments": ["Agro-industrie", "Logistique", "Services numériques", "Tourisme"]
+      },
+      "finance": {
+        "quote": "Finance & Investissement",
+        "enjeux": [
+          "Structuration de montages financiers complexes",
+          "Accès aux capitaux internationaux",
+          "Optimisation fiscale et juridique",
+          "Gestion des risques et conformité"
+        ],
+        "segments": ["Private Equity", "Dettes", "Capital-risque", "Fonds souverains"]
+      }
+    },
+    "expertises": [
+      {
+        "number": "01",
+        "title": "structuration de projets",
+        "objectif": "Structurer des projets solides, cohérents et exécutables dans des environnements complexes",
+        "description": "Nous accompagnons la conception et l'organisation de projets d'investissement, de la phase de réflexion stratégique à leur mise en œuvre opérationnelle.",
+        "image": "structuration.png",
+        "icon": "Target",
+        "points": [
+          {
+            "title": "Structuration stratégique des projets",
+            "description": "Définition du positionnement, des objectifs et des scénarios de développement, en cohérence avec les dynamiques du marché cible.",
+            "icon": "Target"
+          },
+          {
+            "title": "Modélisation économique et scénarios de développement",
+            "description": "Construction de modèles économiques, analyse des hypothèses et structuration de trajectoires de croissance.",
+            "icon": "TrendingUp"
+          },
+          {
+            "title": "Identification et structuration des partenariats",
+            "description": "Sélection d'acteurs clés (partenaires locaux, techniques ou financiers) et organisation des modalités de collaboration.",
+            "icon": "FileText"
+          },
+          {
+            "title": "Élaboration de feuilles de route opérationnelles",
+            "description": "Définition des étapes clés, des priorités et des ressources nécessaires au déploiement du projet.",
+            "icon": "Users"
+          },
+          {
+            "title": "Stratégie d'investissement & développement",
+            "description": "Définition de stratégies d'entrée sur les marchés, priorisation des opportunités et accompagnement des décisions d'investissement.",
+            "icon": "Users"
+          }
+        ]
+      },
+      {
+        "number": "02",
+        "title": "analyse de faisabilité",
+        "objectif": "Sécuriser les décisions et valider la pertinence des projets avant engagement",
+        "description": "Nous produisons des analyses stratégiques à forte valeur ajoutée permettant d'éclairer les décisions d'investissement et d'évaluer la pertinence des projets en amont.",
+        "image": "analysis.avif",
+        "icon": "Search",
+        "points": [
+          {
+            "title": "Analyse des environnements économiques et sectoriels",
+            "description": "Étude des dynamiques de marché, des opportunités sectorielles et des conditions d'entrée.",
+            "icon": "Globe"
+          },
+          {
+            "title": "Analyse pays & intelligence économique",
+            "description": "Analyse des risques politiques, économiques et réglementaires, compréhension des dynamiques locales et cartographie des acteurs clés.",
+            "icon": "Shield"
+          },
+          {
+            "title": "Évaluation des risques réglementaires et opérationnels",
+            "description": "Identification des contraintes juridiques, administratives et opérationnelles susceptibles d'impacter le projet.",
+            "icon": "CheckCircle"
+          },
+          {
+            "title": "Études de faisabilité et validation des hypothèses",
+            "description": "Analyse de la viabilité globale du projet au regard du marché, des ressources et des contraintes identifiées.",
+            "icon": "ArrowRight"
+          },
+          {
+            "title": "Veille stratégique & intelligence sectorielle",
+            "description": "Suivi des évolutions réglementaires et économiques, analyses sectorielles et identification des tendances de marché.",
+            "icon": "ArrowRight"
+          }
+        ]
+      },
+      {
+        "number": "03",
+        "title": "relations institutionnelles & environnements réglementaires",
+        "objectif": "Sécuriser les interactions institutionnelles et faciliter l'implantation des projets",
+        "description": "Nous facilitons l'accès aux écosystèmes locaux et accompagnons les interactions avec les acteurs institutionnels. Nous intervenons à l'interface des acteurs publics, des cadres réglementaires et des dynamiques institutionnelles propres à chaque marché.",
+        "image": "relations.jpeg",
+        "icon": "Building",
+        "points": [
+          {
+            "title": "Compréhension des cadres institutionnels",
+            "description": "Analyse des structures administratives, des acteurs publics et des processus décisionnels.",
+            "icon": "Users"
+          },
+          {
+            "title": "Accès aux marchés & mise en relation",
+            "description": "Identification de partenaires pertinents, mise en relation qualifiée et accompagnement dans les interactions locales.",
+            "icon": "Shield"
+          },
+          {
+            "title": "Accompagnement dans les démarches réglementaires",
+            "description": "Appui dans la compréhension et la structuration des démarches administratives et réglementaires.",
+            "icon": "FileText"
+          },
+          {
+            "title": "Analyse des dynamiques politiques et institutionnelles",
+            "description": "Lecture des environnements politiques et évaluation de leur impact sur les projets.",
+            "icon": "Handshake"
+          }
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Contre-expertise & validation indépendante",
+        "objectif": "Identifier les risques, challenger les analyses existantes et renforcer la fiabilité des décisions stratégiques.",
+        "description": "DEOYA CAPITAL intervient en complément des dispositifs existants afin d'apporter une lecture indépendante, ancrée dans les réalités locales et opérationnelles. Nous analysons, confrontons et validons les orientations stratégiques dans des environnements d'investissement complexes.",
+        "image": "relations.jpeg",
+        "icon": "Building",
+        "points": [
+          {
+            "title": "Relecture stratégique des analyses existantes",
+            "description": "Analyse critique des rapports, études ou recommandations déjà produits.",
+            "icon": "Users"
+          },
+          {
+            "title": "Validation terrain & réalités locales",
+            "description": "Confrontation des hypothèses aux réalités institutionnelles, économiques et opérationnelles.",
+            "icon": "Shield"
+          },
+          {
+            "title": "Identification des risques sous-estimés",
+            "description": "Détection des points de friction potentiels (réglementaires, politiques, partenaires, exécution).",
+            "icon": "FileText"
+          },
+          {
+            "title": "Analyse des acteurs & dynamiques locales",
+            "description": "Lecture fine des écosystèmes : acteurs clés, influences, rapports de force.",
+            "icon": "Handshake"
+          },
+          {
+            "title": "Recommandations ajustées",
+            "description": "Proposition d'ajustements concrets pour sécuriser et optimiser le projet.",
+            "icon": "Handshake"
+          }
+        ]
+      }
+    ],
+    "discussProject": {
+      "title": "Expertises sur mesure pour votre ambition.",
+      "subtitle": "Notre savoir-faire à votre service. Des solutions adaptées à vos enjeux spécifiques.",
+      "buttonText": "Bénéficier de notre expertise"
+    },
+    "labels": {
+      "enjeuxCles": "Enjeux clés",
+      "sousSegmentsCouverts": "Sous-segments couverts"
+    },
+    "expertiseCarousel": {
+      "objectifLabel": "Objectif :",
+      "precedent": "Précédent",
+      "suivant": "Suivant",
+      "slide": "Slide"
+    },
+    "preTitle": "Expertise en"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contactez DEOYA CAPITAL."
+    },
+    "hero": {
+      "label": "Contactez-nous",
+      "title": "Travaillons ensemble",
+      "description": "Vous portez un projet d'investissement a dimension internationale ? Echangeons sur vos enjeux."
+    },
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre entreprise",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Decrivez votre projet...",
+      "submit": "Envoyer le message",
+      "successTitle": "Message envoye",
+      "successDescription": "Nous vous repondrons dans les meilleurs delais."
+    },
+    "modal": {
+      "title": "Rejoindre DEOYA CAPITAL",
+      "close": "Fermer",
+      "successTitle": "Message envoyé avec succès!",
+      "successDescription": "Nous vous contacterons dans les plus brefs délais.",
+      "firstName": "Prénom",
+      "firstNamePlaceholder": "Votre prénom",
+      "lastName": "Nom",
+      "lastNamePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "expertise": "Domaine d'expertise",
+      "expertisePlaceholder": "Quel est votre domaine d'expertise ? Dites nous en plus",
+      "phone": "Téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "cancel": "Annuler",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "error": "Une erreur est survenue lors de l'envoi du message"
+    }
+  },
+  "expertisesPage": {
+    "heroTitle": "Une expertise structuree au service des investissements internationaux",
+    "heroDescription": "DEOYA CAPITAL accompagne entreprises, investisseurs et institutions dans la conception, l'analyse et la mise en oeuvre de projets d'investissement a l'echelle internationale.",
+    "discussTitle": "Expertises sur mesure pour votre ambition.",
+    "discussSubtitle": "Notre savoir-faire a votre service. Des solutions adaptees a vos enjeux specifiques.",
+    "discussButton": "Beneficier de notre expertise"
+  },
+  "newsletter": {
+    "heroTitle": "DEOYA Intelligence",
+    "heroSubtitle": "Notre regard sur l'investissement Afrique - Europe - Amerique. Analyses de fond, notes sectorielles, points de vue sur l'evolution des marches et des reglementations.",
+    "subscribe": "S'abonner",
+    "searchPlaceholder": "Rechercher un article...",
+    "categoryLabel": "Categorie:",
+    "allCategories": "Toutes",
+    "article": "article",
+    "articles": "articles",
+    "foundOne": "trouve",
+    "foundMany": "trouves",
+    "noResults": "Aucun article trouve pour votre recherche.",
+    "loadingArticles": "Chargement des articles...",
+    "subscriptionTitle": "S'abonner a la newsletter",
+    "subscriptionEmail": "Adresse email",
+    "subscriptionConsent": "J'accepte de recevoir la newsletter et comprends que je peux me desabonner a tout moment.",
+    "subscribing": "Abonnement en cours...",
+    "toastTitle": "Abonnement effectue.",
+    "toastDescription": "Vous vous etes abonnes a notre newsletter avec succes. Vous recevrez desormais nos annonces et nouveautes par courrier electronique.",
+    "subscriptionError": "Erreur lors de l'abonnement. Veuillez reessayer."
+  },
+  "ppp": {
+    "tag": "DEOYA Capital - PPP",
+    "title": "Partenariats",
+    "titleAccent": "Public-Prive",
+    "axesTitle": "Nos axes d'intervention",
+    "discussTitle": "Pour aller plus loin",
+    "discussSubtitle": "Si vous developpez un projet impliquant des acteurs publics et prives, ou souhaitez mieux apprehender les dynamiques propres aux partenariats public-prive, nous serons ravis d'examiner les modalites d'un accompagnement adapte a vos enjeux.",
+    "discussButton": "Echanger avec nous"
+  },
+  "reseau": {
+    "heroTitle": "Un reseau international d'Experts au service des projets strategiques",
+    "heroSubtitle": "DEOYA CAPITAL s'appuie sur un reseau international d'experts et de consultants specialises dans differents secteurs et zones geographiques.",
+    "geographyTitle": "Couverture geographique",
+    "geographyDescription": "Nos experts interviennent sur plusieurs zones strategiques",
+    "zonesEurope": "Europe",
+    "zonesAfrica": "Afrique",
+    "zonesNorthAmerica": "Amerique du Nord",
+    "zonesAsia": "Asie",
+    "sectorExpertiseTitle": "Expertises sectorielles strategiques",
+    "joinNetworkTitle": "Rejoindre le reseau",
+    "ctaTitle": "Rejoignez DEOYA CAPITAL",
+    "ctaDescription": "Ensemble, developpons des opportunites d'investissement de portee internationale",
+    "ctaButton": "Contacter nos equipes"
+  },
+  "secteurs": {
+    "label": "Nos Secteurs",
+    "title": "Une expertise multisectorielle pour vos projets ambitieux.",
+    "description": "De l'industrie lourde aux technologies digitales, nous accompagnons votre transformation dans tous les secteurs strategiques avec une connaissance pointue des specificites locales.",
+    "discussTitle": "Votre secteur, notre expertise.",
+    "discussSubtitle": "Chaque industrie a ses defis. Nous avons les solutions adaptees a votre domaine.",
+    "discussButton": "Discuter de votre secteur",
+    "interventionLabel": "Notre expertise",
+    "interventionTitle": "Nos Secteurs d'Intervention",
+    "interventionDescription": "Une comprehension fine des defis locaux, une maitrise des standards internationaux, et un reseau operationnel immediatement activable.",
+    "navPrevious": "Slide precedent",
+    "navNext": "Slide suivant",
+    "navGoTo": "Aller au slide"
+  }
+}

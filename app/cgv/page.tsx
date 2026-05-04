@@ -2,9 +2,16 @@
 
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { cgvContent } from "@/content/cgv"
+import { getCgvContent } from "@/content/cgv"
+import type { Locale } from "@/i18n/config"
 
-export default function ConditionsGeneralesDeVente() {
+type ConditionsGeneralesDeVenteProps = {
+  locale?: Locale
+}
+
+export default function ConditionsGeneralesDeVente({ locale = "fr" }: ConditionsGeneralesDeVenteProps) {
+  const cgvContent = getCgvContent(locale)
+
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800 mt-12">
       <Navigation backgrounded={false} />

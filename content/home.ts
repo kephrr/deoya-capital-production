@@ -1,4 +1,5 @@
 import { Globe, Target, Zap, FileSearch, Compass, Users, Eye, BarChart3, Handshake, Rocket } from "lucide-react"
+import type { Locale } from "@/i18n/config"
 
 export const homeContent = {
   videoHero: {
@@ -134,5 +135,16 @@ export const homeContent = {
     buttonText: "Contactez-nous",
     useModal: false,
     showSubtitle: false
+  }
+}
+
+export function getHomeContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return homeContent
   }
 }

@@ -3,12 +3,13 @@
 import { useState } from "react"
 import { FadeIn } from "@/components/fade-in"
 import { Play, Pause, Volume2, VolumeX } from "lucide-react"
-import { cabinetContent } from "@/content/cabinet"
+import { images } from "@/content/images"
+import { useTranslations } from "next-intl"
 
 export function TrustSection() {
+  const t = useTranslations('cabinet.trustSection')
   const [isMuted, setIsMuted] = useState(true)
   const [isPlaying, setIsPlaying] = useState(false)
-  const { trustSection } = cabinetContent
 
   const toggleMute = () => {
     setIsMuted(!isMuted)
@@ -40,8 +41,8 @@ export function TrustSection() {
               {!isPlaying && (
                 <div className="absolute inset-0">
                   <img
-                    src="/video-cover.png"
-                    alt="Vidéo de présentation DEOYA CAPITAL"
+                    src={images.cabinet.trustSection.videoCover}
+                    alt={t('videoFallbackText')}
                     className="w-full h-full object-cover"
                   />
                   {/* Dark overlay for better button visibility */}
@@ -57,8 +58,8 @@ export function TrustSection() {
                 loop
                 playsInline
               >
-                <source src={trustSection.video.src} type="video/mp4" />
-                {trustSection.video.fallbackText}
+                <source src={images.cabinet.trustSection.video} type="video/mp4" />
+                {t('videoFallbackText')}
               </video>
               
               {/* Play button */}
@@ -66,7 +67,7 @@ export function TrustSection() {
                 <button
                   onClick={handlePlay}
                   className="absolute inset-0 flex items-center justify-center group"
-                  aria-label="Lire la vidéo"
+                  aria-label={t('enableSound')}
                 >
                   <div className="w-16 h-16 rounded-full bg-white/90 hover:bg-white transition-all duration-200 flex items-center justify-center group-hover:scale-110 shadow-lg">
                     <Play className="w-8 h-8 text-primary ml-1" fill="currentColor" />
@@ -79,7 +80,7 @@ export function TrustSection() {
                 <button
                   onClick={handlePause}
                   className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200 bg-transparent"
-                  aria-label="Mettre en pause la vidéo"
+                  aria-label={t('disableSound')}
                 >
                   <div className="w-14 h-14 rounded-full bg-black/60 hover:bg-black/80 transition-all duration-200 flex items-center justify-center shadow-lg">
                     <Pause className="w-7 h-7 text-white" fill="currentColor" />
@@ -92,7 +93,7 @@ export function TrustSection() {
                 <button
                   onClick={toggleMute}
                   className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black/50 hover:bg-black/70 flex items-center justify-center text-white transition-colors duration-200"
-                  aria-label={isMuted ? trustSection.video.ariaLabels.enableSound : trustSection.video.ariaLabels.disableSound}
+                  aria-label={isMuted ? t('enableSound') : t('disableSound')}
                 >
                   {isMuted ? (
                     <VolumeX className="w-5 h-5" />
@@ -114,30 +115,28 @@ export function TrustSection() {
             <div className="space-y-6">
               {/* Section label */}
               <p className="text-sm font-medium uppercase tracking-widest text-accent">
-                {trustSection.label}
+                {t('label')}
               </p>
 
               {/* Main heading */}
               <h1 className="font-serif text-3xl font-semibold leading-tight text-balance md:text-4xl lg:text-5xl">
-                {trustSection.title}
+                {t('title')}
               </h1>
 
               {/* Description */}
               <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-                {trustSection.description.map((paragraph, index) => (
-                  <p key={index}>
-                    {paragraph}
-                  </p>
-                ))}
+                <p>{t('description1')}</p>
+                <p>{t('description2')}</p>
+                <p>{t('description3')}</p>
               </div>
 
               {/* CTA */}
               <div className="pt-4">
                 <a
-                  href={trustSection.cta.href}
+                  href={t('ctaHref')}
                   className="inline-flex items-center gap-2 rounded-md border border-border bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity duration-200 hover:opacity-90"
                 >
-                  {trustSection.cta.text}
+                  {t('ctaText')}
                 </a>
               </div>
             </div>

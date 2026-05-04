@@ -1,8 +1,9 @@
 'use client'
 
 import { ArrowRight } from "lucide-react"
-import { homeContent } from "@/content/home"
 import { useEffect, useRef } from "react"
+import { useTranslations } from "next-intl"
+import { images } from "@/content/images"
 
 interface HeroBackgroundProps {
   backgroundImage?: string;
@@ -27,7 +28,7 @@ interface VideoHeroBackgroundProps {
   videoSrc?: string;
 }
 
-function VideoHeroBackground({ videoSrc = '/Video DEOYA.mp4' }: VideoHeroBackgroundProps) {
+function VideoHeroBackground({ videoSrc = images.home.hero.video }: VideoHeroBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -187,18 +188,17 @@ export function VideoHero({
   showPreTitle,
   height
 }: VideoHeroProps) {
-  const content = homeContent
-  const videoHeroContent = content.videoHero
+  const t = useTranslations('home.videoHero')
 
-  const finalVideoSrc = videoSrc ?? videoHeroContent.videoSrc
-  const finalLabel = label ?? videoHeroContent.label
-  const finalTitle = title ?? videoHeroContent.title
-  const finalSubtitle = subtitle ?? videoHeroContent.subtitle
-  const finalCtaText = ctaText ?? videoHeroContent.ctaText
-  const finalCtaHref = ctaHref ?? videoHeroContent.ctaHref
-  const finalShowCta = showCta ?? videoHeroContent.showCta
-  const finalShowPreTitle = showPreTitle ?? videoHeroContent.showPreTitle
-  const finalHeight = height ?? videoHeroContent.height
+  const finalVideoSrc = videoSrc ?? images.home.hero.video
+  const finalLabel = label ?? t('label')
+  const finalTitle = title ?? t('title')
+  const finalSubtitle = subtitle ?? t('subtitle')
+  const finalCtaText = ctaText ?? t('ctaText')
+  const finalCtaHref = ctaHref ?? "/expertises"
+  const finalShowCta = showCta ?? true
+  const finalShowPreTitle = showPreTitle ?? true
+  const finalHeight = height ?? "min-h-screen"
   return (
     <section className={`relative flex ${finalHeight} items-center overflow-hidden bg-primary text-primary-foreground`}>
       <VideoHeroBackground videoSrc={finalVideoSrc} />
@@ -240,7 +240,7 @@ export function VideoHero({
                 rounded-md border border-primary-foreground/30 px-6 py-3 text-sm font-medium text-primary-foreground transition-colors duration-200 
                 hover:border-primary-foreground hover:bg-primary-foreground/10"
               >
-               {videoHeroContent.secondCta.text}
+               {t('secondCta')}
                 <ArrowRight className="h-4 w-4" />
               </a>
             </div>

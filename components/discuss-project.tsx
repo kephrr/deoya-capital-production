@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { FadeIn } from "@/components/fade-in"
 import { ArrowRight, Send, X } from "lucide-react"
+import { useTranslations } from "next-intl"
+import { images } from "@/content/images"
 
 interface DiscussProjectProps {
   backgroundImage?: string
@@ -16,16 +18,22 @@ interface DiscussProjectProps {
 }
 
 export function DiscussProject({ 
-  backgroundImage = "/discuss.jpg",
+  backgroundImage = images.home.hero.backgroundImage,
   redirectUrl = "/contact",
-  title = "Discutons de votre projet.",
-  subtitle = "Premier échange confidentiel — Réponse sous 48h",
+  title,
+  subtitle,
   showSubtitle=true,
-  buttonText = "Contactez-nous",
+  buttonText,
   useModal = true,
   showCta = true
 }: DiscussProjectProps) {
+  const t = useTranslations('discussProject')
   const [isFormOpen, setIsFormOpen] = useState(false)
+  
+  // Use translated defaults if props are not provided
+  const finalTitle = title || t('defaultTitle')
+  const finalSubtitle = subtitle || t('defaultSubtitle')
+  const finalButtonText = buttonText || t('defaultButtonText')
 
   const handleButtonClick = () => {
     if (useModal) {
@@ -72,11 +80,11 @@ export function DiscussProject({
           <FadeIn>
             <div className="text-center">
               <h2 className="font-serif text-3xl font-semibold text-balance md:text-4xl">
-                {title}
+                {finalTitle}
               </h2>
               <div className="mt-4 h-px w-16 bg-gold/50 mx-auto" />
               {showSubtitle && <p className="mt-6 text-lg leading-relaxed text-primary-foreground/70">
-                {subtitle }
+                {finalSubtitle}
               </p>
               }
               
@@ -85,7 +93,7 @@ export function DiscussProject({
                   onClick={handleButtonClick}
                   className="mt-10 inline-flex items-center gap-2 rounded-md border border-primary-foreground/30 px-8 py-4 text-sm font-medium text-primary-foreground transition-colors duration-200 hover:border-primary-foreground hover:bg-primary-foreground/10"
                 >
-                  {buttonText}
+                  {finalButtonText}
                   <ArrowRight className="h-4 w-4" />
                 </button>
               )}
@@ -100,7 +108,7 @@ export function DiscussProject({
           <div className="mx-6 w-full max-w-lg rounded-lg bg-background p-8 shadow-xl">
             <div className="mb-6 flex items-center justify-between">
               <h3 className="font-serif text-xl font-semibold text-primary">
-                {title}
+                {finalTitle}
               </h3>
               <button
                 onClick={() => setIsFormOpen(false)}
@@ -193,13 +201,13 @@ export function DiscussProject({
                   onClick={() => setIsFormOpen(false)}
                   className="flex-1 rounded-md border border-border px-6 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary"
                 >
-                  Annuler
+                  {t('cancel')}
                 </button>
                 <button
                   type="submit"
                   className="flex-1 inline-flex items-center justify-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity duration-200 hover:opacity-90"
                 >
-                  Envoyer
+                  {t('send')}
                   <Send className="h-4 w-4" />
                 </button>
               </div>

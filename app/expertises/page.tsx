@@ -4,13 +4,15 @@ import { DiscussProject } from "@/components/discuss-project"
 import SecteursCarousel from "@/components/secteurs-intervention-carousel"
 import ExpertiseCarousel from "@/components/expertises-carousel"
 import { FadeIn } from "@/components/fade-in"
-import { expertisesContent } from "@/content/expertises"
+import { useTranslations } from "next-intl"
 
 export default function SecteursPage() {
+  const t = useTranslations('expertises')
+
   // Transformer les expertises en carouselSections
-  const carouselSections = expertisesContent.expertises.map((expertise) => ({
+  const carouselSections = t.raw('expertises').map((expertise: any) => ({
     header: {
-      preTitle: "Expertise en",
+      preTitle: t('preTitle'),
       highlight1: expertise.title,
       midTitle: "",
       highlight2: "",
@@ -18,7 +20,7 @@ export default function SecteursPage() {
       description: expertise.description,
       objectif: expertise.objectif,
     },
-    cards: expertise.points.map((point, index) => ({
+    cards: expertise.points.map((point: any, index: number) => ({
       id: `${expertise.number}-${index}`,
       title: point.title,
       description: point.description,
@@ -34,17 +36,17 @@ export default function SecteursPage() {
       <FadeIn>
         <div className="mt-10 max-w-6xl overflow-hidden mx-auto px-10">
           <h2 className="font-serif text-3xl font-semibold text-primary text-balance md:text-4xl">
-            {expertisesContent.hero.title}
+            {t('hero.title')}
           </h2>
           <div className="mt-4 h-px w-16 bg-gold" />
           <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
-            {expertisesContent.hero.description}
+            {t('hero.description')}
           </p>
         </div>
       </FadeIn>
       {/* Mapper sur la liste d'objets pour afficher les carousels */}
       <div className="max-w-6xl overflow-hidden mx-auto">
-        {carouselSections.map((section, index) => (
+        {carouselSections.map((section: any, index: number) => (
           <ExpertiseCarousel 
             key={index}
             header={section.header}
@@ -54,7 +56,7 @@ export default function SecteursPage() {
         ))}
       </div>
       
-      <DiscussProject {...expertisesContent.discussProject} />
+      <DiscussProject {...t.raw('discussProject')} />
       <Footer />
     </main>
   )

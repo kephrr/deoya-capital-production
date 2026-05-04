@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const contactContent = {
   phone: "+33 1 84 16 18 08",
   hero: {
@@ -35,5 +37,16 @@ export const contactContent = {
       title: "Message envoyé",
       description: "Nous vous répondrons dans les meilleurs délais."
     }
+  }
+}
+
+export function getContactContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return contactContent
   }
 }

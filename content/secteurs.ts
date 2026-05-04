@@ -1,4 +1,5 @@
 import { Building, Factory, Zap, Droplets, Truck, Cpu, Laptop } from "lucide-react"
+import type { Locale } from "@/i18n/config"
 
 export const secteursContent = {
   hero: {
@@ -112,5 +113,16 @@ export const secteursContent = {
       nextSlide: "Slide suivant",
       goToSlide: "Aller au slide"
     }
+  }
+}
+
+export function getSecteursContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return secteursContent
   }
 }

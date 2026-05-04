@@ -3,7 +3,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { DiscussProject } from "@/components/discuss-project"
 import { SecteursIntervention } from "@/components/secteurs-intervention"
-import { secteursContent } from "@/content/secteurs"
+import { getSecteursContent } from "@/content/secteurs"
+import type { Locale } from "@/i18n/config"
 
 function SecteurCard({ title, icon: Icon, description, expertise, delay }: { 
   title: string
@@ -37,7 +38,12 @@ function SecteurCard({ title, icon: Icon, description, expertise, delay }: {
   )
 }
 
-export default function SecteursPage() {
+type SecteursPageProps = {
+  locale?: Locale
+}
+
+export default function SecteursPage({ locale = "fr" }: SecteursPageProps) {
+  const secteursContent = getSecteursContent(locale)
   const { hero, secteursCards, discussProject } = secteursContent
 
   return (

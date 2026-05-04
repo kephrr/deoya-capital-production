@@ -5,11 +5,15 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { DiscussProject } from "@/components/discuss-project";
 import { FadeIn } from "@/components/fade-in";
-import { pppContent } from "@/content/ppp";
+import { getPppContent } from "@/content/ppp";
+import type { Locale } from "@/i18n/config";
 
-const { hero, pillars, discussProject } = pppContent;
+type PPPPageProps = {
+  locale?: Locale
+}
 
-export default function PPPPage() {
+export default function PPPPage({ locale = "fr" }: PPPPageProps) {
+  const { hero, pillars, discussProject } = getPppContent(locale)
   return (
     <div className="min-h-screen bg-background">
       <Navigation backgrounded={true} />

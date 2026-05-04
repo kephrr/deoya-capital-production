@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const newsletterContent = {
   hero: {
     title: "DEOYA Intelligence",
@@ -51,5 +53,16 @@ export const newsletterContent = {
     title: "DEOYA Intelligence — La lettre mensuelle",
     subtitle: "Tendances d'investissement · Évolutions réglementaires · Opportunités identifiées sur l'axe Afrique-Europe-Amérique. 1 email par mois. 5 minutes de lecture.",
     buttonText: "S'abonner"
+  }
+}
+
+export function getNewsletterContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return newsletterContent
   }
 }

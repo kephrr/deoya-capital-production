@@ -1,117 +1,47 @@
 "use client"
 import { useState, useEffect, useRef, useCallback } from "react";
-
-
-// ─── Données centralisées ─────────────────────────────────────────────────────
-const SLIDES = [
-  {
-    id: "energie",
-    quote: "Énergie & Ressources",
-    enjeux: [
-      "Cartographie des environnements réglementaires par pays",
-      "Structuration de projets énergétiques (renouvelables & conventionnels)",
-      "Accès aux licences et cadres d’exploitation",
-      "Interface avec autorités et régulateurs",
-    ],
-    segments: ["Solaire", "Hydraulique", "Pétrole & Gaz", "Mines & Ressources naturelles"],
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80",
-    bg: "#081833",
-  },
-  {
-    id: "infrastructure",
-    quote: "Infrastructure & BTP",
-    enjeux: [
-      "Sécurisation foncière et cadre administratif",
-      "Structuration et coordination de projets publics/privés",
-      "Accès aux financements internationaux (AFD, BEI, Banque mondiale)",
-      "Gestion des relations avec autorités locales",
-    ],
-    segments: ["Infrastructures routières", "Construction", "Smart Cities", "Eau & assainissement"],
-    image: "/roadconstructionmachinery.jpg",
-    bg: "#DF585E",
-  },
-  {
-    id: "industrie",
-    quote: "Industrie & Manufacturing",
-    enjeux: [
-      "Structuration et optimisation des chaînes de valeur",
-      "Accès aux marchés régionaux et internationaux",
-      "Mise en place de partenariats et joint-ventures",
-      "Conformité aux standards industriels",
-    ],
-    segments: ["Agroalimentaire", "Textile", "Métallurgie", "Chimie", "Automobile", "Électronique"],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
-    bg: "#081833",
-  },
-  {
-    id: "services-financiers",
-    quote: "Services Financiers & Banque",
-    enjeux: [
-      "Structuration d’investissements et de produits financiers",
-      "Conformité aux réglementations locales",
-      "Accès aux financements internationaux",
-      "Gestion des risques et conformité",
-    ],
-    segments: ["Banque de détail", "Finance d'entreprise", "Microfinance", "Assurance", "Gestion d'actifs", "Change"],
-    image: "/hands-working-with-office-items.jpg",
-    bg: "#DF585E",
-  },
-  {
-    id: "sante-pharma",
-    quote: "Santé & Pharmaceutique",
-    enjeux: [
-      "Accès réglementaire et autorisations locales",
-      "Structuration de projets d’infrastructures de santé",
-      "Accès aux financements internationaux",
-      "Développement de partenariats publics et privés",
-    ],
-    segments: ["Hôpitaux & cliniques", "Industrie pharmaceutique", "Dispositifs médicaux", "Télémédecine", "Distribution", "Laboratoires"],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80",
-    bg: "#081833",
-  },
-  {
-    id: "bpo",
-    quote: "BPO & Services Digitaux",
-    enjeux: [
-      "Structuration de partenariats avec les écosystèmes technologiques locaux",
-      "Accès aux talents et formation des équipes techniques",
-      "Conformité aux réglementations sur la protection des données",
-      "Optimisation des processus opérationnels par la technologie",
-    ],
-    segments: ["Fintech", "E-commerce", "EdTech", "HealthTech", "AgriTech", "BPO/IT Services"],
-    image: "/bpo.jpg",
-    bg: "#DF585E",
-  },
-  {
-    id: "conseil-juridique",
-    quote: "Conseil Juridique & Fiscal",
-    enjeux: [
-      "Sécurisation juridique des investissements",
-      "Structuration des montages adaptés aux juridictions locales",
-      "Optimisation fiscale et conformité",
-      "Gestion des risques juridiques",
-    ],
-    segments: ["Droit des affaires", "Fiscalité internationale", "Contrats commerciaux", "Propriété intellectuelle", "Contentieux", "Due diligence"],
-    image: "/definition-conseil-juridique.webp",
-    bg: "#081833",
-  },
-  {
-    id: "education",
-    quote: "Éducation & Formation",
-    enjeux: [
-      "Structuration de projets éducatifs et institutionnels",
-      "Conformité réglementaire et accréditations",
-      "Accès aux financements d’infrastructures",
-      "Développement de partenariats publics et privés",
-    ],
-    segments: ["Écoles primaires", "Collèges et lycées", "Enseignement supérieur", "Formation professionnelle", "Écoles spécialisées", "EdTech"],
-    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80",
-    bg: "#DF585E",
-  },
-];
+import { useTranslations } from "next-intl";
+import { images } from "@/content/images";
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function SecteursCarousel() {
+  const t = useTranslations('expertises.secteursCarousel')
+  const tLabels = useTranslations('expertises.labels')
+  // Utiliser les traductions directement
+  const slides = [
+    {
+      id: "energie",
+      quote: t('energie.quote'),
+      enjeux: t.raw('energie.enjeux'),
+      segments: t.raw('energie.segments'),
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80",
+      bg: "#081833",
+    },
+    {
+      id: "infrastructure", 
+      quote: t('infrastructure.quote'),
+      enjeux: t.raw('infrastructure.enjeux'),
+      segments: t.raw('infrastructure.segments'),
+      image: "/roadconstructionmachinery.jpg",
+      bg: "#DF585E",
+    },
+    {
+      id: "industrie",
+      quote: t('industrie.quote'),
+      enjeux: t.raw('industrie.enjeux'),
+      segments: t.raw('industrie.segments'),
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80",
+      bg: "#081833",
+    },
+    {
+      id: "finance",
+      quote: t('finance.quote'),
+      enjeux: t.raw('finance.enjeux'),
+      segments: t.raw('finance.segments'),
+      image: "/hands-working-with-office-items.jpg",
+      bg: "#DF585E",
+    }
+  ]
   const [current, setCurrent] = useState(0);
   const [prev, setPrev] = useState<number | null>(null);
   const [animating, setAnimating] = useState(false);
@@ -134,11 +64,11 @@ export default function SecteursCarousel() {
   );
 
   const next = useCallback(() => {
-    goTo((current + 1) % SLIDES.length, "next");
+    goTo((current + 1) % slides.length, "next");
   }, [current, goTo]);
 
   const goToPrev = useCallback(() => {
-    goTo((current - 1 + SLIDES.length) % SLIDES.length, "prev");
+    goTo((current - 1 + slides.length) % slides.length, "prev");
   }, [current, goTo]);
 
   // Auto-advance
@@ -147,8 +77,8 @@ export default function SecteursCarousel() {
     return () => { if (timerRef.current) clearTimeout(timerRef.current); };
   }, [current, next]);
 
-  const slide = SLIDES[current];
-  const prevSlide = prev !== null ? SLIDES[prev] : null;
+  const slide = slides[current];
+  const prevSlide = prev !== null ? slides[prev] : null;
 
   return (
     <>
@@ -228,9 +158,9 @@ export default function SecteursCarousel() {
               <div className="mt-8">
                 <div className="space-y-3">
                   <div>
-                    <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Enjeux clés</p>
+                    <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">{tLabels('enjeuxCles')}</p>
                     <ul className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0 space-y-1">
-                      {prevSlide.enjeux.map((enjeu, index) => (
+                      {prevSlide.enjeux.map((enjeu: string, index: number) => (
                         <li key={index} className="flex items-start">
                           <span className="mr-2 text-white/50">→</span>
                           <span>{enjeu}</span>
@@ -239,7 +169,7 @@ export default function SecteursCarousel() {
                     </ul>
                   </div>
                   <div className="mt-12">
-                    <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Sous-segments couverts</p>
+                    <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">{tLabels('sousSegmentsCouverts')}</p>
                     <p className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0">
                       {prevSlide.segments.join(' | ')}
                     </p>
@@ -280,9 +210,9 @@ export default function SecteursCarousel() {
             <div className="mt-8">
               <div className="space-y-3">
                 <div>
-                  <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Enjeux clés</p>
+                  <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">{tLabels('enjeuxCles')}</p>
                   <ul className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0 space-y-1">
-                    {slide.enjeux.map((enjeu, index) => (
+                    {slide.enjeux.map((enjeu: string, index: number) => (
                       <li key={index} className="flex items-start">
                         <span className="mr-2 text-white/50">→</span>
                         <span>{enjeu}</span>
@@ -291,7 +221,7 @@ export default function SecteursCarousel() {
                   </ul>
                 </div>
                 <div className="mt-12">
-                  <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">Sous-segments couverts</p>
+                  <p className="font-sans font-semibold text-xs tracking-[0.12em] uppercase text-white/70 m-0 mb-2">{tLabels('sousSegmentsCouverts')}</p>
                   <p className="font-sans font-light text-sm leading-[1.6] text-white/75 m-0">
                     {slide.segments.join(' | ')}
                   </p>
@@ -318,7 +248,7 @@ export default function SecteursCarousel() {
           </button>
 
           <div className="flex gap-1.5 items-center">
-            {SLIDES.map((s, i) => (
+            {slides.map((s: any, i: number) => (
               <button
                 key={s.id}
                 className={`w-1.5 h-1.5 rounded-full bg-white/35 cursor-pointer transition-all border-none p-0 ${i === current ? "bg-white scale-140" : ""}`}

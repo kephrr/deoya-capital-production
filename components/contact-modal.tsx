@@ -4,8 +4,10 @@ import { useState } from "react"
 import { FadeIn } from "@/components/fade-in"
 import { X, Send, User, Mail, Phone, Briefcase } from "lucide-react"
 import { sendContactForm } from "@/lib/emailjs"
+import { useTranslations } from "next-intl"
 
 export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  const t = useTranslations('contact.modal')
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",
@@ -32,7 +34,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
       })
       
       if (!result.success) {
-        throw new Error("Une erreur est survenue lors de l'envoi du message")
+        throw new Error(t('error'))
       }
       
       setSubmitted(true)
@@ -41,7 +43,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
         resetForm()
       }, 2000)
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Une erreur est survenue")
+      setError(err instanceof Error ? err.message : t('error'))
     } finally {
       setLoading(false)
     }
@@ -67,12 +69,12 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
       <div className="mx-6 w-full max-w-lg rounded-lg bg-background p-8 shadow-xl">
         <div className="mb-6 flex items-center justify-between">
           <h3 className="font-serif text-xl font-semibold text-primary">
-            Rejoindre DEOYA CAPITAL
+            {t('title')}
           </h3>
           <button
             onClick={onClose}
             className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-secondary"
-            aria-label="Fermer"
+            aria-label={t('close')}
           >
             <X className="h-5 w-5" />
           </button>
@@ -84,10 +86,10 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
               <Send className="h-6 w-6 text-accent" strokeWidth={1.5} />
             </div>
             <h3 className="mb-2 font-serif text-xl font-semibold text-primary">
-              Message envoyé avec succès!
+              {t('successTitle')}
             </h3>
             <p className="text-sm text-muted-foreground">
-              Nous vous contacterons dans les plus brefs délais.
+              {t('successDescription')}
             </p>
           </div>
         ) : (
@@ -103,7 +105,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                 htmlFor="nom"
                 className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
               >
-                Nom
+                {t('lastName')}
               </label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -115,7 +117,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   onChange={handleInputChange}
                   required
                   className="w-full rounded-md border border-gray-300 bg-background pl-10 pr-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none"
-                  placeholder="Votre nom"
+                  placeholder={t('lastNamePlaceholder')}
                 />
               </div>
             </div>
@@ -125,7 +127,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                 htmlFor="prenom"
                 className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
               >
-                Prénom
+                {t('firstName')}
               </label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -137,7 +139,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   onChange={handleInputChange}
                   required
                   className="w-full rounded-md border border-gray-300 bg-background pl-10 pr-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none"
-                  placeholder="Votre prénom"
+                  placeholder={t('firstNamePlaceholder')}
                 />
               </div>
             </div>
@@ -148,7 +150,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
               htmlFor="email"
               className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
             >
-              Email
+              {t('email')}
             </label>
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -160,7 +162,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                 onChange={handleInputChange}
                 required
                 className="w-full rounded-md border border-gray-300 bg-background pl-10 pr-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none"
-                placeholder="votre@email.com"
+                placeholder={t('emailPlaceholder')}
               />
             </div>
           </div>
@@ -170,7 +172,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                 htmlFor="fonction"
                 className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
               >
-                Domaine d'expertise
+                {t('expertise')}
               </label>
               <div className="relative">
                 <Briefcase className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -181,7 +183,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   value={formData.fonction}
                   onChange={handleInputChange}
                   className="w-full rounded-md border border-gray-300 bg-background pl-10 pr-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none"
-                  placeholder=" Quel est votre domaine d’expertise ? Dites nous en plus"
+                  placeholder={t('expertisePlaceholder')}
                 />
               </div>
             </div>
@@ -191,7 +193,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                 htmlFor="telephone"
                 className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-muted-foreground"
               >
-                Téléphone
+                {t('phone')}
               </label>
               <div className="relative">
                 <Phone className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -202,7 +204,7 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   value={formData.telephone}
                   onChange={handleInputChange}
                   className="w-full rounded-md border border-gray-300 bg-background pl-10 pr-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:ring-1 focus:ring-primary/20 focus:outline-none"
-                  placeholder="+33 6 12 34 56 78"
+                  placeholder={t('phonePlaceholder')}
                 />
               </div>
             </div>
@@ -213,14 +215,14 @@ export function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: ()
               onClick={onClose}
               className="flex-1 rounded-md border border-border px-6 py-3 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary cursor-pointer"
             >
-              Annuler
+              {t('cancel')}
             </button>
             <button
               type="submit"
               disabled={loading}
               className="flex-1 inline-flex items-center justify-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-medium text-accent-foreground transition-opacity duration-200 hover:opacity-90 disabled:opacity-50 cursor-pointer"
             >
-              {loading ? "Envoi en cours..." : "Envoyer"}
+              {loading ? t('sending') : t('send')}
               <Send className="h-4 w-4" />
             </button>
           </div>

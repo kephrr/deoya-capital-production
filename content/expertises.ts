@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const expertisesContent = {
   hero: {
     title: "Une expertise structurée au service des investissements internationaux",
@@ -151,5 +153,16 @@ export const expertisesContent = {
     subtitle: "Notre savoir-faire à votre service. Des solutions adaptées à vos enjeux spécifiques.",
     buttonText: "Bénéficier de notre expertise",
     useModal: false
+  }
+}
+
+export function getExpertisesContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return expertisesContent
   }
 }

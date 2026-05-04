@@ -1,7 +1,13 @@
-const nextConfig = {
-  output: 'export',       // Static HTML export
-  trailingSlash: true,    // Chaque dossier aura un index.html
-  images: { unoptimized: true },
-};
+import createNextIntlPlugin from 'next-intl/plugin'
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts')
+
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+}
+
+export default withNextIntl(nextConfig)

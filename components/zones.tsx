@@ -7,11 +7,19 @@ import {
   Users,
 } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
-import { homeContent } from "@/content/home"
+import { useTranslations } from "next-intl"
 
 
 export function Expertises() {
-  const { label, title, items } = homeContent.expertises
+  const t = useTranslations('home.expertises')
+  const itemsData = t.raw('items') as Array<{title: string, description: string}>
+  
+  // Map icons to items
+  const icons = [FileSearch, Compass, Users]
+  const items = itemsData.map((item, index) => ({
+    ...item,
+    icon: icons[index]
+  }))
   
   return (
     <section id="expertises" className="bg-secondary py-24">
@@ -20,10 +28,10 @@ export function Expertises() {
         <FadeIn>
           <div className="mb-16 max-w-xl">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-accent">
-              {label}
+              {t('label')}
             </p>
             <h2 className="font-serif text-3xl font-semibold text-primary text-balance md:text-4xl">
-              {title}
+              {t('title')}
             </h2>
             <div className="mt-4 h-px w-16 bg-gold" />
           </div>

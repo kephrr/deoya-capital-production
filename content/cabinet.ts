@@ -1,3 +1,5 @@
+import type { Locale } from "@/i18n/config"
+
 export const cabinetContent = {
   discussProject: {
     backgroundImage: "/young-business-people-are-discussing-new-creative-ideas-together-meeting-office.jpg",
@@ -26,5 +28,16 @@ export const cabinetContent = {
       text: "En savoir plus",
       href: "/expertises"
     }
+  }
+}
+
+export function getCabinetContent(locale: Locale) {
+  switch (locale) {
+    case "fr":
+    case "en":
+    case "es":
+    case "ar":
+    default:
+      return cabinetContent
   }
 }
