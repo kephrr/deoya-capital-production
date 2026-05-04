@@ -3,7 +3,7 @@
     "navigationLabel": "Navigation principale",
     "homeLabel": "Retour à l'accueil",
     "logoAlt": "Logo DEOYA CAPITAL",
-    "contactButton": "Nous contacter",
+    "contactButton": "Rejoindre DEOYA",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "home": "Accueil",
@@ -13,7 +13,13 @@
     "ppp": "Partenariat(s) public-privé",
     "newsletter": "Newsletter",
     "contact": "Contact",
-    "cgv": "CGV"
+    "cgv": "CGV",
+    "services": {
+      "label": "Services",
+      "expertises": "Notre savoir-faire",
+      "reseau": "Notre réseau d'experts",
+      "ppp": "Partenariat(s) public-privé"
+    }
   },
   "footer": {
     "brand": {

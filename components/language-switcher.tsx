@@ -9,12 +9,15 @@ import { FadeIn } from "@/components/fade-in"
 import { locales, localeConfig } from "@/i18n/config"
 import { useTranslations } from "next-intl"
 
-export function LanguageSwitcher({ className = "" }: { className?: string }) {
+export function LanguageSwitcher({ className = "", backgrounded = true }: { className?: string; backgrounded?: boolean }) {
   const [isOpen, setIsOpen] = useState(false)
   const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
   const t = useTranslations('languageSwitcher')
+  
+  // Pour l'arabe, le menu déroulant doit être aligné à droite
+  const isRTL = locale === 'ar'
 
   const handleLanguageChange = (newLocale: string) => {
     // Get the current path without the locale prefix
@@ -35,21 +38,29 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
       <div className={`relative ${className}`}>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 rounded-md border border-border px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-secondary hover:text-foreground"
+          className={`flex items-center gap-2 rounded-md border px-3 py-2 text-sm font-medium transition-colors ${
+            backgrounded 
+              ? "border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white" 
+              : "border-border bg-white text-foreground hover:bg-gray-100 hover:text-foreground"
+          }`}
           aria-label={t('changeLanguage')}
         >
           <Globe className="h-4 w-4" />
           <span className="hidden sm:inline">
             {currentLocaleConfig.flag}
           </span>
-          <span className="sm:hidden text-foreground">
+          <span className={`sm:hidden ${
+            backgrounded ? "text-white" : "text-foreground"
+          }`}>
             {currentLocaleConfig.flag}
           </span>
           <ChevronDown className={`h-3 w-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
         </button>
 
         {isOpen && (
-          <div className="absolute right-0 top-full z-50 mt-2 min-w-48 rounded-md border border-border bg-background shadow-lg">
+          <div className={`absolute top-full z-50 mt-2 min-w-48 rounded-md border border-border bg-background shadow-lg ${
+            isRTL ? 'left-0' : 'right-0'
+          }`}>
             <div className="p-1">
               {locales.map((loc) => {
                 const config = localeConfig[loc]

@@ -1,5 +1,11 @@
 {
   "navigation": {
+    "navigationLabel": "التنقل الرئيسي",
+    "homeLabel": "العودة للرئيسية",
+    "logoAlt": "شعار DEOYA CAPITAL",
+    "contactButton": "انضم إلى DEOYA",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
     "home": "الرئيسية",
     "cabinet": "المكتب",
     "expertises": "خبرتنا",
@@ -7,7 +13,13 @@
     "ppp": "الشراكة بين القطاعين العام والخاص",
     "newsletter": "النشرة البريدية",
     "contact": "اتصل بنا",
-    "cgv": "الشروط العامة للبيع"
+    "cgv": "الشروط العامة للبيع",
+    "services": {
+      "label": "الخدمات",
+      "expertises": "خبرتنا",
+      "reseau": "شبكة الخبراء لدينا",
+      "ppp": "الشراكة بين القطاعين العام والخاص"
+    }
   },
   "footer": {
     "brand": {
