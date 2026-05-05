@@ -2,15 +2,10 @@
 
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { getCgvContent } from "@/content/cgv"
-import type { Locale } from "@/i18n/config"
+import { useTranslations } from "next-intl"
 
-type ConditionsGeneralesDeVenteProps = {
-  locale?: Locale
-}
-
-export default function ConditionsGeneralesDeVente({ locale = "fr" }: ConditionsGeneralesDeVenteProps) {
-  const cgvContent = getCgvContent(locale)
+export default function ConditionsGeneralesDeVente() {
+  const t = useTranslations('cgv')
 
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800 mt-12">
@@ -21,15 +16,15 @@ export default function ConditionsGeneralesDeVente({ locale = "fr" }: Conditions
         {/* Page Header */}
         <div className="text-center mb-12">
           <p className="text-xs uppercase tracking-widest text-stone-400 mb-2">
-            {cgvContent.hero.subtitle}
+            {t('hero.subtitle')}
           </p>
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-stone-900">
-            {cgvContent.hero.title}
+            {t('hero.title')}
           </h1>
         </div>
 
         {/* Dynamic Sections */}
-        {cgvContent.sections.map((section, index) => (
+        {t.raw('sections').map((section: any, index: number) => (
           <section key={index}>
             <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
               {section.title}
@@ -43,19 +38,19 @@ export default function ConditionsGeneralesDeVente({ locale = "fr" }: Conditions
         {/* Footer Contact */}
         <section className="border-t border-stone-200 pt-8">
           <p className="text-sm text-stone-500 mb-4">
-            {cgvContent.footer.contact}
+            {t('footer.contact')}
           </p>
           <div className="space-y-2">
             <p className="text-sm text-stone-600">
               <span className="font-medium">Email:</span>{" "}
-              <a href={`mailto:${cgvContent.footer.email}`} className="text-stone-800 hover:text-stone-900 underline">
-                {cgvContent.footer.email}
+              <a href={`mailto:${t('footer.email')}`} className="text-stone-800 hover:text-stone-900 underline">
+                {t('footer.email')}
               </a>
             </p>
             <p className="text-sm text-stone-600">
               <span className="font-medium">Téléphone:</span>{" "}
-              <a href={`tel:${cgvContent.footer.phone}`} className="text-stone-800 hover:text-stone-900 underline">
-                {cgvContent.footer.phone}
+              <a href={`tel:${t('footer.phone')}`} className="text-stone-800 hover:text-stone-900 underline">
+                {t('footer.phone')}
               </a>
             </p>
           </div>

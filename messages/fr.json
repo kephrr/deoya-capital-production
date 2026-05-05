@@ -299,39 +299,68 @@
   },
   "cgv": {
     "meta": {
-      "title": "Conditions Generales de Vente",
-      "description": "Conditions Generales de Vente de DEOYA CAPITAL."
+      "title": "Conditions Générales de Vente",
+      "description": "Conditions Générales de Vente de DEOYA CAPITAL."
     },
     "hero": {
-      "title": "Conditions Generales de Vente",
+      "title": "Conditions Générales de Vente",
       "subtitle": "DEOYA CAPITAL",
-      "description": "Les presentes Conditions Generales de Vente (CGV) regissent les prestations de conseil, de structuration, de coordination et de mise en relation proposees par DEOYA CAPITAL."
+      "description": "Les présentes Conditions Générales de Vente (CGV) régissent les prestations de conseil, de structuration, de coordination et de mise en relation proposées par DEOYA CAPITAL."
     },
-    "sections": {
-      "s1Title": "1. Objet",
-      "s1Content": "Les presentes Conditions Generales de Vente (CGV) regissent les prestations de conseil, de structuration, de coordination et de mise en relation proposees par DEOYA CAPITAL. Toute commande implique l'acceptation sans reserve des presentes CGV.",
-      "s2Title": "2. Nature des prestations",
-      "s2Content": "DEOYA CAPITAL intervient en qualite de conseil et de coordinateur de projets. A ce titre, elle est tenue a une obligation de moyens et non de resultat. Les prestations sont definies precisement dans un devis ou un contrat.",
-      "s3Title": "3. Formation du contrat",
-      "s3Content": "Toute prestation fait l'objet d'un devis prealable. La mission debute uniquement apres signature du devis par le client et paiement de l'acompte correspondant. La signature du devis vaut acceptation des presentes CGV.",
-      "s4Title": "4. Modalites de paiement et penalites de retard",
-      "s4Content": "Un acompte de trente pour cent (30%) est exige a la signature du devis. Le solde est payable de maniere echelonnee, sur une base mensuelle, selon l'avancement de la mission, valide par DEOYA CAPITAL. Chaque echeance donne lieu a l'emission d'une facture par DEOYA CAPITAL, payable a reception. A defaut de paiement d'une echeance, DEOYA CAPITAL se reserve le droit de suspendre l'execution de la mission jusqu'a regularisation. En cas de retard de paiement, des penalites seront exigibles de plein droit, sans qu'un rappel soit necessaire, calculees sur la base du taux legal en vigueur. Conformement a l'article L441-10 du Code de commerce, une indemnite forfaitaire pour frais de recouvrement d'un montant de quarante (40) euros sera egalement due. Lorsque les frais de recouvrement exposes sont superieurs a ce montant, une indemnisation complementaire pourra etre demandee sur justification.",
-      "s5Title": "5. Responsabilite",
-      "s5Content": "DEOYA CAPITAL est tenue a une obligation de moyens. Sa responsabilite ne pourra etre engagee qu'en cas de faute prouvee dans l'execution de ses obligations. Le client demeure seul responsable des decisions prises sur la base des recommandations formulees par DEOYA CAPITAL. En tout etat de cause, la responsabilite de DEOYA CAPITAL, tous prejudices confondus, est limitee au montant des honoraires effectivement percus au titre de la mission concernee. DEOYA CAPITAL ne saurait etre tenue responsable des dommages indirects, notamment perte de chiffre d'affaires, perte d'opportunite ou prejudice commercial.",
-      "s6Title": "6. Intervention des experts",
-      "s6Content": "DEOYA CAPITAL peut faire intervenir des experts partenaires dans le cadre des missions. Ces intervenants agissent sous leur propre responsabilite. DEOYA CAPITAL ne saurait etre tenue responsable de leurs actions, omissions ou manquements.",
-      "s7Title": "7. Confidentialite",
-      "s7Content": "Les parties s'engagent a conserver strictement confidentielles toutes les informations echangees dans le cadre de la mission. Cette obligation s'applique pendant toute la duree de la mission et pendant une periode de cinq (5) ans a compter de sa cessation, quelle qu'en soit la cause.",
-      "s8Title": "8. Propriete intellectuelle",
-      "s8Content": "Les livrables demeurent la propriete de DEOYA CAPITAL jusqu'au paiement complet des prestations. Apres paiement, le client beneficie d'un droit d'utilisation strictement limite a ses besoins internes. Toute reproduction, diffusion ou exploitation sans autorisation ecrite prealable est interdite.",
-      "s9Title": "9. Resiliation",
-      "s9Content": "En cas de resiliation anticipee : Les prestations realisees restent dues et exigibles - Les sommes versees ne sont pas remboursables. DEOYA CAPITAL se reserve le droit de suspendre ou de resilier la mission en cas de manquement du client, notamment en cas de defaut de paiement.",
-      "s10Title": "10. Force majeure",
-      "s10Content": "DEOYA CAPITAL ne pourra etre tenue responsable en cas d'evenement imprevisible, irresistible et exterieur empechant l'execution de ses obligations.",
-      "s11Title": "11. Droit applicable et litiges",
-      "s11Content": "Les presentes CGV sont regies par le droit francais. En cas de differend, les parties s'engagent a rechercher une solution amiable. A defaut d'accord amiable, le litige sera soumis aux tribunaux francais competents.",
-      "s12Title": "12. Acceptation",
-      "s12Content": "La signature du devis par le client emporte acceptation pleine et entiere des presentes Conditions Generales de Vente."
+    "sections": [
+      {
+        "title": "1. Objet",
+        "content": "Les présentes Conditions Générales de Vente (CGV) régissent les prestations de conseil, de structuration, de coordination et de mise en relation proposées par DEOYA CAPITAL. Toute commande implique l'acceptation sans réserve des présentes CGV."
+      },
+      {
+        "title": "2. Nature des prestations",
+        "content": "DEOYA CAPITAL intervient en qualité de conseil et de coordinateur de projets. À ce titre, elle est tenue à une obligation de moyens et non de résultat. Les prestations sont définies précisément dans un devis ou un contrat."
+      },
+      {
+        "title": "3. Formation du contrat",
+        "content": "Toute prestation fait l'objet d'un devis préalable. La mission débute uniquement après signature du devis par le client et paiement de l'acompte correspondant. La signature du devis vaut acceptation des présentes CGV."
+      },
+      {
+        "title": "4. Modalités de paiement et pénalités de retard",
+        "content": "Un acompte de trente pour cent (30%) est exigé à la signature du devis. Le solde est payable de manière échelonnée, sur une base mensuelle, selon l'avancement de la mission, validé par DEOYA CAPITAL. Chaque échéance donne lieu à l'émission d'une facture par DEOYA CAPITAL, payable à réception. À défaut de paiement d'une échéance, DEOYA CAPITAL se réserve le droit de suspendre l'exécution de la mission jusqu'à régularisation. En cas de retard de paiement, des pénalités seront exigibles de plein droit, sans qu'un rappel soit nécessaire, calculées sur la base du taux légal en vigueur. Conformément à l'article L441-10 du Code de commerce, une indemnité forfaitaire pour frais de recouvrement d'un montant de quarante (40) euros sera également due. Lorsque les frais de recouvrement exposés sont supérieurs à ce montant, une indemnisation complémentaire pourra être demandée sur justification."
+      },
+      {
+        "title": "5. Responsabilité",
+        "content": "DEOYA CAPITAL est tenue à une obligation de moyens. Sa responsabilité ne pourra être engagée qu'en cas de faute prouvée dans l'exécution de ses obligations. Le client demeure seul responsable des décisions prises sur la base des recommandations formulées par DEOYA CAPITAL. En tout état de cause, la responsabilité de DEOYA CAPITAL, tous préjudices confondus, est limitée au montant des honoraires effectivement perçus au titre de la mission concernée. DEOYA CAPITAL ne saurait être tenue responsable des dommages indirects, notamment perte de chiffre d'affaires, perte d'opportunité ou préjudice commercial."
+      },
+      {
+        "title": "6. Intervention des experts",
+        "content": "DEOYA CAPITAL peut faire intervenir des experts partenaires dans le cadre des missions. Ces intervenants agissent sous leur propre responsabilité. DEOYA CAPITAL ne saurait être tenue responsable de leurs actions, omissions ou manquements."
+      },
+      {
+        "title": "7. Confidentialité",
+        "content": "Les parties s'engagent à conserver strictement confidentielles toutes les informations échangées dans le cadre de la mission. Cette obligation s'applique pendant toute la durée de la mission et pendant une période de cinq (5) ans à compter de sa cessation, quelle qu'en soit la cause."
+      },
+      {
+        "title": "8. Propriété intellectuelle",
+        "content": "Les livrables demeurent la propriété de DEOYA CAPITAL jusqu'au paiement complet des prestations. Après paiement, le client bénéficie d'un droit d'utilisation strictement limité à ses besoins internes. Toute reproduction, diffusion ou exploitation sans autorisation écrite préalable est interdite."
+      },
+      {
+        "title": "9. Résiliation",
+        "content": "En cas de résiliation anticipée : Les prestations réalisées restent dues et exigibles - Les sommes versées ne sont pas remboursables. DEOYA CAPITAL se réserve le droit de suspendre ou de résilier la mission en cas de manquement du client, notamment en cas de défaut de paiement."
+      },
+      {
+        "title": "10. Force majeure",
+        "content": "DEOYA CAPITAL ne pourra être tenue responsable en cas d'événement imprévisible, irrésistible et extérieur empêchant l'exécution de ses obligations."
+      },
+      {
+        "title": "11. Droit applicable et litiges",
+        "content": "Les présentes CGV sont régies par le droit français. En cas de différend, les parties s'engagent à rechercher une solution amiable. À défaut d'accord amiable, le litige sera soumis aux tribunaux français compétents."
+      },
+      {
+        "title": "12. Acceptation",
+        "content": "La signature du devis par le client emporte acceptation pleine et entière des présentes Conditions Générales de Vente."
+      }
+    ],
+    "footer": {
+      "contact": "Pour toute question concernant ces CGV, contactez-nous à :",
+      "email": "contact@deoya-capital.com",
+      "phone": "+33 6 12 34 56 78"
     }
   },
   "cabinet": {
@@ -704,20 +733,39 @@
     "hero": {
       "label": "Contactez-nous",
       "title": "Travaillons ensemble",
-      "description": "Vous portez un projet d'investissement a dimension internationale ? Echangeons sur vos enjeux."
+      "description": "Vous portez un projet d'investissement à dimension internationale ? Échangeons sur vos enjeux."
     },
     "form": {
-      "name": "Nom",
-      "namePlaceholder": "Votre nom",
-      "company": "Entreprise",
-      "companyPlaceholder": "Votre entreprise",
-      "email": "Email",
-      "emailPlaceholder": "votre@email.com",
-      "message": "Message",
-      "messagePlaceholder": "Decrivez votre projet...",
-      "submit": "Envoyer le message",
-      "successTitle": "Message envoye",
-      "successDescription": "Nous vous repondrons dans les meilleurs delais."
+      "image": {
+        "src": "/businessman-with-folded-arms.jpg",
+        "alt": "Homme d'affaires bras croisés"
+      },
+      "fields": {
+        "name": {
+          "label": "Nom",
+          "placeholder": "Votre nom"
+        },
+        "company": {
+          "label": "Entreprise",
+          "placeholder": "Votre entreprise"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "votre@email.com"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Décrivez votre projet..."
+        }
+      },
+      "submit": {
+        "text": "Envoyer le message",
+        "loading": "Envoi en cours..."
+      },
+      "success": {
+        "title": "Message envoyé",
+        "description": "Nous vous répondrons dans les meilleurs délais."
+      }
     },
     "modal": {
       "title": "Rejoindre DEOYA CAPITAL",
@@ -748,34 +796,129 @@
     "discussButton": "Beneficier de notre expertise"
   },
   "newsletter": {
-    "heroTitle": "DEOYA Intelligence",
-    "heroSubtitle": "Notre regard sur l'investissement Afrique - Europe - Amerique. Analyses de fond, notes sectorielles, points de vue sur l'evolution des marches et des reglementations.",
-    "subscribe": "S'abonner",
-    "searchPlaceholder": "Rechercher un article...",
-    "categoryLabel": "Categorie:",
-    "allCategories": "Toutes",
-    "article": "article",
-    "articles": "articles",
-    "foundOne": "trouve",
-    "foundMany": "trouves",
-    "noResults": "Aucun article trouve pour votre recherche.",
-    "loadingArticles": "Chargement des articles...",
-    "subscriptionTitle": "S'abonner a la newsletter",
-    "subscriptionEmail": "Adresse email",
-    "subscriptionConsent": "J'accepte de recevoir la newsletter et comprends que je peux me desabonner a tout moment.",
-    "subscribing": "Abonnement en cours...",
-    "toastTitle": "Abonnement effectue.",
-    "toastDescription": "Vous vous etes abonnes a notre newsletter avec succes. Vous recevrez desormais nos annonces et nouveautes par courrier electronique.",
-    "subscriptionError": "Erreur lors de l'abonnement. Veuillez reessayer."
+    "hero": {
+      "title": "DEOYA Intelligence",
+      "subtitle": "Notre regard sur l'investissement Afrique – Europe - Amérique. Analyses de fond, notes sectorielles, points de vue sur l'évolution des marchés et des réglementations.",
+      "ctaText": "S'abonner",
+      "ctaMarginTop": "mt-32",
+      "ctaAccent": true
+    },
+    "filters": {
+      "search": {
+        "placeholder": "Rechercher un article..."
+      },
+      "category": {
+        "label": "Catégorie:",
+        "all": "Toutes"
+      },
+      "results": {
+        "article": "article",
+        "articles": "articles",
+        "trouve": "trouvé",
+        "trouves": "trouvés",
+        "noResults": "Aucun article trouvé pour votre recherche.",
+        "loading": "Chargement des articles..."
+      }
+    },
+    "subscription": {
+      "modal": {
+        "title": "S'abonner à la newsletter",
+        "email": {
+          "label": "Adresse email",
+          "placeholder": "votre@email.com"
+        },
+        "consent": "J'accepte de recevoir la newsletter et comprends que je peux me désabonner à tout moment.",
+        "submit": {
+          "subscribing": "Abonnement en cours...",
+          "subscribe": "S'abonner"
+        }
+      },
+      "toast": {
+        "title": "Abonnement effectué.",
+        "description": "Vous vous êtes abonnés à notre newsletter avec succès. Vous recevrez désormais nos annonces et nouveautés par courrier électronique."
+      },
+      "error": "Erreur lors de l'abonnement. Veuillez réessayer."
+    },
+    "discussProject": {
+      "title": "DEOYA Intelligence — La lettre mensuelle",
+      "subtitle": "Tendances d'investissement · Évolutions réglementaires · Opportunités identifiées sur l'axe Afrique-Europe-Amérique. 1 email par mois. 5 minutes de lecture.",
+      "buttonText": "S'abonner"
+    }
   },
   "ppp": {
-    "tag": "DEOYA Capital - PPP",
-    "title": "Partenariats",
-    "titleAccent": "Public-Prive",
-    "axesTitle": "Nos axes d'intervention",
-    "discussTitle": "Pour aller plus loin",
-    "discussSubtitle": "Si vous developpez un projet impliquant des acteurs publics et prives, ou souhaitez mieux apprehender les dynamiques propres aux partenariats public-prive, nous serons ravis d'examiner les modalites d'un accompagnement adapte a vos enjeux.",
-    "discussButton": "Echanger avec nous"
+    "hero": {
+      "title": "Partenariats",
+      "titleAccent": "Public-Privé",
+      "introduction": [
+        "Les partenariats public-privé ne sont pas uniquement des montages contractuels.",
+        "Ils reposent sur des équilibres sensibles entre intérêts publics, logiques économiques et contraintes institutionnelles.",
+        "Leur réussite dépend moins d'une approche technique que de la capacité à comprendre et à aligner des acteurs aux objectifs parfois divergents."
+      ],
+      "highlight": ["DEOYA Capital intervient sur cette ", "zone critique", " : là où se rencontrent décision publique, logique d'investissement et réalité terrain."]
+    },
+    "pillars": {
+      "title": "Nos axes d'intervention",
+      "challengesLabel": "Enjeux identifiés",
+      "approachLabel": "Notre approche",
+      "items": [
+        {
+          "number": "01",
+          "title": "Naviguer entre sphères publiques et privées",
+          "intro": "Les projets en PPP impliquent une multiplicité d'acteurs aux logiques propres :",
+          "actors": [
+            "Institutions publiques",
+            "Investisseurs",
+            "Opérateurs privés",
+            "Partenaires techniques"
+          ],
+          "outcomes": [
+            "Faciliter les échanges",
+            "Anticiper les points de friction",
+            "Structurer des dynamiques de collaboration durables"
+          ],
+          "outcomesLabel": "Nous apportons une lecture claire de ces interactions afin de :"
+        },
+        {
+          "number": "02",
+          "title": "Intégrer les réalités locales dans des cadres internationaux",
+          "intro": "Dans de nombreux contextes, notamment en Afrique, les projets s'inscrivent dans des environnements hybrides :",
+          "actors": [
+            "Cadres réglementaires en évolution",
+            "Pratiques institutionnelles spécifiques",
+            "Décalage entre normes théoriques et réalités opérationnelles"
+          ],
+          "note": "Ces éléments ne sont pas des anomalies - ils font partie intégrante du projet.",
+          "outcomesLabel": "Notre rôle consiste à les intégrer dans la réflexion stratégique, afin d'éviter les décalages entre conception et mise en oeuvre."
+        },
+        {
+          "number": "03",
+          "title": "Une lecture transcontinentale des projets",
+          "intro": "Les PPP impliquent souvent des acteurs issus de différentes zones économiques. Cette diversité crée des écarts :",
+          "actors": [
+            "Perception du risque",
+            "Exigence réglementaire",
+            "Temporalité décisionnelle"
+          ],
+          "outcomesLabel": "Nous intervenons dans une logique transcontinentale, en apportant une lecture cohérente de ces différences et en facilitant leur articulation."
+        },
+        {
+          "number": "04",
+          "title": "Une approche ancrée dans la réalité des projets",
+          "intro": "Au-delà des cadres théoriques, les projets évoluent dans des environnements concrets, avec leurs contraintes et leurs imprévus. Nous intervenons aux côtés des décideurs pour :",
+          "actors": [
+            "Ajuster les approches",
+            "Sécuriser les arbitrages",
+            "Maintenir la cohérence du projet dans le temps"
+          ],
+          "outcomesLabel": "Cette proximité permet d'éviter les ruptures entre stratégie et réalité."
+        }
+      ]
+    },
+    "discussProject": {
+      "title": "Pour aller plus loin",
+      "subtitle": "Si vous développez un projet impliquant des acteurs publics et privés, ou souhaitez mieux appréhender les dynamiques propres aux partenariats public-privé, nous serons ravis d'examiner les modalités d'un accompagnement adapté à vos enjeux.",
+      "buttonText": "Échanger avec nous"
+    }
   },
   "secteurs": {
     "label": "Nos Secteurs",
@@ -790,5 +933,294 @@
     "navPrevious": "Slide precedent",
     "navNext": "Slide suivant",
     "navGoTo": "Aller au slide"
+  },
+  "mentionsLegales": {
+    "meta": {
+      "title": "Mentions légales",
+      "description": "Mentions légales de DEOYA CAPITAL."
+    },
+    "header": {
+      "brand": "Deoya Capital",
+      "title": "Mentions légales"
+    },
+    "editor": {
+      "title": "Éditeur du site",
+      "description": "Le site <span class=\"font-medium text-stone-700\">DEOYA CAPITAL</span> est édité par :",
+      "fields": {
+        "companyName": "Nom de la société",
+        "companyNameValue": "Société en cours de création",
+        "legalForm": "Forme juridique",
+        "legalFormValue": "Société en cours de création",
+        "capital": "Capital social",
+        "capitalValue": "Société en cours de création",
+        "headquarters": "Siège social",
+        "headquartersValue": "Paris, France",
+        "rcs": "Immatriculation RCS",
+        "rcsValue": "Société en cours de création",
+        "vat": "Numéro de TVA intracommunautaire",
+        "vatValue": "Société en cours de création",
+        "director": "Directeur de la publication",
+        "directorValue": "Société en cours de création",
+        "email": "Email",
+        "emailValue": "contact@deoya-capital.com"
+      }
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "description": "Le site est hébergé par :",
+      "fields": {
+        "provider": "Hébergeur",
+        "providerValue": "LWS (Ligne Web Services)",
+        "address": "Adresse",
+        "addressValue": "10 rue Penthièvre, 75008 Paris – France",
+        "website": "Site web",
+        "websiteValue": "https://www.lws.fr"
+      }
+    },
+    "intellectualProperty": {
+      "title": "Propriété intellectuelle",
+      "content1": "L'ensemble des contenus présents sur le site (textes, images, logo, design, structure) est la propriété exclusive de <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span>, sauf mention contraire.",
+      "content2": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation préalable."
+    },
+    "liability": {
+      "title": "Responsabilité",
+      "content": "DEOYA CAPITAL s'efforce d'assurer l'exactitude des informations diffusées sur le site. Toutefois, elle ne saurait être tenue responsable des erreurs, omissions ou résultats obtenus suite à l'utilisation de ces informations."
+    },
+    "applicableLaw": {
+      "title": "Droit applicable",
+      "content1": "Le présent site est soumis au droit français.",
+      "content2": "Tout litige relève de la compétence des tribunaux français."
+    }
+  },
+  "politiqueConfidentialite": {
+    "meta": {
+      "title": "Politique de confidentialité",
+      "description": "Politique de confidentialité de DEOYA CAPITAL."
+    },
+    "header": {
+      "brand": "Deoya Capital",
+      "title": "Politique de confidentialité"
+    },
+    "introduction": {
+      "title": "1. Introduction",
+      "content1": "La présente politique de confidentialité a pour objectif d'informer les utilisateurs du site <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span> sur la manière dont leurs données personnelles sont collectées, utilisées et protégées.",
+      "content2": "DEOYA CAPITAL s'engage à assurer la protection des données personnelles conformément au Règlement Général sur la Protection des Données (RGPD) et à la législation française en vigueur."
+    },
+    "responsible": {
+      "title": "2. Responsable du traitement",
+      "description": "Le responsable du traitement des données est :",
+      "fields": {
+        "company": "Société",
+        "companyValue": "DEOYA CAPITAL",
+        "companyName": "Nom de la société",
+        "companyNameValue": "DEOYA CAPITAL",
+        "address": "Adresse du siège social",
+        "addressValue": "Paris, France",
+        "email": "Email",
+        "emailValue": "contact@deoya-capital.com"
+      }
+    },
+    "dataCollected": {
+      "title": "3. Données collectées",
+      "description": "Dans le cadre de l'utilisation du site, les données suivantes peuvent être collectées :",
+      "items": [
+        "Nom et prénom",
+        "Adresse email",
+        "Informations communiquées via les formulaires de contact",
+        "Données de navigation (cookies)"
+      ]
+    },
+    "purposes": {
+      "title": "4. Finalités du traitement",
+      "description": "Les données personnelles sont collectées pour les finalités suivantes :",
+      "items": [
+        "Répondre aux demandes de contact",
+        "Échanger avec des prospects, partenaires ou clients",
+        "Assurer le suivi des échanges",
+        "Améliorer l'expérience utilisateur et les services proposés"
+      ]
+    },
+    "legalBasis": {
+      "title": "5. Base légale",
+      "description": "Le traitement des données repose sur :",
+      "items": [
+        "Le consentement de l'utilisateur",
+        "L'intérêt légitime de DEOYA CAPITAL"
+      ]
+    },
+    "retention": {
+      "title": "6. Durée de conservation",
+      "content": "Les données personnelles sont conservées pour une durée maximale de <span class=\"font-medium text-stone-800\">3 ans</span> à compter du dernier contact."
+    },
+    "recipients": {
+      "title": "7. Destinataires des données",
+      "content1": "Les données collectées sont exclusivement destinées à DEOYA CAPITAL.",
+      "content2": "Elles peuvent être transmises à des prestataires techniques (hébergement, maintenance) uniquement dans le cadre du fonctionnement du site."
+    },
+    "security": {
+      "title": "8. Sécurité des données",
+      "content": "DEOYA CAPITAL met en œuvre des mesures techniques et organisationnelles appropriées afin de garantir la sécurité et la confidentialité des données personnelles."
+    },
+    "rights": {
+      "title": "9. Droits des utilisateurs",
+      "description": "Conformément à la réglementation en vigueur, vous disposez des droits suivants :",
+      "items": [
+        "Droit d'accès",
+        "Droit de rectification",
+        "Droit de suppression",
+        "Droit d'opposition",
+        "Droit à la limitation du traitement"
+      ],
+      "contact": "Vous pouvez exercer vos droits en contactant :"
+    },
+    "cookies": {
+      "title": "10. Cookies",
+      "content1": "Le site peut utiliser des cookies afin d'assurer le bon fonctionnement du site, mesurer l'audience et améliorer l'expérience utilisateur.",
+      "content2": "Pour en savoir plus, consultez notre politique de cookies.",
+      "policyLink": "politique de cookies"
+    },
+    "modification": {
+      "title": "11. Modification de la politique",
+      "content": "DEOYA CAPITAL se réserve le droit de modifier la présente politique de confidentialité à tout moment afin de garantir sa conformité avec la législation en vigueur."
+    }
+  },
+  "politiqueCookies": {
+    "meta": {
+      "title": "Politique de cookies",
+      "description": "Politique de cookies de DEOYA CAPITAL."
+    },
+    "header": {
+      "brand": "Deoya Capital",
+      "title": "Politique de cookies"
+    },
+    "introduction": {
+      "title": "1. Introduction",
+      "content1": "Le site <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span> utilise des cookies afin d'améliorer l'expérience utilisateur et de mesurer l'audience.",
+      "content2": "La présente politique explique l'utilisation des cookies et vos droits."
+    },
+    "whatIsCookie": {
+      "title": "2. Qu'est-ce qu'un cookie ?",
+      "content": "Un cookie est un fichier déposé sur votre terminal lors de la navigation sur un site internet. Il permet notamment de :",
+      "items": [
+        "Reconnaître votre appareil",
+        "Améliorer la navigation", 
+        "Collecter des données statistiques"
+      ]
+    },
+    "cookieTypes": {
+      "title": "3. Types de cookies utilisés",
+      "description": "Nous utilisons les types de cookies suivants :",
+      "items": [
+        {
+          "title": "Cookies nécessaires",
+          "description": "Indispensables au fonctionnement du site (navigation, sécurité)."
+        },
+        {
+          "title": "Cookies de mesure d'audience",
+          "description": "Permettent d'analyser la fréquentation du site (ex : pages visitées, durée)."
+        },
+        {
+          "title": "Cookies tiers (le cas échéant)",
+          "description": "Certains services externes peuvent déposer des cookies (ex : outils analytiques)."
+        }
+      ]
+    },
+    "cookieManagement": {
+      "title": "4. Gestion des cookies",
+      "description": "Lors de votre première visite, un bandeau vous permet :",
+      "options": [
+        "D'accepter les cookies",
+        "De les refuser", 
+        "De les paramétrer"
+      ]
+    },
+    "cookieDuration": {
+      "title": "5. Durée de conservation",
+      "content": "Les cookies sont conservés pour une durée maximale de <span class=\"font-medium text-stone-800\">13 mois</span>."
+    },
+    "userRights": {
+      "title": "6. Vos droits",
+      "description": "Conformément au RGPD, vous pouvez :",
+      "items": [
+        "Accepter ou refuser les cookies",
+        "Retirer votre consentement à tout moment",
+        "Accéder à vos données"
+      ]
+    },
+    "contact": {
+      "title": "7. Contact",
+      "description": "Pour toute question :"
+    },
+    "browserConfiguration": {
+      "title": "8. Configuration du navigateur",
+      "description": "Vous pouvez également configurer votre navigateur pour :",
+      "options": [
+        "Refuser les cookies par défaut",
+        "Supprimer les cookies existants",
+        "Gérer les préférences de cookies"
+      ]
+    }
+  },
+  "conditionsGeneralesUtilisation": {
+    "meta": {
+      "title": "Conditions générales d'utilisation",
+      "description": "Conditions générales d'utilisation de DEOYA CAPITAL."
+    },
+    "header": {
+      "brand": "DEOYA Capital",
+      "title": "Conditions générales d'utilisation"
+    },
+    "object": {
+      "title": "1. Objet",
+      "content": "Les présentes CGU définissent les conditions d'utilisation du site DEOYA CAPITAL."
+    },
+    "siteAccess": {
+      "title": "2. Accès au site",
+      "content1": "Le site est accessible gratuitement à tout utilisateur disposant d'un accès internet.",
+      "content2": "DEOYA CAPITAL se réserve le droit de modifier ou suspendre le site à tout moment."
+    },
+    "siteContent": {
+      "title": "3. Contenu du site",
+      "content1": "Les informations diffusées sont fournies à titre informatif.",
+      "content2": "Elles ne constituent pas un conseil personnalisé ou une garantie de résultat."
+    },
+    "responsibility": {
+      "title": "4. Responsabilité",
+      "content1": "L'utilisateur reconnaît utiliser le site sous sa responsabilité.",
+      "content2": "DEOYA CAPITAL ne pourra être tenue responsable :",
+      "items": [
+        "des erreurs ou omissions",
+        "de l'utilisation des informations",
+        "de dommages indirects"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "5. Propriété intellectuelle",
+      "content1": "Tous les contenus du site sont protégés :",
+      "items": [
+        "textes",
+        "logo",
+        "design"
+      ],
+      "content2": "Toute reproduction est interdite sans autorisation."
+    },
+    "externalLinks": {
+      "title": "6. Liens externes",
+      "content1": "Le site peut contenir des liens vers d'autres sites.",
+      "content2": "DEOYA CAPITAL ne peut être tenue responsable de leur contenu."
+    },
+    "personalData": {
+      "title": "7. Données personnelles",
+      "content": "Les données collectées sont traitées conformément à la politique de confidentialité."
+    },
+    "modification": {
+      "title": "8. Modification",
+      "content": "DEOYA CAPITAL se réserve le droit de modifier les CGU à tout moment."
+    },
+    "applicableLaw": {
+      "title": "9. Droit applicable",
+      "content1": "Les présentes CGU sont soumises au droit français.",
+      "content2": "Tout litige relève des tribunaux compétents."
+    }
   }
 }

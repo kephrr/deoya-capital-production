@@ -13,18 +13,69 @@ import { getPosts, getCategories } from "@/services/blogAPI";
 import { Toast } from "@/components/ui/toast";
 import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
-import { getNewsletterContent } from "@/content/newsletter";
+import { useTranslations } from "next-intl";
 import { sendNewsletterConfirmation } from "@/lib/emailjs";
-import type { Locale } from "@/i18n/config";
 
-type NewsletterPageProps = {
-  locale?: Locale
-}
-
-export default function NewsletterPage({ locale = "fr" }: NewsletterPageProps) {
+export default function NewsletterPage() {
   const { toast } = useToast();
-  const newsletterContent = getNewsletterContent(locale)
-  const { hero, filters, subscription, discussProject } = newsletterContent
+  const t = useTranslations('newsletter')
+
+  const hero = {
+    title: t('hero.title'),
+    subtitle: t('hero.subtitle'),
+    backgroundImage: "/press.jpg",
+    ctaText: t('hero.ctaText'),
+    ctaMarginTop: t('hero.ctaMarginTop'),
+    ctaAccent: true,
+    showPreTitle: false,
+    mxAuto: true
+  }
+
+  const filters = {
+    search: {
+      placeholder: t('filters.search.placeholder')
+    },
+    category: {
+      label: t('filters.category.label'),
+      all: t('filters.category.all')
+    },
+    results: {
+      article: t('filters.results.article'),
+      articles: t('filters.results.articles'),
+      trouve: t('filters.results.trouve'),
+      trouves: t('filters.results.trouves'),
+      noResults: t('filters.results.noResults'),
+      loading: t('filters.results.loading')
+    }
+  }
+
+  const subscription = {
+    modal: {
+      title: t('subscription.modal.title'),
+      email: {
+        label: t('subscription.modal.email.label'),
+        placeholder: t('subscription.modal.email.placeholder')
+      },
+      consent: t('subscription.modal.consent'),
+      submit: {
+        subscribing: t('subscription.modal.submit.subscribing'),
+        subscribe: t('subscription.modal.submit.subscribe')
+      }
+    },
+    toast: {
+      title: t('subscription.toast.title'),
+      description: t('subscription.toast.description')
+    },
+    error: t('subscription.error')
+  }
+
+  const discussProject = {
+    backgroundImage: "/549.jpg",
+    redirectUrl: "/contact",
+    title: t('discussProject.title'),
+    subtitle: t('discussProject.subtitle'),
+    buttonText: t('discussProject.buttonText')
+  }
   const [posts, setPosts] = useState<WPPost[]>([]);
   const [categories, setCategories] = useState<WPCategory[]>([]);
   const [loading, setLoading] = useState(true);

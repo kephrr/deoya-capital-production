@@ -5,15 +5,33 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { DiscussProject } from "@/components/discuss-project";
 import { FadeIn } from "@/components/fade-in";
-import { getPppContent } from "@/content/ppp";
-import type { Locale } from "@/i18n/config";
+import { useTranslations } from "next-intl";
 
-type PPPPageProps = {
-  locale?: Locale
-}
+export default function PPPPage() {
+  const t = useTranslations('ppp')
 
-export default function PPPPage({ locale = "fr" }: PPPPageProps) {
-  const { hero, pillars, discussProject } = getPppContent(locale)
+  const hero = {
+    title: t('hero.title'),
+    titleAccent: t('hero.titleAccent'),
+    introduction: t.raw('hero.introduction'),
+    highlight: t.raw('hero.highlight')
+  }
+
+  const pillars = {
+    title: t('pillars.title'),
+    challengesLabel: t('pillars.challengesLabel'),
+    approachLabel: t('pillars.approachLabel'),
+    items: t.raw('pillars.items')
+  }
+
+  const discussProject = {
+    title: t('discussProject.title'),
+    subtitle: t('discussProject.subtitle'),
+    buttonText: t('discussProject.buttonText'),
+    redirectUrl: "/contact",
+    backgroundImage: "/business-people-video-call-meeting.jpg"
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation backgrounded={true} />
@@ -44,7 +62,7 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
                 <div className="mt-12 max-w-5xl space-y-6">
                   <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     <div className="space-y-4 text-lg font-light leading-relaxed text-primary-foreground/70">
-                      {hero.introduction.map((paragraph, index) => (
+                      {hero.introduction.map((paragraph: string, index: number) => (
                         <p key={index}>{paragraph}</p>
                       ))}
                     </div>
@@ -52,7 +70,7 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
                     <div className="flex items-center">
                       <div className="border-l border-accent pl-8">
                         <p className="font-serif text-2xl font-light leading-snug text-primary-foreground">
-                          {hero.highlight.map((part, index) => (
+                          {hero.highlight.map((part: string, index: number) => (
                             <span key={index} className={index === 1 ? 'text-accent italic' : ''}>
                               {part}
                             </span>
@@ -80,7 +98,7 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
             </FadeIn>
 
             <div className="space-y-8">
-              {pillars.items.map((pillar, index) => (
+              {pillars.items.map((pillar: any, index: number) => (
                 <FadeIn key={pillar.number} delay={index * 100}>
                   <div className="relative rounded-lg border border-border bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:border-accent/30 overflow-hidden">
                     {/* Header with number and title */}
@@ -102,14 +120,14 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-2 h-2 bg-accent/60 rounded-full animate-pulse"></div>
                           <p className="text-xs font-medium uppercase tracking-wider text-accent/80">
-                            Enjeux identifiés
+                            {pillars.challengesLabel}
                           </p>
                         </div>
                         <p className="mb-6 text-sm leading-relaxed text-muted-foreground font-medium">
                           {pillar.intro}
                         </p>
                         <ul className="space-y-3">
-                          {pillar.actors.map((actor) => (
+                          {pillar.actors.map((actor: string) => (
                             <li key={actor} className="flex items-start gap-3 text-base text-muted-foreground/80">
                               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                               <span>{actor}</span>
@@ -133,7 +151,7 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-2 h-2 bg-accent rounded-full"></div>
                           <p className="text-xs font-medium uppercase tracking-wider text-accent">
-                            Notre approche
+                            {pillars.approachLabel}
                           </p>
                         </div>
                         <p className="mb-6 text-base leading-relaxed text-primary font-medium">
@@ -141,7 +159,7 @@ export default function PPPPage({ locale = "fr" }: PPPPageProps) {
                         </p>
                         {pillar.outcomes && (
                           <ul className="space-y-3">
-                            {pillar.outcomes.map((outcome) => (
+                            {pillar.outcomes?.map((outcome: string) => (
                               <li key={outcome} className="flex items-start gap-3  text-base text-muted-foreground/80">
                                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                                 <span>{outcome}</span>

@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl"
 import { FooterLanguageSwitcher } from "@/components/footer-language-switcher"
 import { useLocale } from "next-intl"
-import { navLinks } from "@/app/resources"
 import { images } from "@/content/images"
 
 export function Footer() {
@@ -10,6 +9,16 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialIcons = images.social
+
+  // Liens de navigation avec leurs URLs
+  const navigationLinks = {
+    cabinet: "/cabinet",
+    expertises: "/expertises",
+    reseau: "/reseau",
+    ppp: "/ppp",
+    newsletter: "/newsletter",
+    contact: "/contact"
+  }
 
   return (
     <footer className="border-t border-accent bg-primary text-primary-foreground">
@@ -32,13 +41,13 @@ export function Footer() {
               {t('footer.navigation.title')}
             </p>
             <ul className="flex flex-col gap-3">
-              {navLinks.map((link) => (
-                <li key={link.href}>
+              {Object.entries(navigationLinks).map(([key, href]) => (
+                <li key={key}>
                   <a
-                    href={`/${locale}${link.href}`}
+                    href={key === 'home' ? `/${locale}` : `/${locale}${href}`}
                     className="text-sm text-primary-foreground/60 transition-colors duration-200 hover:text-primary-foreground"
                   >
-                    {t(`footer.navigation.${link.key}`)}
+                    {t(`footer.navigation.${key}`)}
                   </a>
                 </li>
               ))}

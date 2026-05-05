@@ -3,20 +3,53 @@
 import { useState, type FormEvent } from "react"
 import { Send } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
-import { getContactContent } from "@/content/contact"
 import { sendContactForm } from "@/lib/emailjs"
-import type { Locale } from "@/i18n/config"
+import { useTranslations } from "next-intl"
 
-type ContactProps = {
-  locale?: Locale
-}
-
-export function Contact({ locale = "fr" }: ContactProps) {
+export function Contact() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
-  const content = getContactContent(locale)
-  const { hero, form } = content
+  const t = useTranslations('contact')
+
+  const hero = {
+    label: t('hero.label'),
+    title: t('hero.title'),
+    description: t('hero.description')
+  }
+
+  const form = {
+    image: {
+      src: t('form.image.src'),
+      alt: t('form.image.alt')
+    },
+    fields: {
+      name: {
+        label: t('form.fields.name.label'),
+        placeholder: t('form.fields.name.placeholder')
+      },
+      company: {
+        label: t('form.fields.company.label'),
+        placeholder: t('form.fields.company.placeholder')
+      },
+      email: {
+        label: t('form.fields.email.label'),
+        placeholder: t('form.fields.email.placeholder')
+      },
+      message: {
+        label: t('form.fields.message.label'),
+        placeholder: t('form.fields.message.placeholder')
+      }
+    },
+    submit: {
+      text: t('form.submit.text'),
+      loading: t('form.submit.loading')
+    },
+    success: {
+      title: t('form.success.title'),
+      description: t('form.success.description')
+    }
+  }
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
