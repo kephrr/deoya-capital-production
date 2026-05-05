@@ -15,8 +15,13 @@ import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 import { useTranslations } from "next-intl";
 import { sendNewsletterConfirmation } from "@/lib/emailjs";
+import type { Locale } from "@/i18n/config";
 
-export default function NewsletterPage() {
+type NewsletterPageProps = {
+  locale: Locale
+}
+
+export default function NewsletterPage({ locale }: NewsletterPageProps) {
   const { toast } = useToast();
   const t = useTranslations('newsletter')
 
