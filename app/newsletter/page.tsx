@@ -107,6 +107,11 @@ export default function NewsletterPage({ locale }: NewsletterPageProps) {
         }
       } catch (error) {
         console.error('Error fetching data:', error);
+        // Set empty data on error to prevent rendering issues
+        if (mounted) {
+          setPosts([]);
+          setCategories([]);
+        }
       } finally {
         if (mounted) {
           setLoading(false);
@@ -124,12 +129,12 @@ export default function NewsletterPage({ locale }: NewsletterPageProps) {
   // Get unique categories for filter (exclure la catégorie "non-classe")
   const categoryOptions = [{ id: 0, name: "all", slug: "all" }, ...categories.filter(cat => cat.slug !== "non-classe")];
 
-  // Filter articles
+  // Filter articles with safety checks
   const filteredArticles = posts.filter((post: WPPost) => {
-    if (!post.title || !post.excerpt) return false;
+    if (!post || !post.title || !post.excerpt) return false;
     
-    const title = post.title.replace(/<[^>]*>/g, '');
-    const excerpt = post.excerpt.replace(/<[^>]*>/g, '');
+    const title = post.title?.replace(/<[^>]*>/g, '') || '';
+    const excerpt = post.excerpt?.replace(/<[^>]*>/g, '') || '';
     
     const matchesSearch = title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       excerpt.toLowerCase().includes(searchTerm.toLowerCase());

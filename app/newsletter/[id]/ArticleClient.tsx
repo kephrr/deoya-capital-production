@@ -68,6 +68,29 @@ export default function ArticleClient({ id }: ArticleClientProps) {
     );
   }
 
+  // Handle case where article is null or undefined
+  if (!article) {
+    return (
+      <main>
+        <div className="min-h-screen bg-background">
+          <Navigation backgrounded={false} />
+          <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8 text-center">
+            <h1 className="text-2xl font-bold mb-4">Article non trouvé</h1>
+            <p className="text-gray-600 mb-8">L'article que vous recherchez n'existe pas.</p>
+            <a 
+              href="/newsletter" 
+              className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Retour aux articles
+            </a>
+          </div>
+          <Footer />
+        </div>
+      </main>
+    );
+  }
+
   if (error || !article) {
     return (
       <main>
