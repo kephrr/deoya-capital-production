@@ -1068,11 +1068,13 @@
         "Aceptar o rechazar cookies",
         "Retirar su consentimiento en cualquier momento",
         "Acceder a sus datos"
-      ]
+      ],
+      "contact": "Para cualquier consulta, póngase en contacto con nosotros por correo electrónico:"
     },
     "contact": {
       "title": "7. Contacto",
-      "description": "Para cualquier pregunta:"
+      "description": "Para cualquier pregunta:",
+      "emailValue": "contact@deoya-capital.com"
     },
     "browserConfiguration": {
       "title": "8. Configuración del navegador",

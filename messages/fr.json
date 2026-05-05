@@ -210,93 +210,6 @@
       "buttonText": "Contactez-nous"
     }
   },
-  "cabinet": {
-    "discussProject": {
-      "title": "Rejoignez l'aventure DEOYA CAPITAL.",
-      "buttonText": "Nous rejoindre"
-    },
-    "trustSection": {
-      "label": "Notre philosophie",
-      "title": "Un cabinet fondé sur la confiance",
-      "description": [
-        "DEOYA CAPITAL est né d'une conviction : les projets d'investissement transcontinentaux méritent un partenaire qui comprend à la fois les réalités du terrain africain et les exigences des standards européens.",
-        "Notre modèle est celui d'un cabinet stratégique agile. Une équipe centrale de haut niveau, appuyée par un réseau international d'experts sélectionnés, mobilisés selon la nature exacte de chaque mission.",
-        "Nous intervenons là où la complexité est la plus grande : à l'interface des marchés, des cultures institutionnelles et des exigences réglementaires."
-      ],
-      "video": {
-        "fallbackText": "Votre navigateur ne supporte pas la lecture de cette vidéo.",
-        "ariaLabels": {
-          "enableSound": "Activer le son",
-          "disableSound": "Désactiver le son"
-        }
-      },
-      "cta": {
-        "text": "En savoir plus",
-        "href": "/expertises"
-      }
-    },
-    "notreVision": {
-      "title": "Notre vision",
-      "subtitle": "L'excellence stratégique au service de l'investissement transcontinental",
-      "description": "DEOYA CAPITAL incarne une nouvelle génération de conseil stratégique, où l'expertise africaine et l'exigence européenne se rencontrent pour créer de la valeur.",
-      "values": [
-        {
-          "title": "Expertise locale",
-          "description": "Une connaissance profonde des réalités économiques et institutionnelles africaines."
-        },
-        {
-          "title": "Standards internationaux",
-          "description": "L'excellence méthodologique et la conformité aux meilleures pratiques mondiales."
-        },
-        {
-          "title": "Approche sur mesure",
-          "description": "Des solutions adaptées à chaque contexte, alliant pragmatisme et innovation."
-        }
-      ]
-    },
-    "architectureEtEquipe": {
-      "title": "Architecture et équipe",
-      "subtitle": "Une organisation pensée pour l'efficacité",
-      "description": "Notre structure repose sur un noyau stratégique agile, complété par un réseau d'experts mobilisés selon les besoins spécifiques de chaque mission.",
-      "team": [
-        {
-          "role": "Direction stratégique",
-          "description": "Un comité de pilotage assurant la vision et la coordination globale."
-        },
-        {
-          "role": "Experts réseau",
-          "description": "Des spécialistes mobilisés selon les domaines d'intervention requis."
-        },
-        {
-          "role": "Support opérationnel",
-          "description": "Une équipe dédiée à l'exécution et au suivi des projets."
-        }
-      ]
-    },
-    "zonesGeographiques": {
-      "title": "Nos zones d'intervention",
-      "subtitle": "Une présence stratégique sur les marchés émergents",
-      "description": "Nous opérons principalement en Europe, en Afrique et en Amérique du Nord, avec une capacité d'intervention sur les marchés asiatiques.",
-      "regions": [
-        {
-          "name": "Europe",
-          "description": "Siège stratégique et centre de coordination pour les opérations européennes."
-        },
-        {
-          "name": "Afrique",
-          "description": "Présence opérationnelle et expertise terrain sur les principaux marchés africains."
-        },
-        {
-          "name": "Amérique du Nord",
-          "description": "Interface avec les investisseurs et partenaires nord-américains."
-        },
-        {
-          "name": "Asie",
-          "description": "Capacité d'intervention et réseau de partenaires sur les marchés asiatiques."
-        }
-      ]
-    }
-  },
   "cgv": {
     "meta": {
       "title": "Conditions Générales de Vente",
@@ -1145,11 +1058,13 @@
         "Accepter ou refuser les cookies",
         "Retirer votre consentement à tout moment",
         "Accéder à vos données"
-      ]
+      ],
+      "contact": "Pour toute demande, veuillez nous contacter par email :"
     },
     "contact": {
       "title": "7. Contact",
-      "description": "Pour toute question :"
+      "description": "Pour toute question :",
+      "emailValue": "contact@deoya-capital.com"
     },
     "browserConfiguration": {
       "title": "8. Configuration du navigateur",
