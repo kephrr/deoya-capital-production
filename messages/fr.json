@@ -274,6 +274,10 @@
       "contact": "Pour toute question concernant ces CGV, contactez-nous à :",
       "email": "contact@deoya-capital.com",
       "phone": "+33 6 12 34 56 78"
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "cabinet": {
@@ -636,6 +640,10 @@
       "title": "Rejoignez DEOYA CAPITAL",
       "description": "Ensemble, développons des opportunités d'investissement de portée internationale",
       "buttonText": "Contacter nos équipes"
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "contact": {
@@ -699,6 +707,10 @@
       "send": "Envoyer",
       "sending": "Envoi en cours...",
       "error": "Une erreur est survenue lors de l'envoi du message"
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "expertisesPage": {
@@ -762,6 +774,7 @@
     "hero": {
       "title": "Partenariats",
       "titleAccent": "Public-Privé",
+      "subtitle": "Relier les intérêts publics et l'investissement privé pour des projets stratégiques.",
       "introduction": [
         "Les partenariats public-privé ne sont pas uniquement des montages contractuels.",
         "Ils reposent sur des équilibres sensibles entre intérêts publics, logiques économiques et contraintes institutionnelles.",
@@ -903,6 +916,10 @@
       "title": "Droit applicable",
       "content1": "Le présent site est soumis au droit français.",
       "content2": "Tout litige relève de la compétence des tribunaux français."
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "politiqueConfidentialite": {
@@ -995,6 +1012,10 @@
     "modification": {
       "title": "11. Modification de la politique",
       "content": "DEOYA CAPITAL se réserve le droit de modifier la présente politique de confidentialité à tout moment afin de garantir sa conformité avec la législation en vigueur."
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "politiqueCookies": {
@@ -1074,6 +1095,10 @@
         "Supprimer les cookies existants",
         "Gérer les préférences de cookies"
       ]
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   },
   "conditionsGeneralesUtilisation": {
@@ -1136,6 +1161,10 @@
       "title": "9. Droit applicable",
       "content1": "Les présentes CGU sont soumises au droit français.",
       "content2": "Tout litige relève des tribunaux compétents."
+    },
+    "discussProject": {
+      "title": "Discutons de votre projet.",
+      "buttonText": "Contactez-nous"
     }
   }
 }

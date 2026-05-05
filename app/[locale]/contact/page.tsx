@@ -1,7 +1,6 @@
+import ContactPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import ContactPage from '@/app/contact/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedContactPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedContactPage({params}: LocalizedContactPag
     notFound()
   }
 
-  return <ContactPage locale={locale as Locale} />
+  return <ContactPageClient locale={locale as Locale} />
 }

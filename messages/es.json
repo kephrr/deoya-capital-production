@@ -284,6 +284,10 @@
       "contact": "Para cualquier pregunta sobre estas condiciones, contáctenos en:",
       "email": "contact@deoya-capital.com",
       "phone": "+33 6 12 34 56 78"
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "cabinet": {
@@ -646,6 +650,10 @@
       "title": "Únase a DEOYA CAPITAL",
       "description": "Juntos, desarrollemos oportunidades de inversión de alcance internacional",
       "buttonText": "Contactar a nuestros equipos"
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "contact": {
@@ -709,6 +717,10 @@
       "send": "Enviar",
       "sending": "Enviando...",
       "error": "Ocurrió un error al enviar el mensaje"
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "expertisesPage": {
@@ -772,6 +784,7 @@
     "hero": {
       "title": "Asociaciones",
       "titleAccent": "Público-Privadas",
+      "subtitle": "Conectando intereses públicos y inversión privada para proyectos estratégicos.",
       "introduction": [
         "Las asociaciones público-privadas no son solo acuerdos contractuales.",
         "Se basan en equilibrios sensibles entre intereses públicos, lógica económica y restricciones institucionales.",
@@ -913,6 +926,10 @@
       "title": "Derecho aplicable",
       "content1": "Este sitio está sujeto al derecho francés.",
       "content2": "Cualquier litigio está bajo la jurisdicción de los tribunales franceses."
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "politiqueConfidentialite": {
@@ -1005,6 +1022,10 @@
     "modification": {
       "title": "11. Modificación de la política",
       "content": "DEOYA CAPITAL se reserva el derecho de modificar la presente política de privacidad en cualquier momento para garantizar su conformidad con la legislación vigente."
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "politiqueCookies": {
@@ -1084,6 +1105,10 @@
         "Eliminar cookies existentes",
         "Gestionar preferencias de cookies"
       ]
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   },
   "conditionsGeneralesUtilisation": {
@@ -1146,6 +1171,10 @@
       "title": "9. Ley aplicable",
       "content1": "Las presentes Condiciones de Uso están sujetas a la ley francesa.",
       "content2": "Cualquier disputa corresponde a los tribunales competentes."
+    },
+    "discussProject": {
+      "title": "Hablemos de tu proyecto.",
+      "buttonText": "Contáctanos"
     }
   }
 }

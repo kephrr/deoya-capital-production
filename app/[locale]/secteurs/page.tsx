@@ -1,7 +1,6 @@
+import SecteursPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import SecteursPage from '@/app/secteurs/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedSecteursPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedSecteursPage({params}: LocalizedSecteursP
     notFound()
   }
 
-  return <SecteursPage locale={locale as Locale} />
+  return <SecteursPageClient locale={locale as Locale} />
 }

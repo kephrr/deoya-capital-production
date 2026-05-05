@@ -1,7 +1,6 @@
+import CgvPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import CgvPage from '@/app/cgv/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedCgvPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedCgvPage({params}: LocalizedCgvPageProps) 
     notFound()
   }
 
-  return <CgvPage locale={locale as Locale} />
+  return <CgvPageClient locale={locale as Locale} />
 }

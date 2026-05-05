@@ -1,7 +1,6 @@
+import ReseauPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import ReseauPage from '@/app/reseau/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedReseauPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedReseauPage({params}: LocalizedReseauPageP
     notFound()
   }
 
-  return <ReseauPage locale={locale as Locale} />
+  return <ReseauPageClient locale={locale as Locale} />
 }

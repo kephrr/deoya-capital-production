@@ -1,7 +1,6 @@
+import ExpertisesPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import ExpertisesPage from '@/app/expertises/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedExpertisesPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedExpertisesPage({params}: LocalizedExperti
     notFound()
   }
 
-  return <ExpertisesPage locale={locale as Locale} />
+  return <ExpertisesPageClient locale={locale as Locale} />
 }

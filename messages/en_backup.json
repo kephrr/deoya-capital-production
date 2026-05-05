@@ -650,10 +650,6 @@
       "title": "Join DEOYA CAPITAL",
       "description": "Together, let's develop international investment opportunities",
       "buttonText": "Contact our teams"
-    },
-    "discussProject": {
-      "title": "Discuss your project.",
-      "buttonText": "Contact us"
     }
   },
   "contact": {
@@ -784,7 +780,6 @@
     "hero": {
       "title": "Partnerships",
       "titleAccent": "Public-Private",
-      "subtitle": "Bridging public interests and private investment for strategic projects.",
       "introduction": [
         "Public-private partnerships are not just contractual arrangements.",
         "They rely on sensitive balances between public interests, economic logic, and institutional constraints.",

@@ -1,7 +1,6 @@
+import PppPageClient from './page-client'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
-
-import PppPage from '@/app/ppp/page'
 import {locales, type Locale} from '@/i18n/config'
 
 type LocalizedPppPageProps = {
@@ -15,5 +14,5 @@ export default async function LocalizedPppPage({params}: LocalizedPppPageProps) 
     notFound()
   }
 
-  return <PppPage locale={locale as Locale} />
+  return <PppPageClient locale={locale as Locale} />
 }
