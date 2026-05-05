@@ -4,10 +4,15 @@ import { DiscussProject } from "@/components/discuss-project"
 import SecteursCarousel from "@/components/secteurs-intervention-carousel"
 import ExpertiseCarousel from "@/components/expertises-carousel"
 import { FadeIn } from "@/components/fade-in"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
+import type { Locale } from "@/i18n/config"
 
-export default function SecteursPage() {
-  const t = useTranslations('expertises')
+type ExpertisesPageProps = {
+  locale: Locale
+}
+
+export default async function SecteursPage({ locale }: ExpertisesPageProps) {
+  const t = await getTranslations({ locale, namespace: 'expertises' })
 
   // Transformer les expertises en carouselSections
   const carouselSections = t.raw('expertises').map((expertise: any) => ({

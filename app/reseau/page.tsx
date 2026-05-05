@@ -8,8 +8,13 @@ import { FadeIn } from "@/components/fade-in";
 import { ContactModal } from "@/components/contact-modal";
 import { ArrowRight, Globe, Zap, Wrench, Factory, DollarSign, Stethoscope, Cpu } from "lucide-react";
 import { useTranslations } from "next-intl";
+import type { Locale } from "@/i18n/config"
 
-export default function ReseauPage() {
+type ReseauPageProps = {
+  locale: Locale
+}
+
+export default function ReseauPage({ locale }: ReseauPageProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const t = useTranslations('reseau')
 

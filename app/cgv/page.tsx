@@ -1,11 +1,14 @@
-'use client'
-
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
+import type { Locale } from "@/i18n/config"
 
-export default function ConditionsGeneralesDeVente() {
-  const t = useTranslations('cgv')
+type CgvPageProps = {
+  locale: Locale
+}
+
+export default async function CgvPage({ locale }: CgvPageProps) {
+  const t = await getTranslations({ locale, namespace: 'cgv' })
 
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800 mt-12">

@@ -1,14 +1,16 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { DiscussProject } from "@/components/discuss-project";
 import { FadeIn } from "@/components/fade-in";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import type { Locale } from "@/i18n/config"
 
-export default function PPPPage() {
-  const t = useTranslations('ppp')
+type PPPPageProps = {
+  locale: Locale
+}
+
+export default async function PPPPage({ locale }: PPPPageProps) {
+  const t = await getTranslations({ locale, namespace: 'ppp' })
 
   const hero = {
     title: t('hero.title'),
@@ -115,7 +117,7 @@ export default function PPPPage() {
 
                     {/* Problem Section - Left */}
                     <div className="relative">
-                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-accent/30 to-transparent"></div>
+                      <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-transparent via-accent/30 to-transparent"></div>
                       <div className="p-8 pt-6 lg:pl-12">
                         <div className="flex items-center gap-3 mb-4">
                           <div className="w-2 h-2 bg-accent/60 rounded-full animate-pulse"></div>
@@ -145,7 +147,7 @@ export default function PPPPage() {
                     </div>
 
                     {/* Solution Section - Right */}
-                    <div className="relative border border-t-[1px]">
+                    <div className="relative border border-t">
                       <div className="absolute right-0 top-0 bottom-0 w-1"></div>
                       <div className="p-8 lg:pr-12">
                         <div className="flex items-center gap-3 mb-4">

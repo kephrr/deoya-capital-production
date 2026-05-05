@@ -15,5 +15,5 @@ export default async function LocalizedReseauPage({params}: LocalizedReseauPageP
     notFound()
   }
 
-  return <ReseauPage />
+  return <ReseauPage locale={locale as Locale} />
 }

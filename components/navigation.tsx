@@ -97,7 +97,7 @@ export function Navigation({ backgrounded = true }: NavigationProps) {
                             className={`block px-4 py-3 text-sm transition-colors hover:bg-accent hover:text-accent-foreground ${
                               isDropdownActive 
                                 ? 'bg-accent text-white' 
-                                : scrolled 
+                                : scrolled || !backgrounded
                                   ? 'text-foreground' 
                                   : 'text-white'
                             }`}
