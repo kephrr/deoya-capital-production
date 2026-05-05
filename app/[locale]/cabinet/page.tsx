@@ -1,4 +1,4 @@
-import CabinetPageClient from '@/app/cabinet/page-client'
+import CabinetPage from '@/app/cabinet/page'
 import {hasLocale} from 'next-intl'
 import {notFound} from 'next/navigation'
 import {locales, type Locale} from '@/i18n/config'
@@ -14,5 +14,5 @@ export default async function LocalizedCabinetPage({params}: LocalizedCabinetPag
     notFound()
   }
 
-  return <CabinetPageClient locale={locale as Locale} />
+  return <CabinetPage locale={locale as Locale} />
 }
