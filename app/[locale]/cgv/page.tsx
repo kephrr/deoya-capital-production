@@ -15,5 +15,5 @@ export default async function LocalizedCgvPage({params}: LocalizedCgvPageProps) 
     notFound()
   }
 
-  return <CgvPage locale={locale as Locale} />
+  return <CgvPage />
 }

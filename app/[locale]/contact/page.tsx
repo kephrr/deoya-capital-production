@@ -15,5 +15,5 @@ export default async function LocalizedContactPage({params}: LocalizedContactPag
     notFound()
   }
 
-  return <ContactPage locale={locale as Locale} />
+  return <ContactPage />
 }

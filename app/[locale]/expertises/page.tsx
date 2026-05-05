@@ -15,5 +15,5 @@ export default async function LocalizedExpertisesPage({params}: LocalizedExperti
     notFound()
   }
 
-  return <ExpertisesPage locale={locale as Locale} />
+  return <ExpertisesPage />
 }

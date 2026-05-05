@@ -15,5 +15,5 @@ export default async function LocalizedPppPage({params}: LocalizedPppPageProps) 
     notFound()
   }
 
-  return <PppPage locale={locale as Locale} />
+  return <PppPage />
 }
