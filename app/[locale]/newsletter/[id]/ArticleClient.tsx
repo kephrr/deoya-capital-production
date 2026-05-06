@@ -5,15 +5,17 @@ import Link from "next/link";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { WPPost } from "@/types/WPPTypes";
 import { getPost } from "@/services/blogAPI";
-import { Navigation } from "@/components/navigation";
+import { NavigationSimple } from "@/components/navigation-simple";
 import { Footer } from "@/components/footer";
 import { SocialShare } from "@/components/social-share";
+import { useLocale } from "next-intl";
 
 interface ArticleClientProps {
   id: string;
 }
 
 export default function ArticleClient({ id }: ArticleClientProps) {
+  const locale = useLocale();
   const [article, setArticle] = useState<WPPost | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -49,7 +51,7 @@ export default function ArticleClient({ id }: ArticleClientProps) {
     return (
       <main>
         <div className="min-h-screen bg-background">
-          <Navigation backgrounded={false} />
+          <NavigationSimple backgrounded={false} />
           <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
             <div className="animate-pulse">
               <div className="h-8 bg-gray-200 rounded w-32 mb-8"></div>
@@ -73,12 +75,12 @@ export default function ArticleClient({ id }: ArticleClientProps) {
     return (
       <main>
         <div className="min-h-screen bg-background">
-          <Navigation backgrounded={false} />
+          <NavigationSimple backgrounded={false} />
           <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8 text-center">
             <h1 className="text-2xl font-bold mb-4">Article non trouvé</h1>
             <p className="text-gray-600 mb-8">L'article que vous recherchez n'existe pas.</p>
             <a 
-              href="/newsletter" 
+              href={`/${locale}/newsletter`} 
               className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -95,12 +97,12 @@ export default function ArticleClient({ id }: ArticleClientProps) {
     return (
       <main>
         <div className="min-h-screen bg-background">
-          <Navigation backgrounded={false} />
+          <NavigationSimple backgrounded={false} />
           <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8 text-center">
             <h1 className="text-2xl font-bold mb-4">Article non trouvé</h1>
             <p className="text-gray-600 mb-8">L'article que vous recherchez n'existe pas.</p>
             <Link 
-              href="/newsletter" 
+              href={`/${locale}/newsletter`} 
               className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
@@ -116,11 +118,11 @@ export default function ArticleClient({ id }: ArticleClientProps) {
   return (
     <main>
       <div className="min-h-screen bg-background">
-        <Navigation backgrounded={false} />
+        <NavigationSimple backgrounded={false} />
         <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8">
           {/* Back button */}
           <div className="mb-8">
-            <a href="/newsletter" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
+            <a href={`/${locale}/newsletter`} className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
               <ArrowLeft className="h-4 w-4" />
               Retour aux articles
             </a>

@@ -2,17 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, User } from "lucide-react";
 import { WPPost } from "@/types/WPPTypes";
+import { useLocale } from "next-intl";
 
 interface ArticleCardProps {
   post: WPPost;
 }
 
 export function ArticleCard({ post }: ArticleCardProps) {
+  const locale = useLocale();
   const title = post.title?.replace(/<[^>]*>/g, '') || 'Titre non disponible';
   const excerpt = post.excerpt || 'Description non disponible';
   
   return (
-    <Link href={`/newsletter/${post.slug}`}>
+    <Link href={`/${locale}/newsletter/${post.slug}`}>
       <article className="group cursor-pointer overflow-hidden rounded-lg border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-full flex flex-col">
         {/* Image */}
         <div className="relative h-48 w-full overflow-hidden">
