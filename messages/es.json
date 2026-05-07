@@ -1176,5 +1176,280 @@
       "title": "Hablemos de tu proyecto.",
       "buttonText": "Contáctanos"
     }
+  },
+  "conditionsGeneralesUtilisation": {
+    "meta": {
+      "title": "Términos de Uso",
+      "description": "Términos de Uso de DEOYA CAPITAL."
+    },
+    "header": {
+      "brand": "DEOYA Capital",
+      "title": "Términos de Uso"
+    },
+    "object": {
+      "title": "1. Objeto",
+      "content": "Estos Términos de Uso definen las condiciones de uso del sitio DEOYA CAPITAL."
+    },
+    "siteAccess": {
+      "title": "2. Acceso al sitio",
+      "content1": "El sitio es accesible gratuitamente para cualquier usuario con acceso a internet.",
+      "content2": "DEOYA CAPITAL se reserva el derecho de modificar o suspender el sitio en cualquier momento."
+    },
+    "siteContent": {
+      "title": "3. Contenido del sitio",
+      "content1": "La información difundida se proporciona con fines informativos.",
+      "content2": "No constituye un consejo personalizado ni una garantía de resultados."
+    },
+    "responsibility": {
+      "title": "4. Responsabilidad",
+      "content1": "El usuario reconoce usar el sitio bajo su responsabilidad.",
+      "content2": "DEOYA CAPITAL no podrá ser responsable de:",
+      "items": [
+        "errores u omisiones",
+        "del uso de la información",
+        "daños indirectos"
+      ]
+    },
+    "intellectualProperty": {
+      "title": "5. Propiedad intelectual",
+      "content1": "Todos los contenidos del sitio están protegidos:",
+      "items": [
+        "textos",
+        "logo",
+        "diseño"
+      ],
+      "content2": "Cualquier reproducción está prohibida sin autorización."
+    },
+    "externalLinks": {
+      "title": "6. Enlaces externos",
+      "content1": "El sitio puede contener enlaces a otros sitios.",
+      "content2": "DEOYA CAPITAL no puede ser responsable de su contenido."
+    },
+    "personalData": {
+      "title": "7. Datos personales",
+      "content": "Los datos recopilados se procesan conforme a la política de privacidad."
+    },
+    "modification": {
+      "title": "8. Modificación",
+      "content": "DEOYA CAPITAL se reserva el derecho de modificar los Términos de Uso en cualquier momento."
+    },
+    "applicableLaw": {
+      "title": "9. Ley aplicable",
+      "content1": "Las presentes CGU están sujetas al derecho francés.",
+      "content2": "Cualquier litigio corresponde a los tribunales competentes."
+    }
+  },
+  "politiqueConfidentialite": {
+    "company": "Deoya Capital",
+    "title": "Política de privacidad",
+    "sections": {
+      "introduction": {
+        "title": "1. Introducción",
+        "content1": "La presente política de privacidad tiene como objetivo informar a los usuarios del sitio ",
+        "companyName": "DEOYA CAPITAL",
+        "content2": " sobre la manera en que sus datos personales son recopilados, utilizados y protegidos.",
+        "content3": "DEOYA CAPITAL se compromete a asegurar la protección de los datos personales conforme al Reglamento General de Protección de Datos (RGPD) y la legislación francesa vigente."
+      },
+      "responsable": {
+        "title": "2. Responsable del tratamiento",
+        "subtitle": "El responsable del tratamiento de datos es:",
+        "emailLabel": "Email",
+        "info": [
+          ["Sociedad", "DEOYA CAPITAL"],
+          ["Nombre de la sociedad", "DEOYA CAPITAL"],
+          ["Sede social", "París, Francia"],
+          ["Email", "contact@deoya-capital.com"]
+        ]
+      },
+      "donneesCollectees": {
+        "title": "3. Datos recopilados",
+        "subtitle": "En el marco del uso del sitio, se pueden recopilar los siguientes datos:",
+        "items": [
+          "Nombre y apellidos",
+          "Dirección email",
+          "Informaciones comunicadas vía formularios de contacto",
+          "Datos de navegación (cookies)"
+        ]
+      },
+      "finalites": {
+        "title": "4. Finalidades del tratamiento",
+        "subtitle": "Los datos personales se recopilan para las siguientes finalidades:",
+        "items": [
+          "Responder a solicitudes de contacto",
+          "Intercambiar con prospectos, socios o clientes",
+          "Asegurar el seguimiento de los intercambios",
+          "Mejorar la experiencia del usuario y los servicios ofrecidos"
+        ]
+      },
+      "baseLegale": {
+        "title": "5. Base legal",
+        "subtitle": "El tratamiento de datos se basa en:",
+        "items": [
+          "El consentimiento del usuario",
+          "El interés legítimo de DEOYA CAPITAL"
+        ]
+      },
+      "dureeConservation": {
+        "title": "6. Duración de conservación",
+        "content1": "Los datos personales se conservan durante un período máximo de",
+        "duration": "3 años",
+        "content2": " a partir del último contacto."
+      },
+      "destinataires": {
+        "title": "7. Destinatarios de los datos",
+        "content1": "Los datos recopilados están destinados exclusivamente a DEOYA CAPITAL.",
+        "content2": "Pueden ser transmitidos a proveedores técnicos (alojamiento, mantenimiento) únicamente en el marco del funcionamiento del sitio."
+      },
+      "securite": {
+        "title": "8. Seguridad de los datos",
+        "content": "DEOYA CAPITAL implementa medidas técnicas y organizativas apropiadas para garantizar la seguridad y confidencialidad de los datos personales."
+      },
+      "droitsUtilisateurs": {
+        "title": "9. Derechos de los usuarios",
+        "subtitle": "Conforme a la regulación vigente, dispone de los siguientes derechos:",
+        "items": [
+          "Derecho de acceso",
+          "Derecho de rectificación",
+          "Derecho de supresión",
+          "Derecho de oposición",
+          "Derecho a la limitación del tratamiento"
+        ],
+        "contactText": "Puede ejercer sus derechos contactando:",
+        "contactEmail": "contact@deoya-capital.com"
+      },
+      "cookies": {
+        "title": "10. Cookies",
+        "content1": "El sitio puede utilizar cookies para asegurar el correcto funcionamiento del sitio, medir la audiencia y mejorar la experiencia del usuario.",
+        "content2": "Para saber más, consulte nuestra",
+        "policyLink": "/politique-cookies",
+        "policyLinkText": "política de cookies"
+      },
+      "modification": {
+        "title": "11. Modificación de la política",
+        "content": "DEOYA CAPITAL se reserva el derecho de modificar la presente política de privacidad en cualquier momento para garantizar su conformidad con la legislación vigente."
+      }
+    }
+  },
+  "politiqueCookies": {
+    "company": "Deoya Capital",
+    "title": "Política de cookies",
+    "sections": {
+      "introduction": {
+        "title": "1. Introducción",
+        "content1": "El sitio ",
+        "companyName": "DEOYA CAPITAL",
+        "content2": " utiliza cookies para mejorar la experiencia del usuario y medir la audiencia.",
+        "content3": "La presente política explica el uso de cookies y sus derechos."
+      },
+      "quEstCeQuUnCookie": {
+        "title": "2. ¿Qué es una cookie?",
+        "content1": "Una cookie es un archivo depositado en su terminal al navegar en un sitio de internet. Permite notamment:",
+        "items": [
+          "Reconocer su dispositivo",
+          "Mejorar la navegación",
+          "Recopilar datos estadísticos"
+        ]
+      },
+      "typesCookies": {
+        "title": "3. Tipos de cookies utilizados",
+        "cookieTypes": [
+          {
+            "title": "Cookies necesarios",
+            "desc": "Indispensables para el funcionamiento del sitio (navegación, seguridad)."
+          },
+          {
+            "title": "Cookies de medición de audiencia",
+            "desc": "Permiten analizar la frecuentación del sitio (ej: páginas visitadas, duración)."
+          },
+          {
+            "title": "Cookies de terceros (si aplica)",
+            "desc": "Algunos servicios externos pueden depositar cookies (ej: herramientas analíticas)."
+          }
+        ]
+      },
+      "gestionCookies": {
+        "title": "4. Gestión de cookies",
+        "bannerText": "Durante su primera visita, una banda le permite:",
+        "bannerOptions": [
+          "Aceptar las cookies",
+          "Rechazarlas",
+          "Configurarlas"
+        ],
+        "browserText": "También puede configurar su navegador para:",
+        "browserOptions": [
+          "Rechazar las cookies",
+          "Eliminar las cookies existentes"
+        ]
+      },
+      "dureeConservation": {
+        "title": "5. Duración de conservación",
+        "content1": "Las cookies se conservan durante un período máximo de",
+        "duration": "13 meses"
+      },
+      "vosDroits": {
+        "title": "6. Sus derechos",
+        "subtitle": "Conforme al RGPD, puede:",
+        "items": [
+          "Aceptar o rechazar las cookies",
+          "Retirar su consentimiento en cualquier momento"
+        ]
+      },
+      "contact": {
+        "title": "7. Contacto",
+        "questionText": "Para cualquier pregunta:",
+        "email": "contact@deoya-capital.com"
+      }
+    }
+  },
+  "mentionsLegales": {
+    "company": "Deoya Capital",
+    "title": "Menciones legales",
+    "sections": {
+      "editeur": {
+        "title": "Editor del sitio",
+        "content1": "El sitio ",
+        "companyName": "DEOYA CAPITAL",
+        "content2": " es editado por:",
+        "emailLabel": "Email",
+        "info": [
+          ["Nombre de la sociedad", "Sociedad en creación"],
+          ["Forma jurídica", "Sociedad en creación"],
+          ["Capital social", "Sociedad en creación"],
+          ["Sede social", "París, Francia"],
+          ["Inscripción RCS", "Sociedad en creación"],
+          ["Número de IVA intracomunitario", "Sociedad en creación"]
+        ],
+        "additionalInfo": [
+          ["Director de publicación", "Sociedad en creación"],
+          ["Email", "contact@deoya-capital.com"]
+        ]
+      },
+      "hebergement": {
+        "title": "Alojamiento",
+        "content1": "El sitio está alojado por:",
+        "websiteLabel": "Sitio web",
+        "info": [
+          ["Alojador", "LWS (Ligne Web Services)"],
+          ["Dirección", "10 rue Penthièvre, 75008 París – Francia"],
+          ["Sitio web", "https://www.lws.fr"]
+        ]
+      },
+      "proprieteIntellectuelle": {
+        "title": "Propiedad intelectual",
+        "content1": "El conjunto de contenidos presentes en el sitio (textos, imágenes, logo, diseño, estructura) es propiedad exclusiva de",
+        "companyName": "DEOYA CAPITAL",
+        "content2": "salvo mención contraria.",
+        "content3": "Cualquier reproducción, representación, modificación, publicación o adaptación, total o parcial, está prohibida sin autorización previa."
+      },
+      "responsabilite": {
+        "title": "Responsabilidad",
+        "content": "DEOYA CAPITAL se esfuerza por asegurar la exactitud de la información difundida en el sitio. Sin embargo, no podrá ser responsable de los errores, omisiones o resultados obtenidos del uso de esta información."
+      },
+      "droitApplicable": {
+        "title": "Derecho aplicable",
+        "content1": "El presente sitio está sujeto al derecho francés.",
+        "content2": "Cualquier litigio corresponde a la competencia de los tribunales franceses."
+      }
+    }
   }
 }
