@@ -15,7 +15,7 @@ export function Footer() {
     cabinet: "/cabinet",
     expertises: "/expertises",
     reseau: "/reseau",
-    ppp: "/ppp",
+    ppp: "/partenariats-publics-prives",
     newsletter: "/newsletter",
     contact: "/contact"
   }

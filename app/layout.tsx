@@ -4,6 +4,7 @@ import { Montserrat, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import { CookieBanner } from '@/components/cookie-banner'
 import { CookieManager } from '@/components/cookie-manager'
+import BackToTopButton from '@/components/back-to-top-button'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -73,6 +74,7 @@ export default function RootLayout({
           {children}
         </CookieManager>
         <CookieBanner />
+        <BackToTopButton />
       </body>
     </html>
   )
