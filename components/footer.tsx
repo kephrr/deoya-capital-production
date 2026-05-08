@@ -10,6 +10,30 @@ export function Footer() {
 
   const socialIcons = images.social
 
+  // Social networks configuration
+  const socialNetworks = [
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61575333096729&mibextid=wwXIfr",
+      ariaLabel: "Facebook"
+    },
+    {
+      name: "Instagram", 
+      href: "https://www.instagram.com/deoya.capital?igsh=MXZuYnQ5d25mbm9naQ%3D%3D&utm_source=qr",
+      ariaLabel: "Instagram"
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/company/deoya-capital/", 
+      ariaLabel: "LinkedIn"
+    },
+    {
+      name: "YouTube",
+      href: "https://www.youtube.com/@DEOYACAPITAL",
+      ariaLabel: "YouTube"
+    }
+  ]
+
   // Liens de navigation avec leurs URLs
   const navigationLinks = {
     cabinet: "/cabinet",
@@ -71,20 +95,20 @@ export function Footer() {
                 {t('footer.social.title')}
               </p>
               <div className="flex gap-4">
-                {Object.entries(socialIcons).map(([name, iconSrc]) => (
+                {socialNetworks.map((network) => (
                   <a
-                    key={name}
-                    href="#"
+                    key={network.name}
+                    href={network.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary-foreground/60 
                     transition-colors duration-200 hover:text-primary-foreground
                     border border-primary-foreground/20 rounded-full p-2 hover:bg-primary-foreground/10"
-                    aria-label={t(`footer.social.networks.${name.toLowerCase()}`)}
+                    aria-label={network.ariaLabel}
                   >
                     <img 
-                      src={iconSrc} 
-                      alt={name}
+                      src={socialIcons[network.name.toLowerCase() as 'facebook' | 'instagram' | 'linkedin' | 'youtube']} 
+                      alt={network.name}
                       className="h-5 w-5 object-contain"
                     />
                   </a>

@@ -44,13 +44,7 @@
       "location": "París, Francia"
     },
     "social": {
-      "title": "Síguenos",
-      "networks": {
-        "facebook": "Facebook",
-        "instagram": "Instagram", 
-        "linkedin": "LinkedIn",
-        "youtube": "YouTube"
-      }
+      "title": "Síganos"
     },
     "legal": {
       "mentions": "Aviso legal",

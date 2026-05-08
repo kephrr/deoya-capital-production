@@ -44,13 +44,7 @@
       "location": "باريس، فرنسا"
     },
     "social": {
-      "title": "تابعونا",
-      "networks": {
-        "facebook": "فيسبوك",
-        "instagram": "انستغرام", 
-        "linkedin": "لينكدإن",
-        "youtube": "يوتيوب"
-      }
+      "title": "تابعونا"
     },
     "legal": {
       "mentions": "الإشعارات القانونية",
