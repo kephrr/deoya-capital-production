@@ -234,98 +234,48 @@
         "content": "Las presentes Condiciones Generales de Venta (CGV) definen las modalidades según las cuales DEOYA CAPITAL proporciona servicios de consultoría estratégica, análisis, estructuración de proyectos y acompañamiento a sus clientes. Cualquier pedido implica la aceptación incondicional de estas CGV."
       },
       {
-        "title": "2. Prestaciones",
-        "subtitle": "DEOYA CAPITAL ofrece notablemente:",
-        "services": [
-          "Análisis estratégico y estudios de mercado",
-          "Estructuración de proyectos de inversión",
-          "Acompañamiento para el establecimiento y desarrollo internacional",
-          "Asesoramiento en entornos regulatorios e institucionales"
-        ],
-        "conclusion": "Las prestaciones se definen precisamente en una propuesta comercial o un contrato."
+        "title": "2. Naturaleza de las prestaciones",
+        "content": "DEOYA CAPITAL interviene en calidad de consultor y coordinador de proyectos. A este título, está sujeta a una obligación de medios y no de resultado. Las prestaciones se definen precisamente en un presupuesto o contrato."
       },
       {
-        "title": "3. Presupuestos y pedidos",
-        "subtitle": "Cada misión está sujeta a:",
-        "items": ["Un presupuesto firmado", "O un contrato"],
-        "conclusion": "La validación del presupuesto o contrato constituye aceptación de las CGV."
+        "title": "3. Formación del contrato",
+        "content": "Cada prestación hace objeto de un presupuesto previo. La misión comienza solo después de la firma del presupuesto por el cliente y el pago del anticipo correspondiente. La firma del presupuesto implica aceptación de estas condiciones."
       },
       {
-        "title": "4. Tarifas",
-        "intro": "Las tarifas se expresan en euros, impuestos excluidos (IE). Se fijan según:",
-        "criteria": [
-          "La naturaleza de la misión",
-          "Su complejidad",
-          "Su duración"
-        ],
-        "conclusion": "DEOYA CAPITAL se reserva el derecho de modificar sus tarifas en cualquier momento."
+        "title": "4. Modalidades de pago y penalizaciones de retraso",
+        "content": "Se exige un anticipo del treinta por ciento (30%) en la firma del presupuesto. El saldo es pagadero de manera escalonada, sobre una base mensual, según el avance de la misión, validado por DEOYA CAPITAL. Cada vencimiento da lugar a la emisión de una factura por DEOYA CAPITAL, pagadera a la recepción. En caso de falta de pago de un vencimiento, DEOYA CAPITAL se reserva el derecho de suspender la ejecución de la misión hasta regularización. En caso de retraso en el pago, se exigirán penalidades de pleno derecho, sin recordatorio necesario, calculadas sobre la base del tipo legal vigente. Conforme al artículo L441-10 del Código de comercio, también será debida una indemnización fija por costes de recuperación de cuarenta (40) euros. Cuando los costes de recuperación incurridos superan este monto, podrá solicitarse una indemnización adicional con justificación."
       },
       {
-        "title": "5. Modalidades de pago",
-        "subtitle": "Salvo mención contraria:",
-        "paymentSchedule": [
-          {
-            "label": "Al firmar",
-            "value": "50 %"
-          },
-          {
-            "label": "Al entregar",
-            "value": "50 %"
-          }
-        ],
-        "paymentMethod": "Los pagos se realizan por transferencia bancaria."
+        "title": "5. Responsabilidad",
+        "content": "DEOYA CAPITAL está sujeta a una obligación de medios. Su responsabilidad solo podrá comprometerse en caso de falta probada en la ejecución de sus obligaciones. El cliente sigue siendo el único responsable de las decisiones tomadas sobre la base de las recomendaciones formuladas por DEOYA CAPITAL. En cualquier caso, la responsabilidad de DEOYA CAPITAL, todos los perjuicios combinados, se limita al monto de los honorarios efectivamente percibidos por la misión concernida. DEOYA CAPITAL no podrá ser responsable de los daños indirectos, notablemente pérdida de facturación, pérdida de oportunidad o perjuicio comercial."
       },
       {
-        "title": "6. Retraso en el pago",
-        "subtitle": "Cualquier retraso en el pago resulta en:",
-        "consequences": [
-          "Penalidades por retraso en el pago",
-          "Una tarifa plana de recuperación (40 € mínimo, conforme a la ley)"
-        ],
-        "conclusion": "DEOYA CAPITAL se reserva el derecho de suspender la misión en caso de no pago."
+        "title": "6. Intervención de expertos",
+        "content": "DEOYA CAPITAL puede hacer intervenir expertos asociados en el marco de las misiones. Estos intervinentes actúan bajo su propia responsabilidad. DEOYA CAPITAL no podrá ser responsable de sus acciones, omisiones o incumplimientos."
       },
       {
-        "title": "7. Obligaciones del cliente",
-        "subtitle": "El cliente se compromete a:",
-        "obligations": [
-          "Proporcionar información exacta y completa",
-          "Colaborar activamente",
-          "Respetar los plazos acordados"
-        ],
-        "conclusion": "DEOYA CAPITAL no podrá ser considerada responsable en caso de datos incompletos o erróneos."
+        "title": "7. Confidencialidad",
+        "content": "Las partes se comprometen a mantener estrictamente confidenciales todas las informaciones intercambiadas en el marco de la misión. Esta obligación se aplica durante toda la duración de la misión y durante un período de cinco (5) años a partir de su cesión, cualquiera que sea la causa."
       },
       {
-        "title": "8. Responsabilidad",
-        "intro": "DEOYA CAPITAL está vinculada por una obligación de medios. Las recomendaciones proporcionadas no constituyen una garantía de resultados.",
-        "subtitle": "La responsabilidad de DEOYA CAPITAL no podrá ser comprometida en caso de:",
-        "exclusions": [
-          "Decisiones tomadas por el cliente",
-          "Pérdidas financieras indirectas"
-        ]
+        "title": "8. Propiedad intelectual",
+        "content": "Los entregables siguen siendo propiedad de DEOYA CAPITAL hasta el pago completo de los servicios. Después del pago, el cliente se beneficia de un derecho de uso estrictamente limitado a sus necesidades internas. Cualquier reproducción, difusión o explotación sin autorización escrita previa está prohibida."
       },
       {
-        "title": "9. Confidencialidad",
-        "content": "Las partes se comprometen a mantener estrictamente confidencial toda la información intercambiada en el marco de la misión."
+        "title": "9. Rescisión",
+        "content": "En caso de rescisión anticipada: Las prestaciones realizadas siguen siendo debidas y exigibles - Las cantidades pagadas no son reembolsables. DEOYA CAPITAL se reserva el derecho de suspender o de rescindir la misión en caso de incumplimiento del cliente, notablemente en caso de falta de pago."
       },
       {
-        "title": "10. Propiedad intelectual",
-        "points": [
-          "Los entregables permanecen como propiedad de DEOYA CAPITAL hasta el pago completo.",
-          "Después del pago, el cliente tiene un derecho de uso dentro del marco de su actividad.",
-          "Cualquier reproducción o distribución sin autorización está prohibida."
-        ]
+        "title": "10. Fuerza mayor",
+        "content": "DEOYA CAPITAL no podrá ser responsable en caso de evento imprevisible, irresistible y externo que impida la ejecución de sus obligaciones."
       },
       {
-        "title": "11. Rescisión",
-        "subtitle": "En caso de rescisión anticipada:",
-        "consequences": [
-          "Las prestaciones realizadas permanecen debidas",
-          "Las cantidades pagadas no son reembolsables"
-        ]
+        "title": "11. Derecho aplicable y litigios",
+        "content": "Estas condiciones se rigen por la ley francesa. En caso de diferencia, las partes se comprometen a buscar una solución amistosa. En ausencia de acuerdo amistoso, el litigio será sometido a los tribunales franceses competentes."
       },
       {
-        "title": "12. Fuerza mayor",
-        "content": "DEOYA CAPITAL no podrá ser considerada responsable en caso de un evento imprevisible e independiente de su voluntad que impida la ejecución de las prestaciones."
+        "title": "12. Aceptación",
+        "content": "La firma del presupuesto por el cliente implica aceptación plena y completa de estas Condiciones Generales de Venta."
       },
       {
         "title": "13. Ley aplicable",
