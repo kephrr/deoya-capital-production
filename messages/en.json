@@ -226,67 +226,122 @@
       "description": "General Terms of Sale of DEOYA CAPITAL."
     },
     "hero": {
-      "title": "General Terms of Sale",
-      "subtitle": "DEOYA CAPITAL",
-      "description": "These General Terms of Sale govern consulting, structuring, coordination and matchmaking services provided by DEOYA CAPITAL."
+      "title": "General Terms of Sale"
     },
     "sections": [
       {
         "title": "1. Purpose",
-        "content": "These General Terms of Sale govern consulting, structuring, coordination and matchmaking services provided by DEOYA CAPITAL. Any order implies full acceptance of these terms."
+        "content": "These General Terms of Sale (GTS) define the conditions under which DEOYA CAPITAL provides strategic consulting, analysis, project structuring and support services to its clients. Any order implies the unconditional acceptance of these GTS."
       },
       {
-        "title": "2. Nature of services",
-        "content": "DEOYA CAPITAL acts as advisor and project coordinator with a best-efforts obligation, not an obligation of result. Services are precisely defined in a quote or contract."
+        "title": "2. Services",
+        "subtitle": "DEOYA CAPITAL notably offers:",
+        "services": [
+          "Strategic analysis and market studies",
+          "Investment project structuring",
+          "Support for establishment and international development",
+          "Advice on regulatory and institutional environments"
+        ],
+        "conclusion": "Services are precisely defined in a commercial proposal or a contract."
       },
       {
-        "title": "3. Contract formation",
-        "content": "Each service is subject to a prior quote. The mission begins only after the client signs the quote and pays the corresponding deposit. Quote signature implies acceptance of these terms."
+        "title": "3. Quotes and orders",
+        "subtitle": "Each mission is subject to:",
+        "items": ["A signed quote", "Or a contract"],
+        "conclusion": "Validation of the quote or contract constitutes acceptance of the GTS."
       },
       {
-        "title": "4. Payment terms and late penalties",
-        "content": "A thirty percent (30%) deposit is required at quote signature. The balance is payable in installments on a monthly basis according to mission progress validated by DEOYA CAPITAL. Each installment results in an invoice issued by DEOYA CAPITAL, payable upon receipt. In case of non-payment of an installment, DEOYA CAPITAL reserves the right to suspend mission execution until regularization. In case of late payment, penalties will be due as a matter of right, without reminder, calculated based on the legal rate in effect. Pursuant to article L441-10 of the Commercial Code, a flat fee for recovery costs of forty (40) euros will also be due. When recovery costs incurred exceed this amount, additional compensation may be requested upon justification."
+        "title": "4. Rates",
+        "intro": "Rates are expressed in euros, excluding taxes (ET). They are set according to:",
+        "criteria": [
+          "The nature of the mission",
+          "Its complexity",
+          "Its duration"
+        ],
+        "conclusion": "DEOYA CAPITAL reserves the right to modify its rates at any time."
       },
       {
-        "title": "5. Liability",
-        "content": "DEOYA CAPITAL is bound by a best-efforts obligation. Its liability can only be engaged in case of proven fault in executing its obligations. The client remains solely responsible for decisions made based on recommendations formulated by DEOYA CAPITAL. In any event, DEOYA CAPITAL's liability, all damages combined, is limited to the amount of fees actually received for the concerned mission. DEOYA CAPITAL cannot be held liable for indirect damages, notably loss of turnover, loss of opportunity or commercial prejudice."
+        "title": "5. Payment terms",
+        "subtitle": "Unless otherwise specified:",
+        "paymentSchedule": [
+          {
+            "label": "Upon signing",
+            "value": "50 %"
+          },
+          {
+            "label": "Upon delivery",
+            "value": "50 %"
+          }
+        ],
+        "paymentMethod": "Payments are made by bank transfer."
       },
       {
-        "title": "6. Expert intervention",
-        "content": "DEOYA CAPITAL may involve partner experts within missions. These interveners act under their own responsibility. DEOYA CAPITAL cannot be held liable for their actions, omissions or failings."
+        "title": "6. Late payment",
+        "subtitle": "Any late payment results in:",
+        "consequences": [
+          "Late payment penalties",
+          "A flat recovery fee (€40 minimum, in accordance with the law)"
+        ],
+        "conclusion": "DEOYA CAPITAL reserves the right to suspend the mission in case of non-payment."
       },
       {
-        "title": "7. Confidentiality",
-        "content": "The parties undertake to keep strictly confidential all information exchanged within the mission framework. This obligation applies throughout the mission duration and for a period of five (5) years from its termination, regardless of cause."
+        "title": "7. Client obligations",
+        "subtitle": "The client undertakes to:",
+        "obligations": [
+          "Provide accurate and complete information",
+          "Collaborate actively",
+          "Respect agreed deadlines"
+        ],
+        "conclusion": "DEOYA CAPITAL cannot be held responsible in case of incomplete or erroneous data."
       },
       {
-        "title": "8. Intellectual property",
-        "content": "Deliverables remain DEOYA CAPITAL property until full payment of services. After payment, the client benefits from a usage right strictly limited to internal needs. Any reproduction, dissemination or exploitation without prior written authorization is prohibited."
+        "title": "8. Liability",
+        "intro": "DEOYA CAPITAL is bound by an obligation of means. The recommendations provided do not constitute a guarantee of results.",
+        "subtitle": "The liability of DEOYA CAPITAL cannot be engaged in case of:",
+        "exclusions": [
+          "Decisions made by the client",
+          "Indirect financial losses"
+        ]
       },
       {
-        "title": "9. Termination",
-        "content": "In case of early termination: Performed services remain due and payable - Amounts paid are not refundable. DEOYA CAPITAL reserves the right to suspend or terminate the mission in case of client default, notably in case of non-payment."
+        "title": "9. Confidentiality",
+        "content": "The parties undertake to keep strictly confidential all information exchanged within the framework of the mission."
       },
       {
-        "title": "10. Force majeure",
-        "content": "DEOYA CAPITAL cannot be held liable in case of unforeseeable, irresistible and external event preventing execution of its obligations."
+        "title": "10. Intellectual property",
+        "points": [
+          "Deliverables remain the property of DEOYA CAPITAL until full payment.",
+          "After payment, the client has a right of use within the framework of its activity.",
+          "Any reproduction or distribution without authorization is prohibited."
+        ]
       },
       {
-        "title": "11. Governing law and disputes",
-        "content": "These terms are governed by French law. In case of dispute, the parties undertake to seek an amicable solution. In absence of amicable agreement, the dispute will be submitted to competent French courts."
+        "title": "11. Termination",
+        "subtitle": "In case of early termination:",
+        "consequences": [
+          "Services performed remain due",
+          "Amounts paid are not refundable"
+        ]
       },
       {
-        "title": "12. Acceptance",
-        "content": "The client's signature of the quote implies full and complete acceptance of these General Terms of Sale."
+        "title": "12. Force majeure",
+        "content": "DEOYA CAPITAL cannot be held responsible in case of an unforeseeable and independent event of its will preventing the execution of services."
+      },
+      {
+        "title": "13. Applicable law",
+        "points": [
+          "These GTS are subject to French law.",
+          "Any dispute falls under the jurisdiction of French courts."
+        ]
       }
     ],
     "footer": {
-      "contact": "For any question regarding these terms, contact us at:",
+      "contact": "For any question regarding these GTS, contact us at:",
       "email": "contact@deoya-capital.com",
       "phone": "+33 6 12 34 56 78"
     },
     "discussProject": {
-      "title": "Discuss your project.",
+      "title": "Let's discuss your project.",
       "buttonText": "Contact us"
     }
   },
