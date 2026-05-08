@@ -20,7 +20,8 @@ export default function ReseauPageClient({ locale = "fr" }: ReseauPageClientProp
 
   const hero = {
     title: t('hero.title'),
-    subtitle: t('hero.subtitle')
+    subtitle: t('hero.subtitle'),
+    backgroundImage: "/549.jpg"
   }
 
   const zones = t.raw('zones') as Array<{

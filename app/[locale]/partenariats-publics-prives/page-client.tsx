@@ -40,7 +40,7 @@ export default function PppPageClient({ locale = "fr" }: PppPageClientProps) {
     subtitle: t('discussProject.subtitle'),
     buttonText: t('discussProject.buttonText'),
     redirectUrl: "/contact",
-    backgroundImage: "/dark-abstract-pattern.jpg"
+    backgroundImage: "/business-people-video-call-meeting.jpg"
   };
 
   return (
