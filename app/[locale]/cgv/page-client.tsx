@@ -39,213 +39,113 @@ export default function ConditionsGeneralesDeVente({ locale = "fr" }: CgvPageCli
           </p>
         </section>
 
-        {/* 2. Prestations */}
+        {/* 2. Nature des prestations */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.1.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.1.subtitle')}</p>
-          <ul className="space-y-2 text-sm text-stone-600 mb-4">
-            {[
-              t('sections.1.services.0'),
-              t('sections.1.services.1'),
-              t('sections.1.services.2'),
-              t('sections.1.services.3'),
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.1.conclusion')}
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.1.content')}
           </p>
         </section>
 
-        {/* 3. Devis et commande */}
+        {/* 3. Formation du contrat */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.2.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.2.subtitle')}</p>
-          <ul className="space-y-2 text-sm text-stone-600 mb-4">
-            {[t('sections.2.items.0'), t('sections.2.items.1')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.2.conclusion')}
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.2.content')}
           </p>
         </section>
 
-        {/* 4. Tarifs */}
+        {/* 4. Modalités de paiement et pénalités de retard */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.3.title')}
           </h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            {t('sections.3.intro')}
-          </p>
-          <ul className="space-y-2 text-sm text-stone-600 mb-4">
-            {[t('sections.3.criteria.0'), t('sections.3.criteria.1'), t('sections.3.criteria.2')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.3.conclusion')}
+            {t('sections.3.content')}
           </p>
         </section>
 
-        {/* 5. Modalités de paiement */}
+        {/* 5. Responsabilité */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.4.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.4.subtitle')}</p>
-          <div className="grid grid-cols-2 gap-4 mb-5">
-            {[
-              { label: t('sections.4.paymentSchedule.0.label'), value: t('sections.4.paymentSchedule.0.value') },
-              { label: t('sections.4.paymentSchedule.1.label'), value: t('sections.4.paymentSchedule.1.value') },
-            ].map(({ label, value }) => (
-              <div key={label} className="rounded-lg border border-stone-200 bg-white px-5 py-4 text-center">
-                <p className="font-serif text-2xl font-semibold text-stone-900">{value}</p>
-                <p className="text-xs text-stone-400 mt-1">{label}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.4.paymentMethod')}
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.4.content')}
           </p>
         </section>
 
-        {/* 6. Retard de paiement */}
+        {/* 6. Intervention des experts */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.5.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.5.subtitle')}</p>
-          <ul className="space-y-2 text-sm text-stone-600 mb-4">
-            {[t('sections.5.consequences.0'), t('sections.5.consequences.1')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.5.conclusion')}
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.5.content')}
           </p>
         </section>
 
-        {/* 7. Obligations du client */}
+        {/* 7. Confidentialité */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.6.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.6.subtitle')}</p>
-          <ul className="space-y-2 text-sm text-stone-600 mb-4">
-            {[t('sections.6.obligations.0'), t('sections.6.obligations.1'), t('sections.6.obligations.2')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.6.conclusion')}
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.6.content')}
           </p>
         </section>
 
-        {/* 8. Responsabilité */}
+        {/* 8. Propriété intellectuelle */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.7.title')}
           </h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            {t('sections.7.intro')}
+            {t('sections.7.content')}
           </p>
-          <p className="text-sm text-stone-500 mb-3">
-            {t('sections.7.subtitle')}
-          </p>
-          <ul className="space-y-2 text-sm text-stone-600">
-            {[t('sections.7.exclusions.0'), t('sections.7.exclusions.1')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
         </section>
 
-        {/* 9. Confidentialité */}
+        {/* 9. Résiliation */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.8.title')}
           </h2>
-          <p className="text-sm text-stone-600 leading-relaxed">
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
             {t('sections.8.content')}
           </p>
         </section>
 
-        {/* 10. Propriété intellectuelle */}
+        {/* 10. Force majeure */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.9.title')}
           </h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            {t('sections.9.points.0')}
-          </p>
-          <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            {t('sections.9.points.1')}
-          </p>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.9.points.2')}
+            {t('sections.9.content')}
           </p>
         </section>
 
-        {/* 11. Résiliation */}
+        {/* 11. Droit applicable et litiges */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.10.title')}
           </h2>
-          <p className="text-sm text-stone-500 mb-4">{t('sections.10.subtitle')}</p>
-          <ul className="space-y-2 text-sm text-stone-600">
-            {[t('sections.10.consequences.0'), t('sections.10.consequences.1')].map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-stone-400" />
-                {item}
-              </li>
-            ))}
-          </ul>
+          <p className="text-sm text-stone-600 leading-relaxed mb-3">
+            {t('sections.10.content')}
+          </p>
         </section>
 
-        {/* 12. Force majeure */}
+        {/* 12. Acceptation */}
         <section>
           <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
             {t('sections.11.title')}
           </h2>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.11.content')}
-          </p>
-        </section>
-
-        {/* 13. Droit applicable */}
-        <section>
-          <h2 className="font-serif text-xl font-semibold text-stone-900 mb-6 pb-3 border-b border-stone-200">
-            {t('sections.12.title')}
-          </h2>
           <p className="text-sm text-stone-600 leading-relaxed mb-3">
-            {t('sections.12.points.0')}
-          </p>
-          <p className="text-sm text-stone-600 leading-relaxed">
-            {t('sections.12.points.1')}
+            {t('sections.11.content')}
           </p>
         </section>
       </main>
