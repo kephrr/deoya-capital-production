@@ -869,68 +869,6 @@
     "navNext": "الشريحة التالية",
     "navGoTo": "الانتقال إلى الشريحة"
   },
-  "mentionsLegales": {
-    "meta": {
-      "title": "الإشعارات القانونية",
-      "description": "الإشعارات القانونية لشركة DEOYA CAPITAL."
-    },
-    "header": {
-      "brand": "Deoya Capital",
-      "title": "الإشعارات القانونية"
-    },
-    "editor": {
-      "title": "محرر الموقع",
-      "description": "الموقع <span class=\"font-medium text-stone-700\">DEOYA CAPITAL</span> منشور بواسطة:",
-      "fields": {
-        "companyName": "اسم الشركة",
-        "companyNameValue": "شركة قيد الإنشاء",
-        "legalForm": "الشكل القانوني",
-        "legalFormValue": "شركة قيد الإنشاء",
-        "capital": "رأس المال",
-        "capitalValue": "شركة قيد الإنشاء",
-        "headquarters": "المقر الرئيسي",
-        "headquartersValue": "باريس، فرنسا",
-        "rcs": "تسجيل RCS",
-        "rcsValue": "شركة قيد الإنشاء",
-        "vat": "رقم الضريبة على القيمة المضافة داخل الاتحاد الأوروبي",
-        "vatValue": "شركة قيد الإنشاء",
-        "director": "مدير النشر",
-        "directorValue": "شركة قيد الإنشاء",
-        "email": "البريد الإلكتروني",
-        "emailValue": "contact@deoya-capital.com"
-      }
-    },
-    "hosting": {
-      "title": "الاستضافة",
-      "description": "الموقع مستضاف بواسطة:",
-      "fields": {
-        "provider": "المضيف",
-        "providerValue": "LWS (Ligne Web Services)",
-        "address": "العنوان",
-        "addressValue": "10 rue Penthièvre, 75008 باريس – فرنسا",
-        "website": "الموقع الإلكتروني",
-        "websiteValue": "https://www.lws.fr"
-      }
-    },
-    "intellectualProperty": {
-      "title": "الملكية الفكرية",
-      "content1": "جميع محتويات الموقع (النصوص، الصور، الشعار، التصميم، الهيكل) هي ملكية حصرية لـ <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span>، ما لم يذكر خلاف ذلك.",
-      "content2": "مُنع أي نسخ، تمثيل، تعديل، نشر أو تكيف، كلي أو جزئي، دون موافقة مسبقة."
-    },
-    "liability": {
-      "title": "المسؤولية",
-      "content": "تسعى DEOYA CAPITAL لضمان دقة المعلومات المنشورة على الموقع. ومع ذلك، لا يمكن تحملها مسؤولية الأخطاء أو السهو أو النتائج المترتبة على استخدام هذه المعلومات."
-    },
-    "applicableLaw": {
-      "title": "القانون المطبق",
-      "content1": "هذا الموقع خاضع للقانون الفرنسي.",
-      "content2": "أي نزاع يخضع لاختصاص المحاكم الفرنسية."
-    },
-    "discussProject": {
-      "title": "لنتحدث عن مشروعك.",
-      "buttonText": "اتصل بنا"
-    }
-  },
   "politiqueConfidentialite": {
     "meta": {
       "title": "سياسة الخصوصية",
@@ -1411,15 +1349,16 @@
         "content2": " منشور بواسطة:",
         "emailLabel": "البريد الإلكتروني",
         "info": [
-          ["اسم الشركة", "شركة قيد الإنشاء"],
-          ["الشكل القانوني", "شركة قيد الإنشاء"],
-          ["رأس المال", "شركة قيد الإنشاء"],
-          ["المقر الرئيسي", "باريس، فرنسا"],
-          ["تسجيل RCS", "شركة قيد الإنشاء"],
-          ["رقم التعريف الضريبي المضاف", "شركة قيد الإنشاء"]
+          ["اسم الشركة", "DEOYA CAPITAL"],
+          ["الشكل القانوني", "SASU، شركة مساهمة مبسطة أحادية العضو"],
+          ["رأس المال الاجتماعي", "100 EUR"],
+          ["المقر الاجتماعي", "47 rue Vivienne 75002 Paris FRANCE"],
+          ["تسجيل RCS", "104 865 035 R.C.S. Paris"],
+          ["SIRET", "10486503500018"],
+          ["رقم TVA داخل الاتحاد الأوروبي", "FR7501.104865035"]
         ],
         "additionalInfo": [
-          ["مدير النشر", "شركة قيد الإنشاء"],
+          ["مدير النشر", "DEOYA INTELLIGENCE"],
           ["البريد الإلكتروني", "contact@deoya-capital.com"]
         ]
       },

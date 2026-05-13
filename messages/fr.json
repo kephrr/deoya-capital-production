@@ -859,68 +859,6 @@
     "navNext": "Slide suivant",
     "navGoTo": "Aller au slide"
   },
-  "mentionsLegales": {
-    "meta": {
-      "title": "Mentions légales",
-      "description": "Mentions légales de DEOYA CAPITAL."
-    },
-    "header": {
-      "brand": "Deoya Capital",
-      "title": "Mentions légales"
-    },
-    "editor": {
-      "title": "Éditeur du site",
-      "description": "Le site <span class=\"font-medium text-stone-700\">DEOYA CAPITAL</span> est édité par :",
-      "fields": {
-        "companyName": "Nom de la société",
-        "companyNameValue": "Société en cours de création",
-        "legalForm": "Forme juridique",
-        "legalFormValue": "Société en cours de création",
-        "capital": "Capital social",
-        "capitalValue": "Société en cours de création",
-        "headquarters": "Siège social",
-        "headquartersValue": "Paris, France",
-        "rcs": "Immatriculation RCS",
-        "rcsValue": "Société en cours de création",
-        "vat": "Numéro de TVA intracommunautaire",
-        "vatValue": "Société en cours de création",
-        "director": "Directeur de la publication",
-        "directorValue": "Société en cours de création",
-        "email": "Email",
-        "emailValue": "contact@deoya-capital.com"
-      }
-    },
-    "hosting": {
-      "title": "Hébergement",
-      "description": "Le site est hébergé par :",
-      "fields": {
-        "provider": "Hébergeur",
-        "providerValue": "LWS (Ligne Web Services)",
-        "address": "Adresse",
-        "addressValue": "10 rue Penthièvre, 75008 Paris – France",
-        "website": "Site web",
-        "websiteValue": "https://www.lws.fr"
-      }
-    },
-    "intellectualProperty": {
-      "title": "Propriété intellectuelle",
-      "content1": "L'ensemble des contenus présents sur le site (textes, images, logo, design, structure) est la propriété exclusive de <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span>, sauf mention contraire.",
-      "content2": "Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, est interdite sans autorisation préalable."
-    },
-    "liability": {
-      "title": "Responsabilité",
-      "content": "DEOYA CAPITAL s'efforce d'assurer l'exactitude des informations diffusées sur le site. Toutefois, elle ne saurait être tenue responsable des erreurs, omissions ou résultats obtenus suite à l'utilisation de ces informations."
-    },
-    "applicableLaw": {
-      "title": "Droit applicable",
-      "content1": "Le présent site est soumis au droit français.",
-      "content2": "Tout litige relève de la compétence des tribunaux français."
-    },
-    "discussProject": {
-      "title": "Discutons de votre projet.",
-      "buttonText": "Contactez-nous"
-    }
-  },
   "politiqueConfidentialite": {
     "meta": {
       "title": "Politique de confidentialité",
@@ -1339,15 +1277,16 @@
         "content2": " est édité par :",
         "emailLabel": "Email",
         "info": [
-          ["Nom de la société", "Société en cours de création"],
-          ["Forme juridique", "Société en cours de création"],
-          ["Capital social", "Société en cours de création"],
-          ["Siège social", "Paris, France"],
-          ["Immatriculation RCS", "Société en cours de création"],
-          ["Numéro de TVA intracommunautaire", "Société en cours de création"]
+          ["Nom de la société", "DEOYA CAPITAL"],
+          ["Forme juridique", "SASU, Société par actions simplifiée unipersonnelle"],
+          ["Capital social", "100 EUR"],
+          ["Siège social", "47 rue Vivienne 75002 Paris FRANCE"],
+          ["Immatriculation RCS", "104 865 035 R.C.S. Paris"],
+          ["SIRET", "10486503500018"],
+          ["Numéro de TVA intracommunautaire", "FR7501.104865035"]
         ],
         "additionalInfo": [
-          ["Directeur de la publication", "Société en cours de création"],
+          ["Directeur de la publication", "DEOYA INTELLIGENCE"],
           ["Email", "contact@deoya-capital.com"]
         ]
       },

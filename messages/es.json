@@ -869,68 +869,6 @@
     "navNext": "Siguiente diapositiva",
     "navGoTo": "Ir a la diapositiva"
   },
-  "mentionsLegales": {
-    "meta": {
-      "title": "Aviso legal",
-      "description": "Aviso legal de DEOYA CAPITAL."
-    },
-    "header": {
-      "brand": "Deoya Capital",
-      "title": "Aviso legal"
-    },
-    "editor": {
-      "title": "Editor del sitio",
-      "description": "El sitio <span class=\"font-medium text-stone-700\">DEOYA CAPITAL</span> es publicado por:",
-      "fields": {
-        "companyName": "Nombre de la sociedad",
-        "companyNameValue": "Sociedad en creación",
-        "legalForm": "Forma jurídica",
-        "legalFormValue": "Sociedad en creación",
-        "capital": "Capital social",
-        "capitalValue": "Sociedad en creación",
-        "headquarters": "Sede social",
-        "headquartersValue": "París, Francia",
-        "rcs": "Registro RCS",
-        "rcsValue": "Sociedad en creación",
-        "vat": "Número de IVA intracomunitario",
-        "vatValue": "Sociedad en creación",
-        "director": "Director de publicación",
-        "directorValue": "Sociedad en creación",
-        "email": "Email",
-        "emailValue": "contact@deoya-capital.com"
-      }
-    },
-    "hosting": {
-      "title": "Alojamiento",
-      "description": "El sitio está alojado por:",
-      "fields": {
-        "provider": "Alojador",
-        "providerValue": "LWS (Ligne Web Services)",
-        "address": "Dirección",
-        "addressValue": "10 rue Penthièvre, 75008 París – Francia",
-        "website": "Sitio web",
-        "websiteValue": "https://www.lws.fr"
-      }
-    },
-    "intellectualProperty": {
-      "title": "Propiedad intelectual",
-      "content1": "Todo el contenido del sitio (textos, imágenes, logo, diseño, estructura) es propiedad exclusiva de <span class=\"font-medium text-stone-800\">DEOYA CAPITAL</span>, salvo mención contraria.",
-      "content2": "Cualquier reproducción, representación, modificación, publicación o adaptación, total o parcial, está prohibida sin autorización previa."
-    },
-    "liability": {
-      "title": "Responsabilidad",
-      "content": "DEOYA CAPITAL se esfuerza por asegurar la exactitud de la información publicada en el sitio. Sin embargo, no puede ser responsable de errores, omisiones o resultados obtenidos del uso de esta información."
-    },
-    "applicableLaw": {
-      "title": "Derecho aplicable",
-      "content1": "Este sitio está sujeto al derecho francés.",
-      "content2": "Cualquier litigio está bajo la jurisdicción de los tribunales franceses."
-    },
-    "discussProject": {
-      "title": "Hablemos de tu proyecto.",
-      "buttonText": "Contáctanos"
-    }
-  },
   "politiqueConfidentialite": {
     "meta": {
       "title": "Política de privacidad",
@@ -1411,16 +1349,17 @@
         "content2": " es editado por:",
         "emailLabel": "Email",
         "info": [
-          ["Nombre de la sociedad", "Sociedad en creación"],
-          ["Forma jurídica", "Sociedad en creación"],
-          ["Capital social", "Sociedad en creación"],
-          ["Sede social", "París, Francia"],
-          ["Inscripción RCS", "Sociedad en creación"],
-          ["Número de IVA intracomunitario", "Sociedad en creación"]
+          ["Nombre de la empresa", "DEOYA CAPITAL"],
+          ["Forma jurídica", "SASU, Sociedad por acciones simplificada unipersonal"],
+          ["Capital social", "100 EUR"],
+          ["Domicilio social", "47 rue Vivienne 75002 Paris FRANCE"],
+          ["Registro mercantil RCS", "104 865 035 R.C.S. Paris"],
+          ["SIRET", "10486503500018"],
+          ["Número de IVA intracomunitario", "FR7501.104865035"]
         ],
         "additionalInfo": [
-          ["Director de publicación", "Sociedad en creación"],
-          ["Email", "contact@deoya-capital.com"]
+          ["Director de la publicación", "DEOYA INTELLIGENCE"],
+          ["Correo electrónico", "contact@deoya-capital.com"]
         ]
       },
       "hebergement": {
