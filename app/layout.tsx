@@ -45,16 +45,10 @@ export const metadata: Metadata = {
   },
     icons: {
       icon: [
-        { url: '/deoya-capital-vert-mini-o.png', media: '(prefers-color-scheme: light)', sizes: '32x32' },
-        { url: '/deoya-capital-blanc-vert-mini-o.png', media: '(prefers-color-scheme: dark)', sizes: '32x32' },
-        { url: '/deoya-capital-vert-mini-o.png', media: '(prefers-color-scheme: light)', sizes: '16x16' },
-        { url: '/deoya-capital-blanc-vert-mini-o.png', media: '(prefers-color-scheme: dark)', sizes: '16x16' },
-        { url: '/deoya-capital-vert-mini-o.png', media: '(prefers-color-scheme: light)', sizes: '192x192' },
-        { url: '/deoya-capital-blanc-vert-mini-o.png', media: '(prefers-color-scheme: dark)', sizes: '192x192' },
+        { url: '/favicon.ico' },
+        { url: '/deoya-capital-vert-mini-o.png', type: 'image/png', sizes: '32x32' },
       ],
-      apple: [
-        { url: '/deoya-capital-vert-mini.png', sizes: '180x180' },
-      ]
+      apple: { url: '/deoya-capital-vert-mini.png', sizes: '180x180' },
   },
 }
 
