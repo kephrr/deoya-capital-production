@@ -353,22 +353,22 @@
       "label": "Our markets",
       "title": "Areas of intervention",
       "subtitle": "Operational presence where projects are built.",
+      "intro": "Our scope is not defined by physical offices, but by the depth of our network and the quality of our on-the-ground knowledge.",
       "zones": [
         {
+          "title": "Africa",
+          "description": "Our expertise covers African markets, with a deep understanding of regulatory, economic and institutional environments.\n\nWe rely on a network of field partners to ensure effective operational execution and lasting anchoring of projects.",
+          "countries": ["Cameroon", "Gabon", "Congo", "Côte d'Ivoire", "..."]
+        },
+        {
           "title": "Europe",
-          "description": "Strategy, financing and management from our European offices."
-        },
-        {
-          "title": "West Africa",
-          "description": "Operational presence and field expertise at the heart of projects."
-        },
-        {
-          "title": "North Africa",
-          "description": "Interface between European markets and Mediterranean opportunities."
+          "description": "Based in Europe, we master standards in governance, compliance and financial structuring.\n\nThis dual expertise allows us to secure projects and build solid bridges between European and international environments.",
+          "countries": ["France", "Belgium", "Switzerland", "..."]
         },
         {
           "title": "North America",
-          "description": "Access to financial markets and expertise in international structuring."
+          "description": "We support North American investors in developing international projects, facilitating their access to African and emerging markets.\n\nOur understanding of international financial standards enables robust structuring aligned with investor requirements.",
+          "countries": ["United States", "Canada", "..."]
         }
       ]
     },

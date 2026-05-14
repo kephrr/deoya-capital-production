@@ -336,22 +336,22 @@
       "label": "Nuestros mercados",
       "title": "Zonas de intervención",
       "subtitle": "Presencia operacional donde se construyen los proyectos.",
+      "intro": "Nuestro ámbito de intervención no lo definen oficinas físicas, sino la profundidad de nuestra red y la calidad de nuestro conocimiento del terreno.",
       "zones": [
         {
+          "title": "África",
+          "description": "Nuestra experiencia abarca los mercados africanos, con una comprensión profunda de los entornos regulatorios, económicos e institucionales.\n\nNos apoyamos en una red de socios locales para garantizar una ejecución operativa eficaz y un arraigo duradero de los proyectos.",
+          "countries": ["Camerún", "Gabón", "Congo", "Costa de Marfil", "..."]
+        },
+        {
           "title": "Europa",
-          "description": "Estrategia, financiamiento y gestión desde nuestras oficinas europeas."
-        },
-        {
-          "title": "África Occidental",
-          "description": "Presencia operacional y experiencia de campo en el corazón de los proyectos."
-        },
-        {
-          "title": "África del Norte",
-          "description": "Interfaz entre mercados europeos y oportunidades mediterráneas."
+          "description": "Arraigados en Europa, dominamos los estándares en gobernanza, cumplimiento y estructuración financiera.\n\nEsta doble experiencia nos permite asegurar los proyectos y construir puentes sólidos entre los entornos europeos e internacionales.",
+          "countries": ["Francia", "Bélgica", "Suiza", "..."]
         },
         {
           "title": "América del Norte",
-          "description": "Acceso a mercados financieros y experiencia en estructuración internacional."
+          "description": "Acompañamos a los inversores norteamericanos en el desarrollo de proyectos internacionales, facilitando su acceso a los mercados africanos y emergentes.\n\nNuestra comprensión de las normas financieras internacionales permite una estructuración robusta y alineada con las exigencias de los inversores.",
+          "countries": ["Estados Unidos", "Canadá", "..."]
         }
       ]
     },

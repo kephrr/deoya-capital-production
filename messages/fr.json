@@ -326,22 +326,22 @@
       "label": "Nos marchés",
       "title": "Zones d'interventions",
       "subtitle": "Une présence opérationnelle là où les projets se construisent.",
+      "intro": "Notre périmètre d'intervention n'est pas défini par des bureaux physiques, mais par la profondeur de notre réseau et la qualité de notre connaissance terrain.",
       "zones": [
         {
+          "title": "Afrique",
+          "description": "Notre expertise couvre les marchés africains, avec une compréhension approfondie des environnements réglementaires, économiques et institutionnels.\n\nNous nous appuyons sur un réseau de partenaires terrain pour garantir une exécution opérationnelle efficace et un ancrage durable des projets.",
+          "countries": ["Cameroun", "Gabon", "Congo", "Côte d'Ivoire", "..."]
+        },
+        {
           "title": "Europe",
-          "description": "Stratégie, financement et pilotage depuis nos bureaux européens."
-        },
-        {
-          "title": "Afrique de l'Ouest",
-          "description": "Présence opérationnelle et expertise terrain au cœur des projets."
-        },
-        {
-          "title": "Afrique du Nord",
-          "description": "Interface entre les marchés européens et les opportunités méditerranéennes."
+          "description": "Ancrés en Europe, nous maîtrisons les standards en matière de gouvernance, de conformité et de structuration financière.\n\nCette double expertise nous permet de sécuriser les projets et de construire des ponts solides entre les environnements européens et internationaux.",
+          "countries": ["France", "Belgique", "Suisse", "..."]
         },
         {
           "title": "Amérique du Nord",
-          "description": "Accès aux marchés financiers et expertise en structuration internationale."
+          "description": "Nous accompagnons les investisseurs nord-américains dans le développement de projets internationaux, en facilitant leur accès aux marchés africains et émergents.\n\nNotre compréhension des standards financiers internationaux permet d'assurer une structuration robuste et conforme aux exigences des investisseurs.",
+          "countries": ["États-Unis", "Canada", "..."]
         }
       ]
     },
