@@ -23,14 +23,14 @@ const cormorantGaramond = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://deoya-capital.com'),
+  metadataBase: new URL('https://www.deoya-capital.com'),
   title: 'DEOYA CAPITAL — Conseil stratégique en investissement international',
   description:
     'Cabinet de conseil spécialisé dans l\'accompagnement stratégique et opérationnel de projets d\'investissement internationaux et transfrontaliers',
   openGraph: {
     title: 'DEOYA CAPITAL — Conseil stratégique en investissement international',
     description: 'Cabinet de conseil spécialisé dans l\'accompagnement stratégique et opérationnel de projets d\'investissement internationaux et transfrontaliers',
-    url: 'https://deoya-capital.com', 
+    url: 'https://www.deoya-capital.com', 
     siteName: 'Deoya Capital',
     images: [
       {
