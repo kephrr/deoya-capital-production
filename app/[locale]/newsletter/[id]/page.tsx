@@ -32,7 +32,7 @@ export async function generateMetadata({
 
   const title = post.title?.replace(/<[^>]*>/g, '') || 'Article';
   const description = post.excerpt?.replace(/<[^>]*>/g, '') || '';
-  const ogImage = "https://www.deoya-capital.com/public/348.jpg";
+  const ogImage = post.featured_image?.source_url || post.thumbnail_url || '/deoya-capital-vert-mini-o.png';
 
   return {
     title: `${title} — DEOYA CAPITAL`,
