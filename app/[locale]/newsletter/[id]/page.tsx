@@ -37,6 +37,9 @@ export async function generateMetadata({
   return {
     title: `${title} — DEOYA CAPITAL`,
     description: description || `Article: ${title}`,
+    alternates: {
+      canonical: `https://www.deoya-capital.com/${locale}/newsletter/${post.slug}/`,
+    },
     openGraph: {
       title: `${title} — DEOYA CAPITAL`,
       description: description || `Article: ${title}`,
